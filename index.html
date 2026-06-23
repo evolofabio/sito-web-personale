@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Evolo Digital Studio — Sviluppo web, WordPress e soluzioni digitali su misura. Siti professionali con HTML, CSS e JavaScript.">
+  <title>Evolo Digital Studio | Sviluppo Web & Soluzioni Digitali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="header__logo" aria-label="Evolo Digital Studio — Home">
+        <img src="assets/logo.png" alt="Evolo Digital Studio" width="48" height="48">
+        <span class="header__brand">
+          <strong>Evolo</strong>
+          <small>Digital Studio</small>
+        </span>
+      </a>
+
+      <nav class="header__nav" id="nav" aria-label="Navigazione principale">
+        <ul class="header__links">
+          <li><a href="#chi-sono">Chi sono</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <a href="mailto:evolofabio@outlook.it" class="btn btn--primary header__cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        Email
+      </a>
+
+      <button class="header__toggle" id="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">Sviluppo Web · Software · Soluzioni Digitali</span>
+          <h1 class="hero__title">
+            Creo siti web <span class="text-gradient">autentici</span> che raccontano la tua storia
+          </h1>
+          <p class="hero__subtitle">
+            Sviluppo siti web professionali con codice HTML, CSS, JavaScript e WordPress.
+            Ogni progetto è costruito con cura, per trasmettere valore e fiducia ai tuoi clienti.
+          </p>
+          <div class="hero__actions">
+            <a href="#progetti" class="btn btn--primary btn--lg">Vedi i progetti</a>
+            <a href="#contatti" class="btn btn--outline btn--lg">Parliamone</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <strong>HTML · CSS · JS</strong>
+              <span>Codice su misura</span>
+            </div>
+            <div class="hero__stat">
+              <strong>WordPress</strong>
+              <span>Gestione semplice</span>
+            </div>
+            <div class="hero__stat">
+              <strong>100%</strong>
+              <span>Personalizzato</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__code" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window__bar">
+              <span class="code-window__dot code-window__dot--red"></span>
+              <span class="code-window__dot code-window__dot--yellow"></span>
+              <span class="code-window__dot code-window__dot--green"></span>
+              <span class="code-window__filename">index.html</span>
+            </div>
+            <pre class="code-window__body"><code id="code-animation"></code><span class="code-cursor" id="code-cursor">|</span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chi sono -->
+    <section class="section" id="chi-sono">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Chi sono</span>
+          <h2 class="section__title">Passione per il codice, attenzione ai dettagli</h2>
+        </div>
+        <div class="about">
+          <div class="about__text">
+            <p>
+              Sono <strong>Fabio</strong>, fondatore di <strong>Evolo Digital Studio</strong>.
+              Mi occupo della creazione di siti web che uniscono design moderno e funzionalità concrete,
+              sviluppati con le tecnologie più affidabili del web.
+            </p>
+            <p>
+              Lavoro principalmente con <strong>HTML, CSS e JavaScript</strong> per siti completamente
+              personalizzati, e con <strong>WordPress</strong> quando serve una gestione autonoma dei contenuti.
+              Il mio obiettivo è sempre lo stesso: dare ai clienti un'identità digitale autentica,
+              professionale e su misura.
+            </p>
+            <ul class="about__skills">
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Siti web responsive e performanti
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Temi WordPress personalizzati
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Ottimizzazione SEO e accessibilità
+              </li>
+              <li>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Supporto e manutenzione continua
+              </li>
+            </ul>
+          </div>
+          <div class="about__card">
+            <div class="about__card-inner">
+              <img src="assets/logo.png" alt="Evolo Digital Studio" class="about__logo">
+              <blockquote>
+                «Il codice è il mio linguaggio. Ogni riga è scritta per dare valore reale a chi mi affida il proprio progetto.»
+              </blockquote>
+              <cite>— Fabio, Evolo Digital Studio</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servizi -->
+    <section class="section section--alt" id="servizi">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Servizi</span>
+          <h2 class="section__title">Soluzioni digitali complete</h2>
+          <p class="section__desc">Dalla prima idea al sito online, ti accompagno in ogni fase del progetto.</p>
+        </div>
+        <div class="services">
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <h3>Sviluppo Web Custom</h3>
+            <p>Siti web costruiti da zero con HTML, CSS e JavaScript. Design unico, codice pulito e massime prestazioni.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3>WordPress</h3>
+            <p>Siti WordPress personalizzati con temi su misura. Gestione autonoma dei contenuti senza compromessi sul design.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3>Design Responsive</h3>
+            <p>Interfacce ottimizzate per ogni dispositivo: desktop, tablet e smartphone. Un'esperienza fluida ovunque.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/>
+              </svg>
+            </div>
+            <h3>SEO & Performance</h3>
+            <p>Ottimizzazione per i motori di ricerca e tempi di caricamento rapidi. Visibilità e velocità al servizio del business.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progetti -->
+    <section class="section" id="progetti">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Portfolio</span>
+          <h2 class="section__title">Progetti realizzati</h2>
+          <p class="section__desc">Alcuni dei siti web che ho creato per aziende e professionisti.</p>
+        </div>
+        <div class="projects">
+
+          <article class="project-card">
+            <div class="project-card__visual project-card__visual--medical">
+              <div class="project-card__browser">
+                <div class="project-card__browser-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="project-card__browser-content">
+                  <img src="assets/logo-visitamedical.png" alt="Visita Medical" class="project-card__logo">
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">Healthcare</span>
+              </div>
+              <h3>Visita Medical</h3>
+              <p>
+                Sito web professionale per il settore sanitario e medical tourism.
+                Design pulito e affidabile, pensato per guidare i pazienti verso i servizi offerti
+                con chiarezza e autorevolezza.
+              </p>
+              <a href="https://www.visitamedical.it" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                visitamedical.it
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__visual project-card__visual--civicos">
+              <div class="project-card__browser">
+                <div class="project-card__browser-bar">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="project-card__browser-content">
+                  <img src="assets/logo-civicos.png" alt="CivicOS" class="project-card__logo">
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">HTML · CSS · JS</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">Corporate</span>
+              </div>
+              <h3>CivicOS</h3>
+              <p>
+                Piattaforma web aziendale con identità visiva solida e navigazione intuitiva.
+                Un sito che comunica professionalità e competenza, costruito per valorizzare
+                i servizi e la presenza digitale del brand.
+              </p>
+              <a href="https://www.civicos.it" target="_blank" rel="noopener noreferrer" class="project-card__link">
+                civicos.it
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contatti -->
+    <section class="section section--alt" id="contatti">
+      <div class="container">
+        <div class="contact">
+          <div class="contact__info">
+            <span class="section__label">Contatti</span>
+            <h2 class="section__title">Hai un progetto in mente?</h2>
+            <p>Scrivimi per una consulenza gratuita. Raccontami la tua idea e troveremo insieme la soluzione migliore.</p>
+            <div class="contact__items">
+              <a href="mailto:evolofabio@outlook.it" class="contact__item">
+                <div class="contact__item-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <strong>Email</strong>
+                  <span>Clicca per scrivermi</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <form class="contact__form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="la-tua@email.it" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Messaggio</label>
+              <textarea id="message" name="message" rows="5" placeholder="Raccontami il tuo progetto..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--full">
+              Invia messaggio
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.png" alt="Evolo Digital Studio" width="56" height="56">
+          <p>Sviluppo Web — Software e soluzioni digitali su misura per professionisti e aziende.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="#chi-sono">Chi sono</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#progetti">Progetti</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Progetti</h4>
+          <ul>
+            <li><a href="https://www.visitamedical.it" target="_blank" rel="noopener noreferrer">visitamedical.it</a></li>
+            <li><a href="https://www.civicos.it" target="_blank" rel="noopener noreferrer">civicos.it</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contatti</h4>
+          <ul>
+            <li>
+              <a href="mailto:evolofabio@outlook.it">Email</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Evolo Digital Studio — Tutti i diritti riservati</p>
+        <p class="footer__piva">P.IVA<span id="piva-number">— 04071170791 </span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
