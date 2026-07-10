@@ -34,8 +34,8 @@
         <div class="cookie-banner__text">
           <strong>Questo sito utilizza cookie e tecnologie simili</strong>
           <p>
-            Utilizziamo cookie tecnici necessari al funzionamento del sito e servizi di terze parti
-            (es. Google Fonts). Per maggiori informazioni consulta la
+            Utilizziamo cookie tecnici necessari al funzionamento del sito, cookie statistici
+            (Google Analytics) e servizi di terze parti (es. Google Fonts). Per maggiori informazioni consulta la
             <a href="cookie.html">Cookie Policy</a> e la
             <a href="privacy.html">Privacy Policy</a>.
           </p>
@@ -51,6 +51,7 @@
 
     document.getElementById('cookie-accept').addEventListener('click', () => {
       setConsent('accepted');
+      if (window.EvoloAnalytics) window.EvoloAnalytics.load();
       hideBanner();
     });
 
@@ -77,6 +78,9 @@
   }
 
   const consent = getConsent();
+  if (consent === 'accepted' && window.EvoloAnalytics) {
+    window.EvoloAnalytics.load();
+  }
   if (!consent) {
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', showBanner);
