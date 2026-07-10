@@ -161,7 +161,7 @@ ul { list-style: none; }
 }
 
 .header__logo img {
-  width: 48px;
+  width: auto;
   height: 48px;
   object-fit: contain;
 }
@@ -1061,6 +1061,12 @@ ul { list-style: none; }
   color: var(--text-muted);
 }
 
+.about-section__badge img {
+  width: auto;
+  height: 40px;
+  object-fit: contain;
+}
+
 .about-section__content p {
   color: var(--text-secondary);
   margin-bottom: 1rem;
@@ -1474,7 +1480,8 @@ ul { list-style: none; }
 }
 
 .footer__brand img {
-  width: 64px; height: 64px;
+  width: auto;
+  height: 64px;
   object-fit: contain;
   margin-bottom: 1rem;
   opacity: 0.95;
