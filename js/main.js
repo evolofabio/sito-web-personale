@@ -210,7 +210,7 @@
       const body = encodeURIComponent(
         `Nome: ${name}\nEmail: ${email}\nTipo di progetto: ${serviceLabel}\n\n${message}`
       );
-      window.location.href = `mailto:evolofabio@outlook.it?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:info@evolodigitalstudio.it?subject=${subject}&body=${body}`;
     });
   }
 
