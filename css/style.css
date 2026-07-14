@@ -385,6 +385,25 @@ ul { list-style: none; }
   gap: 1.25rem;
 }
 
+.hero__video-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  padding: 0.5rem;
+  background: transparent;
+}
+
+.hero__video {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  opacity: 0.82;
+}
+
 .hero__image-wrap {
   position: relative;
   border-radius: var(--radius-xl);
@@ -1575,7 +1594,8 @@ body.menu-open { overflow: hidden; }
 /* ---- Responsive ---- */
 @media (max-width: 1024px) {
   .hero__inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .hero__visual { order: -1; }
+  .hero__content { order: 1; }
+  .hero__visual { order: 2; }
   .benefits,
   .services,
   .pricing,
@@ -1619,6 +1639,8 @@ body.menu-open { overflow: hidden; }
   .header__toggle { display: flex; }
 
   .hero { min-height: auto; padding-bottom: 3rem; }
+  .hero__content { order: 1; }
+  .hero__visual { order: 2; }
   .hero__actions { flex-direction: column; }
   .hero__actions .btn { width: 100%; }
 
