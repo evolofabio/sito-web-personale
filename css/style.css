@@ -499,10 +499,14 @@ ul { list-style: none; }
   font-size: 0.72rem;
   line-height: 1.65;
   color: #C8D6E5;
-  min-height: 160px;
   overflow: hidden;
   white-space: pre-wrap;
   word-break: break-all;
+}
+
+/* Altezza fissa = codice completo (13 righe), evita salti di layout durante il typing */
+.code-window--hero .code-window__body {
+  height: calc(1.1rem * 2 + 0.72rem * 1.65 * 13);
 }
 
 .code-window__body .tok-tag { color: #7EC8E3; }
