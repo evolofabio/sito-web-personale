@@ -1907,6 +1907,7 @@ ul { list-style: none; }
 .contact__checks svg { color: var(--warm-400); }
 
 .contact__form {
+  position: relative;
   background: var(--bg-card);
   padding: 2rem;
   border-radius: var(--radius-xl);
@@ -1963,6 +1964,76 @@ ul { list-style: none; }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder { color: var(--text-muted); }
+
+.form-group--error input,
+.form-group--error textarea,
+.form-group--error select {
+  border-color: #c45c5c;
+  box-shadow: 0 0 0 3px rgba(196, 92, 92, 0.12);
+}
+
+.form-group--error .checkbox-label {
+  color: #a33f3f;
+}
+
+.form-group--captcha {
+  margin-bottom: 1.25rem;
+}
+
+.form-group--captcha.form-group--error {
+  outline: 2px solid rgba(196, 92, 92, 0.45);
+  outline-offset: 6px;
+  border-radius: var(--radius-sm);
+}
+
+.form-optional {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-status {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.form-status--success {
+  background: #e8f6ee;
+  color: #1f6b3f;
+  border: 1px solid #b7e0c6;
+}
+
+.form-status--error {
+  background: #fceeee;
+  color: #8f2f2f;
+  border: 1px solid #efc0c0;
+}
+
+#form-submit.is-loading {
+  opacity: 0.85;
+  cursor: wait;
+}
+
+#form-submit.is-loading .btn__icon {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
 
 /* ---- Footer ---- */
 .footer {

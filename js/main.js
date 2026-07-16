@@ -189,28 +189,137 @@
   /* ---- Scroll reveal (sempre visibile) ---- */
   document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
 
-  /* ---- Contact form ---- */
+  /* ---- Contact form (Web3Forms) ---- */
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    const formStatus = document.getElementById('form-status');
+    const submitBtn = document.getElementById('form-submit');
+    const btnLabel = submitBtn ? submitBtn.querySelector('.btn__label') : null;
+
+    function setFormStatus(type, message) {
+      if (!formStatus) return;
+      formStatus.hidden = false;
+      formStatus.className = `form-status form-status--${type}`;
+      formStatus.textContent = message;
+    }
+
+    function clearFieldErrors() {
+      contactForm.querySelectorAll('.form-group--error').forEach((el) => {
+        el.classList.remove('form-group--error');
+      });
+    }
+
+    function markError(fieldId) {
+      const field = document.getElementById(fieldId);
+      if (!field) return;
+      const group = field.closest('.form-group');
+      if (group) group.classList.add('form-group--error');
+    }
+
+    function validateForm() {
+      clearFieldErrors();
+      let valid = true;
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+      const privacy = document.getElementById('privacy-consent');
+      const captchaGroup = document.getElementById('captcha-group');
+      const hCaptchaResponse = contactForm.querySelector('textarea[name="h-captcha-response"]');
+
+      if (!name || !name.value.trim()) {
+        markError('name');
+        valid = false;
+      }
+      if (!email || !email.value.trim() || !email.checkValidity()) {
+        markError('email');
+        valid = false;
+      }
+      if (!message || !message.value.trim()) {
+        markError('message');
+        valid = false;
+      }
+      if (!privacy || !privacy.checked) {
+        markError('privacy-consent');
+        valid = false;
+      }
+      if (!hCaptchaResponse || !hCaptchaResponse.value) {
+        if (captchaGroup) captchaGroup.classList.add('form-group--error');
+        valid = false;
+      } else if (captchaGroup) {
+        captchaGroup.classList.remove('form-group--error');
+      }
+      return valid;
+    }
+
+    function resetCaptcha() {
+      if (typeof window.hcaptcha !== 'undefined') {
+        try {
+          window.hcaptcha.reset();
+        } catch (err) {
+          /* ignore */
+        }
+      }
+    }
+
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      const privacyConsent = document.getElementById('privacy-consent');
-      if (privacyConsent && !privacyConsent.checked) {
-        privacyConsent.focus();
+      if (!validateForm()) {
+        const captchaMissing = !contactForm.querySelector('textarea[name="h-captcha-response"]')?.value;
+        setFormStatus(
+          'error',
+          captchaMissing
+            ? 'Completa la verifica hCaptcha prima di inviare.'
+            : 'Controlla i campi obbligatori evidenziati e riprova.'
+        );
+        const firstError = contactForm.querySelector('.form-group--error input, .form-group--error textarea');
+        if (firstError) firstError.focus();
         return;
       }
 
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const service = document.getElementById('service');
-      const serviceLabel = service.options[service.selectedIndex].text;
-      const message = document.getElementById('message').value.trim();
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('is-loading');
+      }
+      if (btnLabel) btnLabel.textContent = 'Invio in corso…';
+      if (formStatus) {
+        formStatus.hidden = true;
+        formStatus.textContent = '';
+      }
 
-      const subject = encodeURIComponent(`Richiesta preventivo da ${name} — Evolo Digital Studio`);
-      const body = encodeURIComponent(
-        `Nome: ${name}\nEmail: ${email}\nTipo di progetto: ${serviceLabel}\n\n${message}`
-      );
-      window.location.href = `mailto:info@evolodigitalstudio.it?subject=${subject}&body=${body}`;
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' },
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (response.ok && result.success) {
+          contactForm.reset();
+          clearFieldErrors();
+          resetCaptcha();
+          setFormStatus('success', 'Messaggio inviato! Ti rispondo entro 24 ore lavorative.');
+        } else {
+          resetCaptcha();
+          setFormStatus('error', result.message || 'Invio non riuscito. Riprova tra poco o scrivimi via email.');
+        }
+      } catch (err) {
+        resetCaptcha();
+        setFormStatus('error', 'Connessione non disponibile. Controlla la rete e riprova.');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('is-loading');
+        }
+        if (btnLabel) btnLabel.textContent = 'Invia richiesta';
+      }
+    });
+
+    contactForm.querySelectorAll('input, textarea, select').forEach((field) => {
+      field.addEventListener('input', () => {
+        const group = field.closest('.form-group');
+        if (group) group.classList.remove('form-group--error');
+      });
     });
   }
 
