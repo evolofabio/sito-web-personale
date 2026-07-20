@@ -1816,6 +1816,17 @@ ul { list-style: none; }
   inset: 0;
 }
 
+.cta-banner__bg--brand {
+  background:
+    radial-gradient(ellipse 70% 80% at 15% 20%, rgba(184, 212, 236, 0.45) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 70% at 85% 80%, rgba(196, 149, 106, 0.35) 0%, transparent 50%),
+    linear-gradient(135deg, #1E3A5F 0%, #2C5282 45%, #3D6B9E 100%);
+}
+
+.cta-banner__bg--brand::after {
+  background: linear-gradient(135deg, rgba(30, 58, 95, 0.15), rgba(61, 107, 158, 0.1));
+}
+
 .cta-banner__bg img {
   width: 100%;
   height: 100%;
