@@ -1,0 +1,246 @@
+/* Saloni Elite product page — gallery cards & mobile */
+
+/* Uniform screenshot frames */
+.gallery__item .browser {
+  width: 100%;
+  max-width: 100%;
+}
+
+.browser__stage--shot {
+  padding: 0;
+  background: #f5f1eb;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+}
+
+.browser__stage--shot picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.browser__stage--shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Concept mockups: show full composition */
+.gallery .browser__stage--shot {
+  aspect-ratio: 16 / 10;
+  background: #faf7f2;
+}
+.gallery .browser__stage--shot img {
+  object-fit: contain;
+  object-position: center top;
+  background: #faf7f2;
+}
+.hero .browser__stage--shot img,
+.hero .browser__stage--shot picture img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.browser__stage--shot-tall {
+  aspect-ratio: 4 / 5;
+}
+
+.browser__stage--shot-wide {
+  aspect-ratio: 16 / 9;
+}
+
+.gallery__split {
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.gallery__split .gallery__item {
+  min-width: 0;
+}
+
+.gallery__split .browser__stage--shot {
+  aspect-ratio: 4 / 3;
+}
+
+.gallery__meta {
+  gap: 0.65rem 1rem;
+}
+
+.gallery__meta > div {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+/* Info / feature cards — mobile-first polish */
+.info-card,
+.feature-chip,
+.integration-card,
+.pricing-card,
+.process-card {
+  min-width: 0;
+}
+
+@media (max-width: 1024px) {
+  .gallery__split {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .gallery__split .browser__stage--shot {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    gap: 1.75rem;
+  }
+
+  .gallery__item {
+    gap: 0.75rem;
+  }
+
+  .gallery__meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .gallery__meta h3 {
+    font-size: 1.05rem;
+  }
+
+  .gallery__meta p {
+    font-size: 0.88rem;
+    max-width: none;
+  }
+
+  .gallery__tag {
+    align-self: flex-start;
+  }
+
+  .browser {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+
+  .browser:hover {
+    transform: none;
+    box-shadow: var(--shadow-md);
+  }
+
+  .browser__bar {
+    padding: 0.55rem 0.75rem;
+    gap: 0.35rem;
+  }
+
+  .browser__dots span {
+    width: 8px;
+    height: 8px;
+  }
+
+  .browser__url {
+    font-size: 0.65rem;
+    padding: 0.28rem 0.55rem;
+    margin-left: 0.25rem;
+  }
+
+  .browser__stage--shot,
+  .gallery__split .browser__stage--shot,
+  .browser__stage--shot-wide,
+  .browser__stage--shot-tall {
+    aspect-ratio: auto;
+    max-height: none;
+  }
+
+  .browser__stage--shot img {
+    height: auto;
+    object-fit: contain;
+    object-position: top center;
+  }
+
+  .browser--hero {
+    transform: none;
+    max-width: 100%;
+  }
+
+  .browser--hero:hover {
+    transform: none;
+  }
+
+  .hero__visual {
+    padding-bottom: 0.75rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero__float--product {
+    left: 0.5rem;
+    bottom: 0.35rem;
+    font-size: 0.85rem;
+    padding: 0.55rem 0.75rem;
+  }
+
+  .info-card,
+  .feature-chip,
+  .integration-card,
+  .process-card {
+    padding: 1.2rem;
+  }
+
+  .info-card:hover,
+  .feature-chip:hover {
+    transform: none;
+  }
+
+  .card-grid--3,
+  .feature-grid {
+    gap: 0.85rem;
+  }
+
+  .stats-band__grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .browser__stage--shot,
+  .gallery__split .browser__stage--shot,
+  .browser__stage--shot-wide,
+  .browser__stage--shot-tall {
+    aspect-ratio: auto;
+  }
+
+  .browser__url {
+    max-width: 55%;
+  }
+
+  .stats-band__grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .stats-band__item strong {
+    font-size: 1.25rem;
+  }
+}
+
+/* Prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .browser,
+  .info-card,
+  .feature-chip {
+    transition: none;
+  }
+
+  .browser:hover,
+  .info-card:hover {
+    transform: none;
+  }
+}
