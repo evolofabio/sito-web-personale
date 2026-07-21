@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vacation Home Bookings v1.2.0 — plugin WordPress per prenotazioni case vacanza con sync iCal Airbnb/Booking e pagamenti Stripe. Prodotto di Evolo Digital Studio.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1E3A5F">
+  <title>Vacation Home Bookings | Plugin WordPress | Evolo Digital Studio</title>
+  <link rel="canonical" href="https://evolodigitalstudio.it/vacation-home-bookings.html">
+  <link rel="icon" href="assets/logo.png?v=2" type="image/png">
+  <meta property="og:title" content="Vacation Home Bookings | Evolo Digital Studio">
+  <meta property="og:description" content="Plugin WordPress per prenotazioni case vacanza: iCal Airbnb/Booking, Stripe Checkout, dashboard operatore. Licenza da 79 €/anno.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://evolodigitalstudio.it/vacation-home-bookings.html">
+  <meta property="og:image" content="https://evolodigitalstudio.it/assets/plugins/vhb/02-dashboard.png">
+  <meta property="og:locale" content="it_IT">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product-page.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Vacation Home Bookings",
+    "applicationCategory": "WordPress Plugin",
+    "operatingSystem": "WordPress",
+    "softwareVersion": "1.2.0",
+    "description": "Plugin WordPress per prenotazioni case vacanza con sync iCal Airbnb/Booking e pagamenti Stripe Checkout.",
+    "offers": {
+      "@type": "Offer",
+      "price": "79",
+      "priceCurrency": "EUR",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Evolo Digital Studio",
+      "url": "https://evolodigitalstudio.it"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://evolodigitalstudio.it/" },
+      { "@type": "ListItem", "position": 2, "name": "Plugin WordPress", "item": "https://evolodigitalstudio.it/plugins.html" },
+      { "@type": "ListItem", "position": 3, "name": "Vacation Home Bookings", "item": "https://evolodigitalstudio.it/vacation-home-bookings.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Evolo Digital Studio — Home">
+        <img src="assets/logo.png?v=2" alt="Evolo Digital Studio" width="48" height="48">
+        <span class="header__brand">
+          <strong>Evolo</strong>
+          <small>Digital Studio</small>
+        </span>
+      </a>
+      <nav class="header__nav" id="nav" aria-label="Navigazione principale">
+        <ul class="header__links">
+          <li><a href="index.html#servizi">Servizi</a></li>
+          <li><a href="index.html#processo">Come funziona</a></li>
+          <li><a href="index.html#progetti">Portfolio</a></li>
+          <li><a href="plugins.html" class="active">Plugin</a></li>
+          <li><a href="index.html#pacchetti">Pacchetti</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+      <a href="#contatti" class="btn btn--primary header__cta">Richiedi info</a>
+      <button class="header__toggle" id="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="product-subnav" aria-label="Sezioni prodotto">
+    <div class="container product-subnav__inner">
+      <a href="plugins.html">← Tutti i plugin</a>
+      <a href="#funzionalita">Funzionalità</a>
+      <a href="#integrazioni">Integrazioni</a>
+      <a href="#schermate">Schermate</a>
+      <a href="#prezzi">Prezzi</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__grid-pattern"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge badge--pulse">
+            <span class="badge__dot"></span>
+            Plugin WordPress · v1.2.0
+          </span>
+          <h1 class="hero__title">
+            Prenotazioni per case vacanza, <span class="text-gradient">sul tuo WordPress</span>
+          </h1>
+          <p class="hero__subtitle">
+            Appartamenti, calendari, richieste ospiti, sync iCal con Airbnb/Booking
+            e pagamenti Stripe — senza commissioni di piattaforma.
+          </p>
+          <div class="hero__actions">
+            <a href="#contatti" class="btn btn--primary btn--lg">
+              Richiedi info
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#schermate" class="btn btn--outline btn--lg">Vedi le schermate</a>
+          </div>
+          <div class="hero__trust">
+            <div class="hero__trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Sync iCal bidirezionale
+            </div>
+            <div class="hero__trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Stripe dopo accettazione
+            </div>
+            <div class="hero__trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Supporto incluso
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="browser browser--hero">
+            <div class="browser__bar">
+              <div class="browser__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="browser__url">wp-admin · VHB Bookings</div>
+            </div>
+            <div class="browser__stage browser__stage--tight">
+              <img src="assets/plugins/vhb/02-dashboard.png" alt="Dashboard Vacation Home Bookings" width="1400" height="900">
+            </div>
+          </div>
+          <div class="hero__float hero__float--stats hero__float--product">
+            <strong>Zero</strong>
+            <span>commissioni piattaforma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Punti chiave">
+      <div class="container stats-band__grid">
+        <div class="stats-band__item">
+          <strong>1</strong>
+          <span>Licenza sito singolo</span>
+        </div>
+        <div class="stats-band__item">
+          <strong>5</strong>
+          <span>Stati prenotazione</span>
+        </div>
+        <div class="stats-band__item">
+          <strong>iCal</strong>
+          <span>Export + import OTA</span>
+        </div>
+        <div class="stats-band__item">
+          <strong>Stripe</strong>
+          <span>Pagamento opzionale</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PER CHI -->
+    <section class="section" id="per-chi">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Per chi è</span>
+          <h2 class="section__title">Gestisci le richieste sul tuo dominio</h2>
+          <p class="section__desc">Per chi vuole ricevere prenotazioni dal sito, non solo dalle piattaforme.</p>
+        </div>
+        <div class="card-grid card-grid--3">
+          <article class="info-card">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+            </div>
+            <span class="info-card__meta">01 · Proprietari</span>
+            <h3>Case e appartamenti</h3>
+            <p>Gestisci disponibilità e richieste in autonomia, con una dashboard chiara.</p>
+          </article>
+          <article class="info-card">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <span class="info-card__meta">02 · Agenzie</span>
+            <h3>Piccole realtà WP</h3>
+            <p>Un sito WordPress proprio, senza dipendere solo da Airbnb o Booking.</p>
+          </article>
+          <article class="info-card">
+            <div class="info-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <span class="info-card__meta">03 · Conversione</span>
+            <h3>Dal click alla conferma</h3>
+            <p>L’ospite richiede, tu accetti, opzionalmente incassi con Stripe — tutto sul tuo brand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNZIONALITÀ -->
+    <section class="section section--alt" id="funzionalita">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Funzionalità</span>
+          <h2 class="section__title">Tutto il flusso, dalla ricerca alla conferma</h2>
+          <p class="section__desc">Dashboard operatore, frontend ospite, iCal con le OTA e pagamenti Stripe opzionali.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <div>
+              <strong>Appartamenti</strong>
+              <span>Galleria, prezzo, capienza e servizi</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <strong>Calendari</strong>
+              <span>Disponibilità e prezzi giornalieri</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div>
+              <strong>Ricerca & form</strong>
+              <span>Shortcode, blocchi e Elementor</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <div>
+              <strong>Stati prenotazione</strong>
+              <span>In attesa, in attesa pagamento, confermata, rifiutata, annullata</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>Email automatiche</strong>
+              <span>Notifiche a ospite e operatore</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <strong>Ruolo Gestore</strong>
+              <span>Accesso limitato, senza admin completo</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+            </div>
+            <div>
+              <strong>Sync iCal</strong>
+              <span>Export e import Airbnb / Booking</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <div>
+              <strong>Stripe Checkout</strong>
+              <span>Pagamento online dopo la tua accettazione</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <div class="feature-chip__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <div>
+              <strong>Impostazioni a sezioni</strong>
+              <span>Generale, iCal, Stripe, email e aspetto — aprili e chiudili</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTEGRAZIONI -->
+    <section class="section" id="integrazioni">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Integrazioni</span>
+          <h2 class="section__title">iCal e Stripe, senza doppie prenotazioni</h2>
+          <p class="section__desc">Sincronizza i calendari con Airbnb e Booking, e incassa online solo quando accetti la richiesta.</p>
+        </div>
+        <div class="integration-grid">
+          <article class="integration-card">
+            <div class="integration-card__head">
+              <div class="integration-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              </div>
+              <h3>Sync iCal (Airbnb / Booking)</h3>
+            </div>
+            <ol>
+              <li><strong>Export:</strong> ogni appartamento ha un URL <code>.ics</code> da incollare come calendario esterno su Airbnb o Booking.</li>
+              <li><strong>Import:</strong> incolli gli URL iCal delle piattaforme nel box Calendario dell’appartamento.</li>
+              <li>Le date importate bloccano automaticamente le prenotazioni sul tuo sito.</li>
+              <li>Sync automatica ogni ora, oppure manuale al salvataggio.</li>
+              <li>Nessun dato personale dell’ospite nel feed export — solo date occupate.</li>
+            </ol>
+          </article>
+          <article class="integration-card">
+            <div class="integration-card__head">
+              <div class="integration-card__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <h3>Stripe Checkout (opzionale)</h3>
+            </div>
+            <ol>
+              <li>L’ospite invia la richiesta → stato <strong>In attesa</strong>.</li>
+              <li>Tu clicchi <strong>Accetta</strong> → l’ospite riceve il link di pagamento via email.</li>
+              <li>Stato <strong>In attesa pagamento</strong> finché non paga.</li>
+              <li>Al pagamento completato → <strong>Confermata</strong> automaticamente + email di conferma.</li>
+              <li>Se non paga entro il termine, la prenotazione viene annullata e le date tornano libere.</li>
+            </ol>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COME FUNZIONA -->
+    <section class="section section--alt" id="come-funziona">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Come funziona</span>
+          <h2 class="section__title">Operativo in quattro passi</h2>
+          <p class="section__desc">Installi, configuri iCal/Stripe, pubblichi e gestisci le richieste dalla dashboard.</p>
+        </div>
+        <div class="process-grid process-grid--4">
+          <article class="process-card">
+            <h3>Setup</h3>
+            <p>Attivi il plugin, completi valuta, email operatore e pagina risultati.</p>
+          </article>
+          <article class="process-card">
+            <h3>Appartamenti</h3>
+            <p>Crei gli alloggi, imposti calendario, prezzi e feed iCal export/import.</p>
+          </article>
+          <article class="process-card">
+            <h3>Pubblicazione</h3>
+            <p>Inserisci barra ricerca e form con shortcode, blocchi Gutenberg o Elementor.</p>
+          </article>
+          <article class="process-card">
+            <h3>Gestione</h3>
+            <p>Accetti o rifiuti le richieste; con Stripe l’ospite paga dopo la tua approvazione.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHERMATE -->
+    <section class="section section--alt" id="schermate">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Schermate</span>
+          <h2 class="section__title">L’interfaccia del plugin</h2>
+          <p class="section__desc">Screenshot reali del prodotto: dashboard, prenotazioni, form e ricerca.</p>
+        </div>
+
+        <div class="gallery">
+          <article class="gallery__item">
+            <div class="gallery__meta">
+              <div>
+                <h3>Dashboard operatore</h3>
+                <p>Panoramica richieste in attesa, confermate e appartamenti attivi.</p>
+              </div>
+              <span class="gallery__tag">Admin</span>
+            </div>
+            <div class="browser">
+              <div class="browser__bar">
+                <div class="browser__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="browser__url">admin.php?page=cvp-dashboard</div>
+              </div>
+              <div class="browser__stage browser__stage--tight">
+                <img src="assets/plugins/vhb/02-dashboard.png" alt="Dashboard Vacation Home Bookings" width="1400" height="900" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <div class="gallery__split">
+            <article class="gallery__item">
+              <div class="gallery__meta">
+                <div>
+                  <h3>Gestione prenotazioni</h3>
+                  <p>Accetta, rifiuta o annulla. Con Stripe: reinvio link pagamento e stato “In attesa pagamento”.</p>
+                </div>
+                <span class="gallery__tag">Operatore</span>
+              </div>
+              <div class="browser">
+                <div class="browser__bar">
+                  <div class="browser__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser__url">admin.php?page=cvp-bookings</div>
+                </div>
+                <div class="browser__stage browser__stage--tight">
+                  <img src="assets/plugins/vhb/03-bookings.png" alt="Tabella gestione prenotazioni" width="1280" height="720" loading="lazy">
+                </div>
+              </div>
+            </article>
+
+            <article class="gallery__item">
+              <div class="gallery__meta">
+                <div>
+                  <h3>Form richiesta</h3>
+                  <p>Date, ospiti, totale stimato e invio richiesta.</p>
+                </div>
+                <span class="gallery__tag">Frontend</span>
+              </div>
+              <div class="browser">
+                <div class="browser__bar">
+                  <div class="browser__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                  <div class="browser__url">suite-vista-mare · booking form</div>
+                </div>
+                <div class="browser__stage browser__stage--form">
+                  <img src="assets/plugins/vhb/04-booking-form.png" alt="Form richiesta prenotazione" width="900" height="1100" loading="lazy">
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <article class="gallery__item">
+            <div class="gallery__meta">
+              <div>
+                <h3>Barra ricerca</h3>
+                <p>Check-in, check-out e ospiti — lo shortcode da mettere in homepage.</p>
+              </div>
+              <span class="gallery__tag">Frontend</span>
+            </div>
+            <div class="browser">
+              <div class="browser__bar">
+                <div class="browser__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="browser__url">[cvp_search_bar]</div>
+              </div>
+              <div class="browser__stage">
+                <img src="assets/plugins/vhb/05-search-bar-hero.png" alt="Barra ricerca check-in check-out ospiti" width="1400" height="560" loading="lazy">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREZZI -->
+    <section class="section" id="prezzi">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Prezzi</span>
+          <h2 class="section__title">Licenza semplice</h2>
+          <p class="section__desc">Licenza annuale, senza commissioni sulle prenotazioni. Paghi una volta all’anno, non a percentuale.</p>
+        </div>
+        <div class="pricing pricing--two">
+          <article class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">Consigliato</span>
+            <h3>Licenza sito singolo</h3>
+            <p class="pricing-card__desc">Plugin + aggiornamenti 12 mesi + supporto email</p>
+            <div class="pricing-card__price">
+              <strong>79&nbsp;€</strong>
+              <span class="pricing-card__from">/ anno</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>1 sito WordPress</li>
+              <li>Aggiornamenti 12 mesi</li>
+              <li>Supporto email</li>
+              <li>Sync iCal + Stripe Checkout</li>
+              <li>Guida utente IT / EN</li>
+            </ul>
+            <a href="mailto:info@evolodigitalstudio.it?subject=Vacation%20Home%20Bookings%20—%20Licenza%2079%E2%82%AC" class="btn btn--primary btn--full">Acquista / Richiedi</a>
+          </article>
+          <article class="pricing-card">
+            <h3>Rinnovo aggiornamenti</h3>
+            <p class="pricing-card__desc">Dopo il primo anno: continui ad avere aggiornamenti e supporto</p>
+            <div class="pricing-card__price">
+              <strong>39&nbsp;€</strong>
+              <span class="pricing-card__from">/ anno</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Aggiornamenti plugin</li>
+              <li>Supporto email</li>
+              <li>Compatibilità WP recente</li>
+            </ul>
+            <a href="mailto:info@evolodigitalstudio.it?subject=Vacation%20Home%20Bookings%20—%20Rinnovo%2039%E2%82%AC" class="btn btn--outline btn--full">Rinnova / Scrivi</a>
+          </article>
+        </div>
+        <p class="legal-note">Il codice è GPL. Acquisti licenza d’uso, aggiornamenti e supporto — non un plugin “chiuso”. Il plugin continua a funzionare anche senza rinnovo; il rinnovo serve per aggiornamenti e assistenza.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container faq-wrap">
+        <div class="section__header section__header--center">
+          <span class="section__label">FAQ</span>
+          <h2 class="section__title">Domande frequenti</h2>
+        </div>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Serve un account Airbnb?</summary>
+            <p>No. Funziona sul tuo WordPress, sul tuo dominio.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Posso usarlo con Elementor?</summary>
+            <p>Sì: widget dedicati, oltre a shortcode e blocchi Gutenberg.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Posso sincronizzare Airbnb o Booking?</summary>
+            <p>Sì: ogni appartamento ha un feed iCal in export e puoi importare i calendari esterni.</p>
+          </details>
+          <details class="faq__item">
+            <summary>I pagamenti online sono inclusi?</summary>
+            <p>Sì, opzionali via Stripe Checkout: accetti la richiesta, l’ospite paga via email e la prenotazione si conferma.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Come funziona il pagamento Stripe?</summary>
+            <p>L’ospite invia la richiesta. Tu accetti dalla dashboard: parte un’email con il link Stripe. Solo quando paga la prenotazione passa a Confermata. Puoi anche gestire tutto senza Stripe, confermando manualmente.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Come evito doppie prenotazioni con Airbnb?</summary>
+            <p>Esporti il calendario del tuo sito verso Airbnb/Booking e importi i loro feed iCal nell’appartamento. Le date si sincronizzano ogni ora in entrambe le direzioni.</p>
+          </details>
+          <details class="faq__item">
+            <summary>C’è una demo live pubblica?</summary>
+            <p>Al momento no. Puoi vedere le schermate sopra o richiedere una call di prova.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" id="contatti">
+      <div class="cta-banner__bg cta-banner__bg--brand" aria-hidden="true"></div>
+      <div class="container cta-banner__inner">
+        <h2>Pronto a gestire le richieste sul tuo sito?</h2>
+        <p>Scrivimi per ricevere lo zip 1.2.0 e le istruzioni di installazione. Risposta entro 24 ore lavorative.</p>
+        <a href="mailto:info@evolodigitalstudio.it?subject=Vacation%20Home%20Bookings" class="btn btn--white btn--lg">
+          Scrivi a info@evolodigitalstudio.it
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+    <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.png?v=2" alt="Evolo Digital Studio" width="56" height="56">
+          <p>Vacation Home Bookings è un plugin WordPress di Evolo Digital Studio.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="index.html#servizi">Servizi</a></li>
+            <li><a href="index.html#processo">Come funziona</a></li>
+            <li><a href="index.html#progetti">Portfolio</a></li>
+            <li><a href="plugins.html">Plugin</a></li>
+            <li><a href="index.html#pacchetti">Pacchetti</a></li>
+            <li><a href="chi-sono.html">Chi sono</a></li>
+            <li><a href="index.html#contatti">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Prodotto</h4>
+          <ul>
+            <li><a href="#funzionalita">Funzionalità</a></li>
+            <li><a href="#integrazioni">Integrazioni</a></li>
+            <li><a href="#schermate">Schermate</a></li>
+            <li><a href="#prezzi">Prezzi</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Risorse</h4>
+          <ul>
+            <li><a href="plugins.html">Plugin WordPress</a></li>
+            <li><a href="sito-wordpress-su-misura.html">Sito WordPress su misura</a></li>
+            <li><a href="realizzazione-siti-web.html">Realizzazione siti web</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="mailto:info@evolodigitalstudio.it">Email</a></li>
+            <li><a href="https://www.instagram.com/evolo.digitalstudio" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://g.page/r/CdwnK_4LVsy6EAE/review" target="_blank" rel="noopener noreferrer">Recensioni Google</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Evolo Digital Studio — Vacation Home Bookings</p>
+        <div class="footer__bottom-right">
+          <nav class="footer__legal-links" aria-label="Link legali">
+            <a href="privacy.html">Privacy</a>
+            <a href="cookie.html">Cookie</a>
+          </nav>
+          <p class="footer__piva">P.IVA 04071170791</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/analytics.js"></script>
+  <script src="js/cookie-consent.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chi è Fabio, fondatore di Evolo Digital Studio. Sviluppatore web specializzato in HTML, CSS, JavaScript e WordPress per professionisti e aziende.">
+  <meta name="description" content="Plugin WordPress sviluppati da Evolo Digital Studio. Soluzioni su misura per prenotazioni, gestione e integrazioni — codice pulito e supporto diretto.">
   <meta name="robots" content="index, follow">
-  <title>Chi Sono | Evolo Digital Studio</title>
-  <link rel="canonical" href="https://evolodigitalstudio.it/chi-sono.html">
+  <title>Plugin WordPress | Evolo Digital Studio</title>
+  <link rel="canonical" href="https://evolodigitalstudio.it/plugins.html">
   <link rel="icon" href="assets/logo.png?v=2" type="image/png">
-  <meta property="og:title" content="Chi Sono | Evolo Digital Studio">
-  <meta property="og:description" content="Fabio, sviluppatore web e fondatore di Evolo Digital Studio. Partner tecnico per siti professionali su misura.">
+  <meta property="og:title" content="Plugin WordPress | Evolo Digital Studio">
+  <meta property="og:description" content="Plugin WordPress sviluppati in house: Vacation Home Bookings per case vacanza con iCal e Stripe.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://evolodigitalstudio.it/chi-sono.html">
+  <meta property="og:url" content="https://evolodigitalstudio.it/plugins.html">
   <meta property="og:image" content="https://evolodigitalstudio.it/assets/og-image.png">
   <meta property="og:locale" content="it_IT">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product-page.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://evolodigitalstudio.it/" },
-      { "@type": "ListItem", "position": 2, "name": "Chi sono", "item": "https://evolodigitalstudio.it/chi-sono.html" }
+      { "@type": "ListItem", "position": 2, "name": "Plugin WordPress", "item": "https://evolodigitalstudio.it/plugins.html" }
     ]
   }
   </script>
@@ -45,9 +46,9 @@
           <li><a href="index.html#servizi">Servizi</a></li>
           <li><a href="index.html#processo">Come funziona</a></li>
           <li><a href="index.html#progetti">Portfolio</a></li>
-          <li><a href="plugins.html">Plugin</a></li>
+          <li><a href="plugins.html" class="active">Plugin</a></li>
           <li><a href="index.html#pacchetti">Pacchetti</a></li>
-          <li><a href="chi-sono.html" class="active">Chi sono</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
           <li><a href="index.html#contatti">Contatti</a></li>
         </ul>
@@ -60,59 +61,48 @@
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero page-hero--rich">
       <div class="container page-hero__inner reveal">
-        <span class="section__label">Chi sono</span>
-        <h1>Un partner tecnico, <span class="text-gradient">non solo un fornitore</span></h1>
-        <p>Sono Fabio, sviluppatore web e fondatore di Evolo Digital Studio. Creo siti professionali per chi vuole risultati concreti, non template generici.</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Plugin WordPress</span>
+        </nav>
+        <span class="section__label">Prodotti</span>
+        <h1>Plugin WordPress <span class="text-gradient">sviluppati da me</span></h1>
+        <p>Oltre ai siti su misura, creo plugin WordPress per esigenze specifiche: prenotazioni, integrazioni e strumenti operativi. Codice GPL, licenza annuale, supporto diretto.</p>
       </div>
     </section>
 
-    <section class="section about-section page-section--first">
-      <div class="container about-section__inner">
-        <div class="about-section__image reveal">
-          <img src="assets/fabio.jpg" alt="Fabio, fondatore di Evolo Digital Studio" width="768" height="1024" loading="lazy">
-          <div class="about-section__badge">
-            <img src="assets/logo.png?v=2" alt="" width="40" height="40">
-            <div>
-              <strong>Fabio</strong>
-              <span>Founder, Evolo Digital Studio</span>
+    <section class="section page-section--first">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Catalogo</span>
+          <h2 class="section__title">Plugin disponibili</h2>
+          <p class="section__desc">Ogni prodotto nasce da un bisogno reale — niente marketplace generico, ma soluzioni curate e mantenute.</p>
+        </div>
+
+        <div class="plugin-grid">
+          <article class="plugin-card reveal">
+            <a href="vacation-home-bookings.html" class="plugin-card__thumb">
+              <img src="assets/plugins/vhb/02-dashboard.png" alt="Dashboard Vacation Home Bookings" width="1400" height="900" loading="lazy">
+            </a>
+            <div class="plugin-card__body">
+              <div class="plugin-card__meta">
+                <span class="plugin-card__version">v1.2.0</span>
+                <span class="plugin-card__price">da 79 €/anno</span>
+              </div>
+              <h2><a href="vacation-home-bookings.html">Vacation Home Bookings</a></h2>
+              <p>Prenotazioni per case vacanza sul tuo WordPress: appartamenti, calendari, sync iCal con Airbnb/Booking e pagamenti Stripe opzionali.</p>
+              <div class="plugin-card__tags">
+                <span>Case vacanza</span>
+                <span>iCal</span>
+                <span>Stripe</span>
+                <span>Elementor</span>
+              </div>
+              <a href="vacation-home-bookings.html" class="btn btn--primary">Scopri il plugin</a>
             </div>
-          </div>
-        </div>
-        <div class="about-section__content reveal reveal--delay">
-          <h2 class="section__title">La mia storia</h2>
-          <p>Ho creato <strong>Evolo Digital Studio</strong> con un obiettivo chiaro: aiutare professionisti e piccole imprese ad avere una presenza online seria, veloce e credibile.</p>
-          <p>Non vendo pacchetti preconfezionati. Ogni progetto nasce dall'ascolto delle esigenze del cliente, con attenzione al design, al codice e ai risultati che il sito deve portare.</p>
-          <p>Il mio approccio è semplice: <strong>ascolto, progetto, sviluppo e supporto</strong>. Resto disponibile anche dopo il lancio, perché un sito deve continuare a funzionare e crescere nel tempo.</p>
-          <ul class="about__skills">
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>HTML, CSS, JavaScript</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>WordPress personalizzato</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Design responsive</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>SEO e performance</li>
-          </ul>
-          <a href="index.html#contatti" class="btn btn--primary">Parliamo del tuo progetto</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats-band" aria-label="Numeri chiave">
-      <div class="container stats-band__grid">
-        <div class="stats-band__item reveal">
-          <strong>4+</strong>
-          <span>Siti consegnati</span>
-        </div>
-        <div class="stats-band__item reveal reveal--delay">
-          <strong>100%</strong>
-          <span>Progetti personalizzati</span>
-        </div>
-        <div class="stats-band__item reveal reveal--delay-2">
-          <strong>3+</strong>
-          <span>Anni di esperienza</span>
-        </div>
-        <div class="stats-band__item reveal reveal--delay-3">
-          <strong>24h</strong>
-          <span>Tempo di risposta medio</span>
+          </article>
         </div>
       </div>
     </section>
@@ -120,32 +110,14 @@
     <section class="section section--alt">
       <div class="container">
         <div class="section__header section__header--center reveal">
-          <span class="section__label">Il mio approccio</span>
-          <h2 class="section__title">Cosa puoi aspettarti lavorando con me</h2>
+          <span class="section__label">Su misura</span>
+          <h2 class="section__title">Hai bisogno di un plugin personalizzato?</h2>
+          <p class="section__desc">Se il tuo progetto WordPress richiede funzionalità che non trovi pronte, possiamo svilupparle insieme — integrazioni, dashboard, automazioni.</p>
         </div>
-        <div class="values-grid">
-          <article class="value-card reveal">
-            <h3>Trasparenza</h3>
-            <p>Preventivi chiari, tempi definiti e aggiornamenti costanti su ogni fase del progetto.</p>
-          </article>
-          <article class="value-card reveal reveal--delay">
-            <h3>Qualità</h3>
-            <p>Codice pulito, design curato e attenzione ai dettagli che fanno la differenza.</p>
-          </article>
-          <article class="value-card reveal reveal--delay-2">
-            <h3>Supporto</h3>
-            <p>Non ti lascio solo dopo il lancio: resto disponibile per assistenza e miglioramenti.</p>
-          </article>
+        <div class="section__footer reveal">
+          <a href="index.html#contatti" class="btn btn--primary btn--lg">Parliamone</a>
+          <a href="sito-wordpress-su-misura.html" class="btn btn--outline btn--lg">Sito WordPress su misura</a>
         </div>
-      </div>
-    </section>
-
-    <section class="cta-banner" aria-label="Call to action">
-      <div class="cta-banner__bg cta-banner__bg--brand" aria-hidden="true"></div>
-      <div class="container cta-banner__inner reveal">
-        <h2>Costruiamo il tuo sito insieme</h2>
-        <p>Raccontami la tua attività e scopriamo se possiamo lavorare insieme. La prima consulenza è gratuita.</p>
-        <a href="index.html#contatti" class="btn btn--white btn--lg">Contattami ora</a>
       </div>
     </section>
   </main>
@@ -166,17 +138,16 @@
             <li><a href="plugins.html">Plugin</a></li>
             <li><a href="index.html#pacchetti">Pacchetti</a></li>
             <li><a href="chi-sono.html">Chi sono</a></li>
-            <li><a href="index.html#faq">FAQ</a></li>
             <li><a href="index.html#contatti">Contatti</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h4>Risorse</h4>
           <ul>
+            <li><a href="plugins.html">Plugin WordPress</a></li>
             <li><a href="realizzazione-siti-web.html">Realizzazione siti web</a></li>
             <li><a href="quanto-costa-sito-web.html">Quanto costa un sito web</a></li>
             <li><a href="sito-wordpress-su-misura.html">Sito WordPress su misura</a></li>
-            <li><a href="plugins.html">Plugin WordPress</a></li>
           </ul>
         </div>
         <div class="footer__col">
