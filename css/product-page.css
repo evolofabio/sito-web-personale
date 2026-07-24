@@ -456,6 +456,17 @@
   display: block;
 }
 
+.plugin-card__thumb--brand {
+  background: #f7f4ef;
+  aspect-ratio: 16 / 9;
+}
+
+.plugin-card__thumb--brand img {
+  object-fit: contain;
+  object-position: center;
+  padding: 0.5rem;
+}
+
 .plugin-card__body {
   display: flex;
   flex-direction: column;
