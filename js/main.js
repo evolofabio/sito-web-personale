@@ -199,7 +199,10 @@
   /* ---- Parallax + mouse tilt (studio presence) ---- */
   const heroBg = document.querySelector('.hero__bg');
   const heroVisual = document.querySelector('.hero__visual');
-  if (!reduceMotion && (heroBg || heroVisual)) {
+  const canParallax = !reduceMotion
+    && window.matchMedia('(pointer: fine)').matches
+    && window.matchMedia('(min-width: 769px)').matches;
+  if (canParallax && (heroBg || heroVisual)) {
     let scrollY = 0;
     let mouseX = 0;
     let mouseY = 0;
