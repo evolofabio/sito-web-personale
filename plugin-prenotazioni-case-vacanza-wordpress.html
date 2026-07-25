@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Come funziona un sistema di prenotazioni online per case vacanza su WordPress: calendario, sync iCal, pagamenti e cosa valuta un buon plugin prenotazioni case vacanza WordPress.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="Fabio — Evolo Digital Studio">
+  <title>Plugin prenotazioni case vacanza WordPress: come funziona | Evolo Digital Studio</title>
+  <link rel="canonical" href="https://evolodigitalstudio.it/plugin-prenotazioni-case-vacanza-wordpress.html">
+  <link rel="icon" href="assets/logo.png?v=2" type="image/png">
+  <meta property="og:title" content="Plugin prenotazioni case vacanza WordPress: come funziona">
+  <meta property="og:description" content="Calendario, sync iCal con Airbnb/Booking, pagamenti e flusso ospite: come funziona un sistema di prenotazioni online per case vacanza sul tuo WordPress.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://evolodigitalstudio.it/plugin-prenotazioni-case-vacanza-wordpress.html">
+  <meta property="og:image" content="https://evolodigitalstudio.it/assets/blog/plugin-prenotazioni-case-vacanza.png">
+  <meta property="og:locale" content="it_IT">
+  <meta property="article:published_time" content="2026-07-25">
+  <meta property="article:author" content="Fabio — Evolo Digital Studio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://evolodigitalstudio.it/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://evolodigitalstudio.it/blog.html" },
+          { "@type": "ListItem", "position": 3, "name": "Plugin prenotazioni case vacanza WordPress", "item": "https://evolodigitalstudio.it/plugin-prenotazioni-case-vacanza-wordpress.html" }
+        ]
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Sistema di prenotazioni online per case vacanza: come funziona",
+        "description": "Come funziona un sistema di prenotazioni online per case vacanza su WordPress: calendario, sync iCal, pagamenti e cosa cercare in un plugin.",
+        "datePublished": "2026-07-25",
+        "dateModified": "2026-07-25",
+        "author": {
+          "@type": "Person",
+          "name": "Fabio",
+          "url": "https://evolodigitalstudio.it/chi-sono.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Evolo Digital Studio",
+          "url": "https://evolodigitalstudio.it/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://evolodigitalstudio.it/assets/logo.png"
+          }
+        },
+        "mainEntityOfPage": "https://evolodigitalstudio.it/plugin-prenotazioni-case-vacanza-wordpress.html",
+        "image": "https://evolodigitalstudio.it/assets/blog/plugin-prenotazioni-case-vacanza.png",
+        "inLanguage": "it-IT",
+        "keywords": "plugin prenotazioni case vacanza WordPress"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="page-article">
+
+  <header class="header header--scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo" aria-label="Evolo Digital Studio — Home">
+        <img src="assets/logo.png?v=2" alt="Evolo Digital Studio" width="48" height="48">
+        <span class="header__brand">
+          <strong>Evolo</strong>
+          <small>Digital Studio</small>
+        </span>
+      </a>
+      <nav class="header__nav" id="nav" aria-label="Navigazione principale">
+        <ul class="header__links">
+          <li><a href="index.html#servizi">Servizi</a></li>
+          <li><a href="index.html#progetti">Portfolio</a></li>
+          <li><a href="plugins.html">Plugin</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="chi-sono.html">Chi sono</a></li>
+        </ul>
+      </nav>
+      <a href="index.html#contatti" class="btn btn--primary header__cta">Preventivo gratuito</a>
+      <button class="header__toggle" id="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header class="article-hero">
+        <div class="article-hero__glow" aria-hidden="true"></div>
+        <div class="container article-hero__inner reveal">
+          <nav class="breadcrumb breadcrumb--left" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li aria-current="page">Prenotazioni case vacanza</li>
+            </ol>
+          </nav>
+          <span class="section__label">WordPress · Case vacanza</span>
+          <h1>Sistema di prenotazioni online per case vacanza: <span class="text-gradient">come funziona</span></h1>
+          <p class="article-hero__lead">Se gestisci appartamenti o case vacanza e stai valutando un plugin prenotazioni case vacanza WordPress, ecco come funziona davvero il flusso — senza commissioni di piattaforma sul tuo sito.</p>
+          <div class="article-author">
+            <img src="assets/fabio.jpg" alt="Fabio, fondatore di Evolo Digital Studio" width="56" height="56" class="article-author__photo">
+            <div class="article-author__info">
+              <strong><a href="chi-sono.html">Fabio</a> · Evolo Digital Studio</strong>
+              <span>25 luglio 2026 · ~6 min di lettura</span>
+            </div>
+          </div>
+          <figure class="article-cover">
+            <img src="assets/blog/plugin-prenotazioni-case-vacanza.png" alt="Plugin prenotazioni case vacanza WordPress — anteprima sistema di booking" width="1024" height="558" loading="eager">
+          </figure>
+        </div>
+      </header>
+
+      <div class="article-layout">
+        <div class="container article-layout__inner">
+          <aside class="article-toc reveal" aria-label="Indice dell’articolo">
+            <p class="article-toc__label">In questo articolo</p>
+            <ol class="article-toc__list">
+              <li><a href="#perche"><span>01</span> Perché sul tuo sito</a></li>
+              <li><a href="#flusso"><span>02</span> Come funziona il flusso</a></li>
+              <li><a href="#plugin"><span>03</span> Cosa fa il plugin</a></li>
+              <li><a href="#ical"><span>04</span> Sync iCal e pagamenti</a></li>
+              <li><a href="#scegliere"><span>05</span> Cosa valutare</a></li>
+            </ol>
+            <a href="index.html#contatti" class="btn btn--primary btn--full article-toc__cta">Consulenza gratuita</a>
+          </aside>
+
+          <div class="article-body reveal">
+            <p class="article-lead">Airbnb e Booking funzionano, ma costano in commissioni e non sono “il tuo brand”. Un sistema di prenotazioni online sul tuo WordPress ti permette di ricevere richieste (e, se vuoi, pagamenti) direttamente dal sito — con calendario, disponibilità e sync verso le OTA.</p>
+            <p>Lavorando su siti turistici come <a href="https://www.caladelsol.it/" target="_blank" rel="noopener noreferrer">Cala del Sol</a> e sviluppando <a href="vacation-home-bookings.html">Vacation Home Bookings</a>, ho visto spesso la stessa esigenza: un flusso chiaro per l’ospite e una dashboard gestibile per chi gestisce le case. Ecco come funziona, in pratica.</p>
+
+            <section class="article-q" id="perche">
+              <div class="article-q__num" aria-hidden="true">01</div>
+              <div class="article-q__content">
+                <h2>Perché un sistema di prenotazioni sul tuo sito</h2>
+                <p>Le piattaforme restano utili per la visibilità. Il problema nasce quando ogni prenotazione diretta “salta” perché sul sito non c’è un modo serio di chiedere disponibilità o confermare. Un buon plugin prenotazioni case vacanza WordPress chiude quel buco: l’ospite resta sul tuo dominio, vede le date libere e invia una richiesta strutturata.</p>
+                <p>Non sostituisce necessariamente Airbnb. Lo affianca: meno dipendenza dalle commissioni, più controllo su messaggi, prezzi e regole di casa.</p>
+                <p class="article-tip"><strong>In sintesi:</strong> le OTA portano traffico; il sito converte chi ti cerca già o torna per una seconda vacanza.</p>
+              </div>
+            </section>
+
+            <section class="article-q" id="flusso">
+              <div class="article-q__num" aria-hidden="true">02</div>
+              <div class="article-q__content">
+                <h2>Come funziona il flusso (ospite → te)</h2>
+                <p>Il percorso tipico è lineare:</p>
+                <ol>
+                  <li>L’ospite cerca date e numero di ospiti (barra di ricerca o calendario).</li>
+                  <li>Vede gli alloggi disponibili e apre la scheda (foto, prezzo, servizi).</li>
+                  <li>Invia una richiesta di prenotazione con i dati essenziali.</li>
+                  <li>Tu ricevi la richiesta in dashboard e la accetti, rifiuti o chiedi chiarimenti.</li>
+                  <li>Se hai i pagamenti attivi, dopo l’accettazione parte il link di pagamento; altrimenti confermi a mano.</li>
+                </ol>
+                <p>L’importante è che ogni stato sia chiaro: in attesa, accettata, confermata, annullata. Così non perdi messaggi in una casella email confusa.</p>
+              </div>
+            </section>
+
+            <section class="article-q" id="plugin">
+              <div class="article-q__num" aria-hidden="true">03</div>
+              <div class="article-q__content">
+                <h2>Cosa fa un plugin prenotazioni case vacanza WordPress</h2>
+                <p>Un plugin dedicato non è “un form di contatto con le date”. Di solito gestisce:</p>
+                <ul>
+                  <li><strong>Alloggi:</strong> appartamenti o case con galleria, prezzo, capienza e servizi.</li>
+                  <li><strong>Calendari:</strong> disponibilità giorno per giorno, blocchi e prezzi stagionali dove previsti.</li>
+                  <li><strong>Richieste:</strong> elenco prenotazioni con stati e dettagli ospite.</li>
+                  <li><strong>Frontend:</strong> shortcode o widget (anche Elementor) da mettere in homepage o nelle pagine alloggio.</li>
+                </ul>
+                <p>Su WordPress questo significa lavorare sul tuo hosting, con i tuoi contenuti e senza una piattaforma esterna che trattiene una percentuale su ogni soggiorno. Nel mio prodotto <a href="vacation-home-bookings.html">Vacation Home Bookings</a> il modello è proprio questo: licenza annuale, zero commissioni sulle prenotazioni.</p>
+                <p class="article-tip"><strong>Attenzione:</strong> un calendario generico “eventi” raramente basta per case vacanza. Serve logica notti, disponibilità e stati di booking.</p>
+              </div>
+            </section>
+
+            <section class="article-q" id="ical">
+              <div class="article-q__num" aria-hidden="true">04</div>
+              <div class="article-q__content">
+                <h2>Sync iCal e pagamenti: due pezzi che fanno la differenza</h2>
+                <p><strong>iCal</strong> è il ponte con Airbnb, Booking e simili. Esporti il calendario del sito verso le OTA e importi i loro feed: le date prenotate si bloccano (con un ritardo di sync, non in tempo reale API). Non è magia, ma evita gran parte delle doppie prenotazioni se lo configuri bene.</p>
+                <p><strong>I pagamenti</strong> (es. Stripe Checkout) sono opzionali ma utili: accetti la richiesta, l’ospite paga via link e la prenotazione passa a confermata. Puoi anche gestire tutto offline, se preferisci bonifico o saldo in loco.</p>
+                <p>In entrambi i casi il punto non è “avere tutte le feature del mondo”, ma un flusso che tu e l’ospite capite al primo utilizzo.</p>
+              </div>
+            </section>
+
+            <section class="article-q" id="scegliere">
+              <div class="article-q__num" aria-hidden="true">05</div>
+              <div class="article-q__content">
+                <h2>Cosa valutare prima di scegliere (o far sviluppare) un plugin</h2>
+                <p>Se stai confrontando soluzioni, tieni d’occhio questi punti:</p>
+                <ul>
+                  <li>Supporto reale (chi risponde dopo l’acquisto).</li>
+                  <li>Sync iCal bidirezionale, non solo “esporta ICS”.</li>
+                  <li>Dashboard chiara: stati, filtri, dettaglio ospite.</li>
+                  <li>Compatibilità con il tuo tema / Elementor senza pasticci CSS.</li>
+                  <li>Costi trasparenti: licenza vs commissioni vs SaaS mensile.</li>
+                </ul>
+                <p>Se il sito è ancora da fare, ha senso progettare insieme layout e plugin: il booking non è un pezzo da attaccare in coda. Se il sito c’è già, si valuta l’integrazione sul WordPress esistente.</p>
+              </div>
+            </section>
+
+            <section class="article-closing" id="conclusione">
+              <h2>In chiusura</h2>
+              <p>Un sistema di prenotazioni online per case vacanza funziona quando l’ospite trova date e invia una richiesta in pochi passaggi, e tu gestisci tutto da una dashboard — con iCal verso le OTA e, se serve, pagamenti online. Un plugin prenotazioni case vacanza WordPress serio fa esattamente questo, sul tuo dominio e con le tue regole.</p>
+              <p>Se vuoi capire se ha senso per i tuoi appartamenti (uno o tanti), partiamo da una chiacchierata concreta: stack, flusso e cosa conviene davvero nel tuo caso.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <section class="cta-banner" aria-label="Call to action">
+        <div class="cta-banner__bg cta-banner__bg--brand" aria-hidden="true"></div>
+        <div class="container cta-banner__inner reveal">
+          <h2>Vuoi prenotazioni dirette sul tuo sito?</h2>
+          <p>La consulenza iniziale è gratuita e senza impegno. Ti dico se un plugin WordPress (o un setup su misura) è la strada giusta per le tue case vacanza.</p>
+          <a href="index.html#contatti" class="btn btn--white btn--lg">Richiedi la consulenza gratuita</a>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__header section__header--center reveal">
+            <span class="section__label">Approfondisci</span>
+            <h2 class="section__title">Prodotti e guide collegate</h2>
+          </div>
+          <div class="resource-grid">
+            <article class="resource-card reveal">
+              <span class="resource-card__tag">Plugin</span>
+              <h3><a href="vacation-home-bookings.html">Vacation Home Bookings</a></h3>
+              <p>Il mio plugin WordPress per case vacanza: iCal, Stripe opzionale, dashboard operatore. Da 99 €/anno.</p>
+              <a href="vacation-home-bookings.html" class="btn btn--outline">Scopri il plugin →</a>
+            </article>
+            <article class="resource-card reveal reveal--delay">
+              <span class="resource-card__tag">WordPress</span>
+              <h3><a href="sito-wordpress-su-misura.html">Sito WordPress su misura</a></h3>
+              <p>Tema custom vs template: quando conviene per velocità, controllo e integrazioni come il booking.</p>
+              <a href="sito-wordpress-su-misura.html" class="btn btn--outline">Leggi la guida →</a>
+            </article>
+            <article class="resource-card reveal reveal--delay-2">
+              <span class="resource-card__tag">Catalogo</span>
+              <h3><a href="plugins.html">Tutti i plugin WordPress</a></h3>
+              <p>Vacation Home Bookings, DoctorSearch, Saloni Elite: prodotti sviluppati in house.</p>
+              <a href="plugins.html" class="btn btn--outline">Vai al catalogo →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.png?v=2" alt="Evolo Digital Studio" width="56" height="56">
+          <p>Siti web professionali che portano clienti. Sviluppo HTML, CSS, JavaScript e WordPress su misura.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="index.html#servizi">Servizi</a></li>
+            <li><a href="index.html#processo">Come funziona</a></li>
+            <li><a href="index.html#progetti">Portfolio</a></li>
+            <li><a href="plugins.html">Plugin</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#pacchetti">Pacchetti</a></li>
+            <li><a href="chi-sono.html">Chi sono</a></li>
+            <li><a href="index.html#contatti">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Risorse</h4>
+          <ul>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="plugin-prenotazioni-case-vacanza-wordpress.html">Prenotazioni case vacanza</a></li>
+            <li><a href="sviluppatore-web-freelance-vs-agenzia.html">Freelance vs agenzia</a></li>
+            <li><a href="come-scegliere-sviluppatore-sito-web.html">Come scegliere lo sviluppatore</a></li>
+            <li><a href="vacation-home-bookings.html">Vacation Home Bookings</a></li>
+            <li><a href="plugins.html">Plugin WordPress</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Legale</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookie.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="mailto:info@evolodigitalstudio.it">Email</a></li>
+            <li><a href="https://www.instagram.com/evolo.digitalstudio" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@evolo.web.designsv" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+            <li><a href="https://g.page/r/CdwnK_4LVsy6EAE/review" target="_blank" rel="noopener noreferrer">Recensioni Google</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Evolo Digital Studio — Tutti i diritti riservati</p>
+        <div class="footer__bottom-right">
+          <nav class="footer__legal-links" aria-label="Link legali">
+            <a href="privacy.html">Privacy</a>
+            <a href="cookie.html">Cookie</a>
+          </nav>
+          <p class="footer__piva">P.IVA 04071170791</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/analytics.js"></script>
+  <script src="js/cookie-consent.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
