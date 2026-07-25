@@ -34,6 +34,11 @@
   const navLinks = document.querySelectorAll('.header__links a');
   const sections = document.querySelectorAll('section[id]');
 
+  /* Safari paints later DOM nodes above earlier GPU layers — keep header on top */
+  if (header && header.parentElement === document.body) {
+    document.body.appendChild(header);
+  }
+
   function updateActiveNav() {
     const scrollPos = window.scrollY + 120;
     sections.forEach((section) => {
