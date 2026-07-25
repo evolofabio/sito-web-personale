@@ -457,8 +457,7 @@ ul { list-style: none; }
   height: auto;
   display: block;
   object-fit: contain;
-  mix-blend-mode: multiply;
-  opacity: 0.82;
+  background: transparent;
 }
 
 .hero__image-wrap {
