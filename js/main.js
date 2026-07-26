@@ -353,6 +353,41 @@
     const formStatus = document.getElementById('form-status');
     const submitBtn = document.getElementById('form-submit');
     const btnLabel = submitBtn ? submitBtn.querySelector('.btn__label') : null;
+    let captchaLoader = null;
+
+    function loadCaptchaScripts() {
+      if (captchaLoader) return captchaLoader;
+      captchaLoader = new Promise((resolve) => {
+        const existing = document.querySelector('script[data-web3forms]');
+        if (existing) {
+          resolve();
+          return;
+        }
+        const s = document.createElement('script');
+        s.src = 'https://web3forms.com/client/script.js';
+        s.async = true;
+        s.dataset.web3forms = 'true';
+        s.onload = () => resolve();
+        s.onerror = () => resolve();
+        document.body.appendChild(s);
+      });
+      return captchaLoader;
+    }
+
+    contactForm.addEventListener('focusin', () => {
+      loadCaptchaScripts();
+    }, { once: true });
+
+    // Prefetch when form approaches viewport
+    if ('IntersectionObserver' in window) {
+      const captchaObs = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          loadCaptchaScripts();
+          captchaObs.disconnect();
+        }
+      }, { rootMargin: '200px' });
+      captchaObs.observe(contactForm);
+    }
 
     function setFormStatus(type, message) {
       if (!formStatus) return;
