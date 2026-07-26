@@ -40,7 +40,7 @@
 
   --font-sans: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Syne', 'DM Sans', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
 
   --header-height: 72px;
   --header-offset: calc(var(--header-height) + env(safe-area-inset-top, 0px));

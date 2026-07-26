@@ -30,9 +30,11 @@
   <meta name="twitter:image" content="https://evolodigitalstudio.it/assets/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=7">
-  <link rel="stylesheet" href="css/product-page.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/logo-animation.webp?v=6" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/product-page.css?v=1" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/product-page.css?v=1"></noscript>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -240,11 +242,12 @@
           <div class="hero__video-wrap">
             <img
               class="hero__video"
-              src="assets/logo-animation.webp?v=5"
+              src="assets/logo-animation.webp?v=6"
               alt="Animazione logo Evolo Digital Studio"
-              width="240"
-              height="362"
+              width="180"
+              height="271"
               decoding="async"
+              fetchpriority="high"
             >
           </div>
           <div class="code-window code-window--hero">
@@ -1052,6 +1055,6 @@
 
   <script src="js/analytics.js"></script>
   <script src="js/cookie-consent.js"></script>
-  <script src="js/main.js?v=7"></script>
+  <script src="js/main.js?v=8"></script>
 </body>
 </html>
