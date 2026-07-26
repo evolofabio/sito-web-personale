@@ -276,7 +276,7 @@
 
   /* Auto-enrich section headers for studio motion */
   if (!reduceMotion) {
-    document.querySelectorAll('.section__header, .stats-band__item, .service-card, .process__step, .method__step, .case-study, .plugin-card, .pricing-card, .faq__item, .portfolio-reel').forEach((el, i) => {
+    document.querySelectorAll('.section__header, .stats-band__item, .service-card, .process__step, .method__step, .case-study, .plugin-card, .pricing-card, .faq__item').forEach((el, i) => {
       if (el.classList.contains('reveal') || el.classList.contains('reveal-left') || el.classList.contains('reveal-scale') || el.classList.contains('hero-enter') || el.classList.contains('method__step')) return;
       el.classList.add(i % 3 === 0 ? 'reveal-scale' : 'reveal');
       if (i % 4 === 1) el.classList.add('reveal--delay');
@@ -324,43 +324,6 @@
     updateMethodProgress();
   } else if (methodSteps.length) {
     methodSteps.forEach((step) => step.classList.add('is-active'));
-  }
-
-  /* Keep portfolio reel muted & playing when visible */
-  const reel = document.querySelector('.portfolio-reel__video');
-  if (reel) {
-    reel.muted = true;
-    reel.setAttribute('muted', '');
-    let reelLoaded = false;
-    function ensureReelSource() {
-      if (reelLoaded) return;
-      const src = reel.getAttribute('data-src');
-      if (!src) return;
-      const source = document.createElement('source');
-      source.src = src;
-      source.type = 'video/mp4';
-      reel.appendChild(source);
-      reel.load();
-      reelLoaded = true;
-    }
-    if ('IntersectionObserver' in window && !reduceMotion) {
-      const reelObs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              ensureReelSource();
-              reel.play().catch(() => {});
-            } else {
-              reel.pause();
-            }
-          });
-        },
-        { rootMargin: '120px', threshold: 0.2 }
-      );
-      reelObs.observe(reel);
-    } else if (!reduceMotion) {
-      ensureReelSource();
-    }
   }
 
   /* ---- Contact form (Web3Forms) ---- */
