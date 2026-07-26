@@ -1463,15 +1463,6 @@ ul { list-style: none; }
 .portfolio-reel__dots span:nth-child(2) { background: #FEBC2E; }
 .portfolio-reel__dots span:nth-child(3) { background: #28C840; }
 
-.portfolio-reel__label {
-  margin-left: auto;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.4);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
 .portfolio-reel__stage {
   aspect-ratio: 16 / 9;
   overflow: hidden;
