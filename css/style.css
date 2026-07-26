@@ -463,22 +463,114 @@ ul { list-style: none; }
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.hero__video-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 180px;
-  padding: 0.5rem;
-  background: transparent;
+.hero__devices {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0.5rem 0 1.25rem;
 }
 
-.hero__video {
+.hero__laptop {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__laptop-screen {
+  background: #0B1220;
+  border: 10px solid #1A2333;
+  border-radius: 14px 14px 8px 8px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 48px rgba(11, 18, 32, 0.22),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  aspect-ratio: 16 / 10;
+}
+
+.hero__laptop-screen img {
   width: 100%;
-  max-width: 240px;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
   display: block;
-  object-fit: contain;
-  background: transparent;
+}
+
+.hero__laptop-base {
+  height: 12px;
+  margin: 0 auto;
+  width: 108%;
+  margin-left: -4%;
+  background: linear-gradient(180deg, #D5DAE2 0%, #B8C0CC 100%);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 18px rgba(11, 18, 32, 0.12);
+  position: relative;
+}
+
+.hero__laptop-base::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 3px;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(11, 18, 32, 0.18);
+}
+
+.hero__laptop-notch {
+  display: none;
+}
+
+.hero__phone {
+  position: absolute;
+  right: -4%;
+  bottom: 0;
+  z-index: 2;
+  width: 28%;
+  min-width: 92px;
+  max-width: 124px;
+  background: #0B1220;
+  border: 3px solid #1A2333;
+  border-radius: 18px;
+  padding: 8px 5px 10px;
+  box-shadow: 0 18px 36px rgba(11, 18, 32, 0.28);
+}
+
+.hero__phone::before {
+  content: '';
+  display: block;
+  width: 36%;
+  height: 4px;
+  margin: 0 auto 7px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.hero__phone-screen {
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: 9 / 16;
+  background: #0B1220;
+}
+
+.hero__phone-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .hero__devices {
+    animation: heroDeviceFloat 5.5s ease-in-out infinite;
+  }
+}
+
+@keyframes heroDeviceFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .hero__image-wrap {
@@ -2679,7 +2771,8 @@ body.menu-open { overflow: hidden; }
 
   .hero__orb,
   .studio-line,
-  .hero__float {
+  .hero__float,
+  .hero__devices {
     animation: none !important;
   }
 
@@ -2756,6 +2849,14 @@ body.menu-open { overflow: hidden; }
   .hero { min-height: auto; padding-bottom: 3rem; }
   .hero__content { order: 1; }
   .hero__visual { order: 2; }
+  .hero__devices {
+    max-width: 100%;
+    padding-bottom: 1rem;
+  }
+  .hero__phone {
+    right: 0;
+    min-width: 84px;
+  }
   .hero__actions { flex-direction: column; }
   .hero__actions .btn { width: 100%; }
 

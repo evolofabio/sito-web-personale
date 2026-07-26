@@ -31,8 +31,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/logo-animation.webp?v=7" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="preload" as="image" href="assets/hero-device-caladelsol.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css?v=11">
   <link rel="stylesheet" href="css/product-page.css?v=1" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="css/product-page.css?v=1"></noscript>
   <script type="application/ld+json">
@@ -239,16 +239,33 @@
         </div>
 
         <div class="hero__visual hero-enter hero-enter--visual" style="--enter-delay: 5">
-          <div class="hero__video-wrap">
-            <img
-              class="hero__video"
-              src="assets/logo-animation.webp?v=7"
-              alt="Animazione logo Evolo Digital Studio"
-              width="280"
-              height="423"
-              decoding="async"
-              fetchpriority="high"
-            >
+          <div class="hero__devices" aria-label="Anteprima sito Cala del Sol su laptop e smartphone">
+            <div class="hero__laptop">
+              <div class="hero__laptop-screen">
+                <img
+                  src="assets/hero-device-caladelsol.webp"
+                  alt="Homepage Cala del Sol realizzata da Evolo Digital Studio"
+                  width="900"
+                  height="385"
+                  decoding="async"
+                  fetchpriority="high"
+                >
+              </div>
+              <div class="hero__laptop-base" aria-hidden="true"></div>
+              <div class="hero__laptop-notch" aria-hidden="true"></div>
+            </div>
+            <div class="hero__phone" aria-hidden="true">
+              <div class="hero__phone-screen">
+                <img
+                  src="assets/hero-device-caladelsol.webp"
+                  alt=""
+                  width="900"
+                  height="385"
+                  decoding="async"
+                  loading="lazy"
+                >
+              </div>
+            </div>
           </div>
           <div class="code-window code-window--hero">
             <div class="code-window__bar">
