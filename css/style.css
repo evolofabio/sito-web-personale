@@ -479,8 +479,6 @@ ul { list-style: none; }
   display: block;
   object-fit: contain;
   background: transparent;
-  /* crisp edges on retina without heavier file */
-  transform: translateZ(0);
 }
 
 .hero__image-wrap {
