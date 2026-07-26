@@ -221,7 +221,7 @@ ul { list-style: none; }
 .header__brand small {
   font-size: 0.7rem;
   font-weight: 500;
-  color: var(--blue-400);
+  color: var(--blue-500);
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -1451,13 +1451,13 @@ ul { list-style: none; }
 }
 
 .section--dark .btn--primary {
-  background: var(--warm-400);
-  box-shadow: 0 8px 24px rgba(31, 154, 138, 0.35);
+  background: #0E7A6C;
+  box-shadow: 0 8px 24px rgba(14, 122, 108, 0.35);
 }
 
 .section--dark .btn--primary:hover {
-  background: var(--warm-300);
-  color: var(--bg-dark);
+  background: #0A6559;
+  color: #fff;
 }
 
 /* ---- Projects ---- */

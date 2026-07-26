@@ -331,20 +331,35 @@
   if (reel) {
     reel.muted = true;
     reel.setAttribute('muted', '');
+    let reelLoaded = false;
+    function ensureReelSource() {
+      if (reelLoaded) return;
+      const src = reel.getAttribute('data-src');
+      if (!src) return;
+      const source = document.createElement('source');
+      source.src = src;
+      source.type = 'video/mp4';
+      reel.appendChild(source);
+      reel.load();
+      reelLoaded = true;
+    }
     if ('IntersectionObserver' in window && !reduceMotion) {
       const reelObs = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
+              ensureReelSource();
               reel.play().catch(() => {});
             } else {
               reel.pause();
             }
           });
         },
-        { threshold: 0.35 }
+        { rootMargin: '120px', threshold: 0.2 }
       );
       reelObs.observe(reel);
+    } else if (!reduceMotion) {
+      ensureReelSource();
     }
   }
 

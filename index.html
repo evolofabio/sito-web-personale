@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=7">
   <link rel="stylesheet" href="css/product-page.css">
   <script type="application/ld+json">
   {
@@ -455,16 +455,14 @@
           <div class="portfolio-reel__stage">
             <video
               class="portfolio-reel__video"
-              autoplay
               muted
               loop
               playsinline
-              preload="metadata"
+              preload="none"
               poster="assets/portfolio-reel-poster.jpg"
               aria-label="Anteprima animata dei siti realizzati"
-            >
-              <source src="assets/portfolio-reel.mp4" type="video/mp4">
-            </video>
+              data-src="assets/portfolio-reel.mp4"
+            ></video>
           </div>
         </div>
 
@@ -1054,6 +1052,6 @@
 
   <script src="js/analytics.js"></script>
   <script src="js/cookie-consent.js"></script>
-  <script src="js/main.js?v=6"></script>
+  <script src="js/main.js?v=7"></script>
 </body>
 </html>
