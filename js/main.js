@@ -59,8 +59,14 @@
     updateActiveNav();
 
     if (stickyCta) {
-      const heroBottom = document.getElementById('hero')?.offsetHeight || 600;
-      stickyCta.classList.toggle('visible', window.scrollY > heroBottom && window.innerWidth <= 768);
+      const heroEl =
+        document.getElementById('hero') ||
+        document.querySelector('section.hero, .page-hero');
+      const heroBottom = heroEl?.offsetHeight || 400;
+      stickyCta.classList.toggle(
+        'visible',
+        window.scrollY > heroBottom && window.innerWidth <= 768
+      );
     }
   }
 
@@ -471,6 +477,11 @@
           clearFieldErrors();
           resetCaptcha();
           setFormStatus('success', 'Messaggio inviato! Ti rispondo entro 24 ore lavorative.');
+          if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+            window.gtag('event', 'generazione_lead', {
+              metodo_contatto: 'form_sito',
+            });
+          }
         } else {
           resetCaptcha();
           setFormStatus('error', result.message || 'Invio non riuscito. Riprova tra poco o scrivimi via email.');
