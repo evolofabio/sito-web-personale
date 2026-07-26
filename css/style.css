@@ -474,11 +474,13 @@ ul { list-style: none; }
 
 .hero__video {
   width: 100%;
-  max-width: 220px;
+  max-width: 240px;
   height: auto;
   display: block;
   object-fit: contain;
   background: transparent;
+  /* crisp edges on retina without heavier file */
+  transform: translateZ(0);
 }
 
 .hero__image-wrap {
