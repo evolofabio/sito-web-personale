@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Chi è Fabio, fondatore di Evolo Digital Studio. Sviluppatore web specializzato in HTML, CSS, JavaScript e WordPress per professionisti e aziende.">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <title>Chi Sono | Evolo Digital Studio</title>
   <link rel="canonical" href="https://evolodigitalstudio.it/chi-sono.html">
   <link rel="icon" href="assets/logo.webp" type="image/webp">
@@ -21,10 +21,37 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://evolodigitalstudio.it/" },
-      { "@type": "ListItem", "position": 2, "name": "Chi sono", "item": "https://evolodigitalstudio.it/chi-sono.html" }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://evolodigitalstudio.it/" },
+          { "@type": "ListItem", "position": 2, "name": "Chi sono", "item": "https://evolodigitalstudio.it/chi-sono.html" }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://evolodigitalstudio.it/chi-sono.html#person",
+        "name": "Fabio",
+        "url": "https://evolodigitalstudio.it/chi-sono.html",
+        "image": "https://evolodigitalstudio.it/assets/fabio.jpg",
+        "jobTitle": "Sviluppatore web",
+        "worksFor": { "@id": "https://evolodigitalstudio.it/#organization" },
+        "sameAs": [
+          "https://www.instagram.com/evolo.digitalstudio",
+          "https://www.tiktok.com/@evolo.web.designsv"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://evolodigitalstudio.it/#organization",
+        "name": "Evolo Digital Studio",
+        "url": "https://evolodigitalstudio.it/",
+        "logo": "https://evolodigitalstudio.it/assets/logo.webp",
+        "founder": { "@id": "https://evolodigitalstudio.it/chi-sono.html#person" },
+        "email": "info@evolodigitalstudio.it",
+        "taxID": "04071170791"
+      }
     ]
   }
   </script>
