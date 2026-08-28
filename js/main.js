@@ -507,13 +507,55 @@
   }
 
   /* ---- FAQ: close others on open ---- */
-  document.querySelectorAll('.faq__item').forEach((item) => {
+  document.querySelectorAll('.faq__item, .ag-faq__item').forEach((item) => {
     item.addEventListener('toggle', () => {
       if (item.open) {
-        document.querySelectorAll('.faq__item').forEach((other) => {
+        const group = item.classList.contains('ag-faq__item') ? '.ag-faq__item' : '.faq__item';
+        document.querySelectorAll(group).forEach((other) => {
           if (other !== item) other.open = false;
         });
       }
     });
   });
+
+  /* ---- Hero browser: rotate featured projects ---- */
+  const heroBrowserImg = document.getElementById('hero-browser-img');
+  const heroBrowserUrl = document.getElementById('hero-browser-url');
+  if (heroBrowserImg && heroBrowserUrl) {
+    const heroSlides = [
+      {
+        src: 'assets/project-visitamedical.webp',
+        url: 'visitamedical.it',
+        alt: 'Anteprima progetto Visita Medical',
+      },
+      {
+        src: 'assets/project-civicos.webp',
+        url: 'civicos.it',
+        alt: 'Anteprima progetto CivicoS',
+      },
+      {
+        src: 'assets/project-caladelsol.webp',
+        url: 'caladelsol.it',
+        alt: 'Anteprima progetto Cala del Sol',
+      },
+    ];
+    let heroSlideIndex = 0;
+    const heroFadeMs = 450;
+    const heroIntervalMs = 5500;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!reduceMotion && heroSlides.length > 1) {
+      window.setInterval(() => {
+        heroSlideIndex = (heroSlideIndex + 1) % heroSlides.length;
+        heroBrowserImg.style.opacity = '0';
+        window.setTimeout(() => {
+          const slide = heroSlides[heroSlideIndex];
+          heroBrowserImg.src = slide.src;
+          heroBrowserImg.alt = slide.alt;
+          heroBrowserUrl.textContent = slide.url;
+          heroBrowserImg.style.opacity = '1';
+        }, heroFadeMs);
+      }, heroIntervalMs);
+    }
+  }
 })();

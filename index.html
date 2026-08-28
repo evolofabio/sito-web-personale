@@ -6,7 +6,7 @@
   <meta name="description" content="Evolo Digital Studio — Sviluppo siti web professionali con HTML, CSS, JavaScript e WordPress. Portfolio reale, consulenza gratuita e progetti su misura in Italia.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Evolo Digital Studio">
-  <meta name="theme-color" content="#050B18">
+  <meta name="theme-color" content="#FFFFFF">
   <meta name="google-site-verification" content="AmXvchyCad4rFtbRlB_QhEJeITL8WyJ9cZtY2MM9XiI">
   <title>Evolo Digital Studio | Sviluppo Siti Web HTML, CSS, JS e WordPress</title>
   <link rel="canonical" href="https://evolodigitalstudio.it/">
@@ -30,9 +30,9 @@
   <meta name="twitter:image" content="https://evolodigitalstudio.it/assets/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="preload" as="image" href="assets/hero-device-caladelsol.webp" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=26">
+  <link rel="stylesheet" href="css/agency.css?v=12">
   <link rel="stylesheet" href="css/product-page.css?v=2" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="css/product-page.css?v=2"></noscript>
   <script type="application/ld+json">
@@ -172,34 +172,27 @@
   }
   </script>
 </head>
-<body class="site-craft">
 
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="container header__inner">
-      <a href="#hero" class="header__logo" aria-label="Evolo Digital Studio — Home">
-        <img src="assets/logo.webp" alt="" width="41" height="48">
-        <span class="header__brand">
-          <strong>Evolo</strong>
-          <small>Digital Studio</small>
-        </span>
+<body class="site-agency">
+
+  <header class="ag-header" id="header">
+    <div class="container ag-header__inner">
+      <a href="#hero" class="ag-header__logo" aria-label="Evolo Digital Studio — Home">
+        <img src="assets/logo.webp" alt="" width="36" height="42">
+        <span><strong>Evolo</strong> Digital Studio</span>
       </a>
-
-      <nav class="header__nav" id="nav" aria-label="Navigazione principale">
+      <nav class="ag-header__nav" id="nav" aria-label="Navigazione principale">
         <ul class="header__links">
-          <li><a href="#percorso">Percorso</a></li>
+          <li><a href="#chi-siamo">Studio</a></li>
+          <li><a href="#processo">Metodo</a></li>
           <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#progetti">Portfolio</a></li>
-          <li><a href="plugins.html">Plugin</a></li>
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#pacchetti">Prezzi</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="#contatti">Contatti</a></li>
         </ul>
       </nav>
-
-      <a href="#contatti" class="btn btn--primary header__cta">
-        Preventivo gratuito
-      </a>
-
+      <a href="#contatti" class="ag-btn ag-btn--primary ag-header__cta">Preventivo</a>
       <button class="header__toggle" id="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
@@ -208,783 +201,341 @@
 
   <main>
 
-    <!-- Hero -->
-    <section class="hero hero--craft" id="hero">
-      <div class="hero__bg" aria-hidden="true">
-        <div class="hero__ink hero__ink--navy"></div>
-        <div class="hero__ink hero__ink--amber"></div>
-        <div class="hero__orb hero__orb--1"></div>
-        <div class="hero__orb hero__orb--2"></div>
-        <div class="hero__grain"></div>
+    <!-- HERO -->
+    <section class="ag-hero" id="hero">
+      <div class="ag-hero__bg" aria-hidden="true">
+        <div class="ag-hero__grid-pattern"></div>
+        <div class="ag-hero__glow ag-hero__glow--1"></div>
+        <div class="ag-hero__glow ag-hero__glow--2"></div>
       </div>
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <p class="hero__brand hero-enter" style="--enter-delay: 0">
-            <span class="hero__brand-name">Evolo</span>
-            <span class="hero__brand-tag">Digital Studio</span>
-          </p>
-          <div class="hero__byline hero-enter" style="--enter-delay: 1">
-            <img src="assets/fabio.jpg" alt="Fabio, fondatore di Evolo Digital Studio" width="48" height="48" class="hero__byline-photo">
-            <div class="hero__byline-text">
-              <strong>Fabio</strong>
-              <span>Sviluppo web su misura · Italia</span>
-            </div>
+      <div class="container ag-hero__grid">
+        <div class="ag-hero__copy">
+          <h1>Siti web che portano <em>clienti</em>, non solo visite.</h1>
+          <p class="ag-hero__lead">HTML, CSS, JavaScript e WordPress fatti a mano per professionisti e PMI. Codice su misura, niente template anonimi.</p>
+          <div class="ag-hero__actions">
+            <a href="#contatti" class="ag-btn ag-btn--primary">Consulenza gratuita</a>
+            <a href="#progetti" class="ag-btn ag-btn--ghost">Vedi i progetti</a>
           </div>
-          <h1 class="hero__title hero-enter" style="--enter-delay: 2">
-            Il tuo sito deve<br>
-            <span class="text-accent">portarti clienti</span>,<br>
-            non solo essere bello
-          </h1>
-          <p class="hero__subtitle hero-enter" style="--enter-delay: 3">
-            Progetto e sviluppo siti in HTML, CSS, JavaScript e WordPress —
-            fatti a mano, veloci, con un design che parla della tua attività.
-          </p>
-          <div class="hero__actions hero-enter" style="--enter-delay: 4">
-            <a href="#contatti" class="btn btn--primary btn--lg btn--lift">
-              Consulenza gratuita
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-            <a href="#progetti" class="btn btn--outline btn--lg">Vedi i progetti</a>
+          <div class="ag-trust">
+            <div class="ag-trust__item">
+              <strong class="ag-trust__stars" aria-label="5 stelle su 5">★★★★★</strong>
+              <span><a href="https://g.page/r/CdwnK_4LVsy6EAE/review" target="_blank" rel="noopener noreferrer">Recensioni Google</a></span>
+            </div>
+            <span class="ag-trust__sep" aria-hidden="true"></span>
+            <div class="ag-trust__item">
+              <strong>24h</strong>
+              <span>Tempo di risposta</span>
+            </div>
           </div>
         </div>
-
-        <div class="hero__visual hero-enter hero-enter--visual" style="--enter-delay: 5">
-          <div class="hero__stage" aria-label="Anteprima progetto Cala del Sol">
-            <div class="hero__stage-glow" aria-hidden="true"></div>
-            <div class="hero__devices">
-              <div class="hero__laptop">
-                <div class="hero__laptop-screen">
-                  <img
-                    src="assets/hero-device-caladelsol.webp"
-                    alt="Homepage Cala del Sol realizzata da Evolo Digital Studio"
-                    width="900"
-                    height="385"
-                    decoding="async"
-                    fetchpriority="high"
-                  >
-                </div>
-                <div class="hero__laptop-base" aria-hidden="true"></div>
-                <div class="hero__laptop-notch" aria-hidden="true"></div>
-              </div>
-              <div class="hero__phone" aria-hidden="true">
-                <div class="hero__phone-screen">
-                  <img
-                    src="assets/hero-phone-caladelsol.webp"
-                    alt=""
-                    width="390"
-                    height="846"
-                    decoding="async"
-                    loading="lazy"
-                  >
-                </div>
-              </div>
+        <div class="ag-hero__visual">
+          <div class="ag-browser">
+            <div class="ag-browser__chrome">
+              <span class="ag-browser__dot ag-browser__dot--r"></span>
+              <span class="ag-browser__dot ag-browser__dot--y"></span>
+              <span class="ag-browser__dot ag-browser__dot--g"></span>
+              <div class="ag-browser__url" id="hero-browser-url">visitamedical.it</div>
             </div>
-            <p class="hero__caption">
-              <span>Progetto recente</span>
-              Cala del Sol — sito turistico + prenotazioni
-            </p>
+            <div class="ag-browser__screen">
+              <img id="hero-browser-img" src="assets/project-visitamedical.webp" alt="Anteprima progetto Visita Medical" width="960" height="403" fetchpriority="high" decoding="async">
+            </div>
+            <div class="ag-browser__shine" aria-hidden="true"></div>
           </div>
         </div>
       </div>
+      <a href="#chi-siamo" class="ag-hero__scroll" aria-label="Scorri verso il contenuto">
+        <span>Scopri di più</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
 
-      <div class="hero__marquee" aria-hidden="true">
-        <div class="hero__marquee-track">
-          <span>HTML · CSS · JavaScript · WordPress · SEO · Performance · Design su misura · HTML · CSS · JavaScript · WordPress · SEO · Performance · Design su misura ·</span>
-          <span>HTML · CSS · JavaScript · WordPress · SEO · Performance · Design su misura · HTML · CSS · JavaScript · WordPress · SEO · Performance · Design su misura ·</span>
+    <!-- INTRO -->
+    <section class="ag-intro" id="chi-siamo">
+      <div class="container ag-intro__grid">
+        <figure class="ag-intro__photo reveal">
+          <div class="ag-intro__photo-frame">
+            <img src="assets/fabio.jpg" alt="Fabio, fondatore di Evolo Digital Studio" width="768" height="1024" loading="lazy" decoding="async">
+            <figcaption class="ag-intro__badge">
+              <img class="ag-intro__badge-mark" src="assets/logo-mark-light.webp" alt="" width="40" height="46" decoding="async">
+              <div class="ag-intro__badge-text">
+                <strong>Fabio</strong>
+                <span>Fondatore, Evolo Digital Studio</span>
+              </div>
+            </figcaption>
+          </div>
+        </figure>
+        <div class="ag-intro__content">
+          <div class="section-head reveal">
+            <p class="section-head__kicker">01 · Studio</p>
+            <h2>Partner tecnico, non solo fornitore</h2>
+            <p>Sono Fabio: sviluppatore web e fondatore di Evolo Digital Studio.</p>
+          </div>
+          <div class="ag-intro__body reveal reveal--delay">
+            <p>Tecnico di formazione, oggi sviluppatore. Aiuto professionisti e PMI a farsi trovare online con siti veloci, chiari e pensati per convertire.</p>
+            <p>Lavoro diretto, senza intermediari. Iscritto al <strong>MEPA</strong> per progetti con la Pubblica Amministrazione.</p>
+            <ul class="ag-stats">
+              <li><strong>MEPA</strong><span>Iscritto al mercato PA</span></li>
+              <li><strong>100%</strong><span>Codice su misura</span></li>
+              <li><strong>1:1</strong><span>Lavori direttamente con me</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Stats -->
-    <section class="stats-band" aria-label="Numeri chiave">
-      <div class="container stats-band__grid">
-        <div class="stats-band__item reveal">
-          <strong>3</strong><span class="counter-suffix">+</span>
-          <span>Progetti online</span>
-        </div>
-        <div class="stats-band__item reveal reveal--delay">
-          <strong>0</strong>
-          <span>Intermediari tra noi</span>
-        </div>
-        <div class="stats-band__item reveal reveal--delay-2">
-          <strong>3</strong><span class="counter-suffix">+</span>
-          <span>Anni di esperienza</span>
-        </div>
-        <div class="stats-band__item reveal reveal--delay-3">
-          <strong>24h</strong>
-          <span>Tempo di risposta medio</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clienti -->
-    <section class="clients" aria-label="Clienti">
+    <!-- PROCESS -->
+    <section class="ag-process" id="processo">
       <div class="container">
-        <p class="clients__label reveal">Progetti realizzati — lavoro diretto con i clienti</p>
-        <div class="clients__logos reveal">
-          <img src="assets/logo-visitamedical.webp" alt="Visita Medical" width="200" height="100" loading="lazy">
-          <img src="assets/logo-civicos.webp" alt="CivicOS" width="200" height="133" loading="lazy">
-          <img src="assets/logo-caladelsol.webp" alt="Cala del Sol" width="217" height="160" loading="lazy" class="clients__logo--caladelsol">
+        <div class="section-head section-head--center reveal">
+          <p class="section-head__kicker">02 · Metodo</p>
+          <h2>Come funziona</h2>
+          <p>Dalla prima call al sito online: un percorso chiaro, senza sorprese.</p>
         </div>
+        <ol class="ag-process__steps">
+          <li class="ag-process__step reveal">
+            <span class="ag-process__num">01</span>
+            <h3>Consulenza gratuita</h3>
+            <p>Parliamo del tuo progetto, del target e di cosa deve fare il sito. Nessun impegno.</p>
+          </li>
+          <li class="ag-process__step reveal reveal--delay">
+            <span class="ag-process__num">02</span>
+            <h3>Progetto e design</h3>
+            <p>Definiamo struttura, contenuti e look. Tu approvi prima che parta lo sviluppo.</p>
+          </li>
+          <li class="ag-process__step reveal reveal--delay-2">
+            <span class="ag-process__num">03</span>
+            <h3>Sviluppo</h3>
+            <p>Codice scritto a mano, test su mobile e desktop, revisioni incluse nel percorso.</p>
+          </li>
+          <li class="ag-process__step reveal reveal--delay-3">
+            <span class="ag-process__num">04</span>
+            <h3>Lancio e supporto</h3>
+            <p>Messa online, formazione se serve, e assistenza nei giorni successivi al go-live.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- Perché scegliere -->
-    <section class="section" id="perche">
+    <!-- SERVICES -->
+    <section class="ag-services" id="servizi">
       <div class="container">
-        <div class="section__header section__header--center reveal" data-watermark="WHY">
-          <span class="section__label">Perché Evolo</span>
-          <h2 class="section__title">Non un template. Un sito costruito per vendere.</h2>
-          <p class="section__desc">Ogni progetto nasce dal codice, non da soluzioni preconfezionate. Questo significa autenticità, performance e un'immagine che i tuoi clienti ricorderanno.</p>
+        <div class="section-head reveal">
+          <p class="section-head__kicker">03 · Servizi</p>
+          <h2>Servizi web</h2>
+          <p>Tre modi di costruire il tuo sito — sempre personalizzato, mai un template preso dal cassetto.</p>
         </div>
-        <div class="benefits">
-          <article class="benefit-card reveal">
-            <div class="benefit-card__image">
-              <img src="assets/project-visitamedical.webp" alt="Screenshot sito Visita Medical" width="960" height="403" loading="lazy">
+        <div class="ag-services__grid">
+          <a href="#contatti" class="ag-card reveal">
+            <span class="ag-card__index">01</span>
+            <div class="ag-card__thumb">
+              <img src="assets/project-civicos.webp" alt="" width="960" height="403" loading="lazy">
             </div>
-            <div class="benefit-card__body">
-              <div class="benefit-card__icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </div>
-              <h3>Codice autentico</h3>
-              <p>HTML, CSS e JavaScript scritti a mano. Niente template anonimi: il tuo sito è unico come la tua attività.</p>
+            <div class="ag-card__body">
+              <h3>Sviluppo custom</h3>
+              <p>HTML, CSS e JavaScript scritti a mano. Veloci, leggeri, facili da mantenere.</p>
+              <span class="ag-card__link">Scopri <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
             </div>
-          </article>
-          <article class="benefit-card reveal reveal--delay">
-            <div class="benefit-card__image">
-              <img src="assets/project-civicos.webp" alt="Screenshot sito CivicOS" width="960" height="403" loading="lazy">
+          </a>
+          <a href="#contatti" class="ag-card reveal reveal--delay">
+            <span class="ag-card__index">02</span>
+            <div class="ag-card__thumb">
+              <img src="assets/project-caladelsol.webp" alt="" width="800" height="342" loading="lazy">
             </div>
-            <div class="benefit-card__body">
-              <div class="benefit-card__icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <h3>Fiducia e professionalità</h3>
-              <p>Un sito curato nei dettagli trasmette affidabilità. I tuoi visitatori si sentono sicuri a contattarti o acquistare.</p>
+            <div class="ag-card__body">
+              <h3>WordPress su misura</h3>
+              <p>Temi e plugin proprietari. Tu aggiorni i contenuti in autonomia.</p>
+              <span class="ag-card__link">Scopri <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
             </div>
-          </article>
-          <article class="benefit-card reveal reveal--delay-2">
-            <div class="benefit-card__image">
-              <img src="assets/project-caladelsol.webp" alt="Screenshot sito Cala del Sol" width="800" height="342" loading="lazy">
+          </a>
+          <a href="#contatti" class="ag-card reveal reveal--delay-2">
+            <span class="ag-card__index">03</span>
+            <div class="ag-card__thumb">
+              <img src="assets/project-visitamedical.webp" alt="" width="960" height="403" loading="lazy">
             </div>
-            <div class="benefit-card__body">
-              <div class="benefit-card__icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-              </div>
-              <h3>Velocità e visibilità</h3>
-              <p>Siti ottimizzati per Google e per ogni dispositivo. Più visibilità online significa più opportunità di business.</p>
+            <div class="ag-card__body">
+              <h3>SEO &amp; performance</h3>
+              <p>Struttura, velocità e contenuti pensati per farti trovare su Google.</p>
+              <span class="ag-card__link">Scopri <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Percorso / Offerta studio -->
-    <section class="section path-section" id="percorso">
-      <div class="container">
-        <div class="path-section__intro reveal">
-          <div class="path-section__copy">
-            <span class="section__label">Il percorso</span>
-            <h2 class="section__title">Da tecnico a Digital Studio</h2>
-            <p>Nasco come <strong>tecnico delle telecomunicazioni e informatico</strong>. Poi mi sono specializzato nella creazione di siti web e nello sviluppo software.</p>
-            <p>Oggi Evolo Digital Studio è il modo in cui metto insieme queste competenze: non solo un sito online, ma un <strong>partner tecnologico</strong> per professionisti e PMI — presenza digitale, strumenti su misura e supporto quando serve. Sono anche <strong>iscritto al MEPA</strong>, il Mercato Elettronico della Pubblica Amministrazione: posso lavorare con enti e strutture che acquistano tramite Consip.</p>
-          </div>
-          <ol class="path-timeline" aria-label="Tappe del percorso">
-            <li class="path-timeline__item">
-              <span class="path-timeline__num">01</span>
-              <div>
-                <strong>Telecomunicazioni &amp; IT</strong>
-                <span>Reti, sistemi, risoluzione problemi reali sul campo</span>
-              </div>
-            </li>
-            <li class="path-timeline__item">
-              <span class="path-timeline__num">02</span>
-              <div>
-                <strong>Siti web &amp; software</strong>
-                <span>Progettazione, codice e prodotti digitali su misura</span>
-              </div>
-            </li>
-            <li class="path-timeline__item">
-              <span class="path-timeline__num">03</span>
-              <div>
-                <strong>Digital Studio</strong>
-                <span>Un unico referente per web, software e assistenza</span>
-              </div>
-            </li>
-          </ol>
-        </div>
-
-        <div class="path-pillars">
-          <article class="path-pillar reveal">
-            <span class="path-pillar__num">01</span>
-            <h3>Web &amp; digital</h3>
-            <p>Siti professionali in HTML, CSS, JavaScript o WordPress su misura, SEO e performance. Il punto di partenza per farti trovare e convertire.</p>
-            <ul>
-              <li>Siti vetrina e WordPress</li>
-              <li>SEO on-page e velocità</li>
-              <li>Design responsive su misura</li>
-            </ul>
-            <a href="#servizi" class="path-pillar__link">Vedi i servizi web →</a>
-          </article>
-          <article class="path-pillar path-pillar--featured reveal reveal--delay">
-            <span class="path-pillar__num">02</span>
-            <h3>Software su misura</h3>
-            <p>Quando un sito non basta: strumenti, aree riservate, integrazioni e logica applicativa pensata sul tuo modo di lavorare.</p>
-            <ul>
-              <li>Funzionalità e flussi custom</li>
-              <li>Integrazioni e automazioni</li>
-              <li>Plugin e pannelli dedicati</li>
-            </ul>
-            <a href="#contatti" class="path-pillar__link">Parliamone →</a>
-          </article>
-          <article class="path-pillar reveal reveal--delay-2">
-            <span class="path-pillar__num">03</span>
-            <h3>Assistenza IT</h3>
-            <p>Supporto tecnico concreto: dopo il lancio e nella quotidianità. Hosting, email, aggiornamenti, backup e interventi quando qualcosa non funziona.</p>
-            <ul>
-              <li>Manutenzione e aggiornamenti</li>
-              <li>Backup, sicurezza, email</li>
-              <li>Supporto post-lancio e IT base</li>
-            </ul>
-            <a href="#contatti" class="path-pillar__link">Richiedi supporto →</a>
-          </article>
-        </div>
-
-        <div class="path-credentials reveal">
-          <div class="path-credentials__item">
-            <span class="path-credentials__label">Acquisti PA</span>
-            <strong>Iscritto al MEPA</strong>
-            <p>Mercato Elettronico della Pubblica Amministrazione (Consip). Ideale se cerchi un fornitore già abilitato per gare e ordini elettronici.</p>
-          </div>
-          <a href="#contatti" class="btn btn--outline">Hai un progetto per la PA?</a>
-        </div>
-
-        <p class="path-section__note reveal">Il sito ti fa arrivare i clienti. Il software risolve un problema operativo. L’assistenza IT ti tiene in piedi. Puoi partire da uno solo o combinarli — ne parliamo senza impegno.</p>
-      </div>
-    </section>
-
-    <!-- Servizi -->
-    <section class="section section--alt" id="servizi">
-      <div class="container">
-        <div class="section__header section__header--center reveal" data-watermark="WORK">
-          <span class="section__label">Servizi web</span>
-          <h2 class="section__title">Come lavoro sul tuo sito</h2>
-          <p class="section__desc">Il cuore dell’offerta digitale: dalla vetrina professionale al progetto custom, con SEO e performance incluse nel metodo.</p>
-        </div>
-        <div class="services">
-          <article class="service-card reveal">
-            <div class="service-card__number">01</div>
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3>Sviluppo Web Custom</h3>
-            <p>Siti costruiti da zero con HTML, CSS e JavaScript. Massima libertà di design e prestazioni elevate.</p>
-            <ul class="service-card__list">
-              <li>Design su misura</li>
-              <li>Animazioni e interazioni</li>
-              <li>Codice pulito e leggero</li>
-            </ul>
-            <a href="#contatti" class="service-card__link">Richiedi preventivo →</a>
-          </article>
-          <article class="service-card service-card--featured reveal reveal--delay">
-            <div class="service-card__badge">Più richiesto</div>
-            <div class="service-card__number">02</div>
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            </div>
-            <h3>WordPress su misura</h3>
-            <p>Gestisci i contenuti in autonomia con un sito <a href="sito-wordpress-su-misura.html">WordPress personalizzato</a>, non un tema generico.</p>
-            <ul class="service-card__list">
-              <li>Pannello di controllo intuitivo</li>
-              <li>Tema personalizzato</li>
-              <li>Blog e pagine illimitate</li>
-            </ul>
-            <a href="#contatti" class="service-card__link">Richiedi preventivo →</a>
-          </article>
-          <article class="service-card reveal reveal--delay-2">
-            <div class="service-card__number">03</div>
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
-            </div>
-            <h3>SEO & Performance</h3>
-            <p>Ottimizzazione per i motori di ricerca e velocità di caricamento. Fatti trovare e converti i visitatori.</p>
-            <ul class="service-card__list">
-              <li>Ottimizzazione Google</li>
-              <li>Mobile-first</li>
-              <li>Analisi e miglioramenti</li>
-            </ul>
-            <a href="#contatti" class="service-card__link">Richiedi preventivo →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Metodo -->
-    <section class="section method-section method-section--dark" id="processo">
-      <div class="container">
-        <div class="section__header section__header--center reveal">
-          <span class="section__label">Metodo</span>
-          <h2 class="section__title">Dal primo contatto al sito online</h2>
-          <p class="section__desc">Quattro fasi chiare. Nessuna sorpresa, solo avanzamento misurabile.</p>
-        </div>
-        <div class="method" id="method">
-          <div class="method__track" aria-hidden="true">
-            <div class="method__track-base"></div>
-            <div class="method__track-fill" id="method-progress"></div>
-          </div>
-          <div class="method__steps">
-            <article class="method__step" data-step="0">
-              <div class="method__index"><span>01</span></div>
-              <h3>Consulenza</h3>
-              <p>Raccontami attività, obiettivi e budget. Definiamo insieme la soluzione giusta.</p>
-            </article>
-            <article class="method__step" data-step="1">
-              <div class="method__index"><span>02</span></div>
-              <h3>Progetto</h3>
-              <p>Struttura e design: ti mostro le bozze e affiniamo ogni dettaglio con te.</p>
-            </article>
-            <article class="method__step" data-step="2">
-              <div class="method__index"><span>03</span></div>
-              <h3>Sviluppo</h3>
-              <p>Codice artigianale o WordPress su misura, con aggiornamenti in ogni fase.</p>
-            </article>
-            <article class="method__step" data-step="3">
-              <div class="method__index"><span>04</span></div>
-              <h3>Lancio</h3>
-              <p>Pubblicazione, test e consegna. Poi supporto reale, non un ticket automatico.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="section section--alt" id="progetti">
-      <div class="container">
-        <div class="section__header section__header--center reveal" data-watermark="CASES">
-          <span class="section__label">Portfolio</span>
-          <h2 class="section__title">Risultati concreti per clienti reali</h2>
-          <p class="section__desc">Espandi ogni progetto per leggere il case study completo, oppure visita i siti live.</p>
-        </div>
-
-        <div class="case-studies">
-
-          <article class="case-study reveal" id="progetto-visitamedical">
-            <div class="case-study__visual">
-              <a href="https://www.visitamedical.it" target="_blank" rel="noopener noreferrer" class="project-card__frame">
-                <div class="project-card__toolbar">
-                  <div class="project-card__dots" aria-hidden="true"><span></span><span></span><span></span></div>
-                  <span class="project-card__url">visitamedical.it</span>
-                </div>
-                <img src="assets/project-visitamedical.webp" alt="Screenshot homepage Visita Medical" width="960" height="403" class="project-card__screenshot" loading="lazy">
-              </a>
-            </div>
-            <div class="case-study__content">
-              <span class="case-study__number">01</span>
-              <h3>VisitaMedical</h3>
-              <p class="case-study__tagline">Restyling, ottimizzazione e sviluppo di logiche di backend personalizzate.</p>
-              <div class="case-study__meta">
-                <a href="https://www.visitamedical.it" target="_blank" rel="noopener noreferrer" class="case-study__link">
-                  www.visitamedical.it
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-                <p class="case-study__stack"><strong>Stack:</strong> PHP, MySQL, JavaScript, HTML5, CSS3 / SASS</p>
-              </div>
-              <a href="visita-medical.html" class="btn btn--outline">Apri il case study →</a>
-            </div>
-          </article>
-
-          <article class="case-study case-study--reverse reveal" id="progetto-civicos">
-            <div class="case-study__visual">
-              <a href="https://www.civicos.it" target="_blank" rel="noopener noreferrer" class="project-card__frame">
-                <div class="project-card__toolbar">
-                  <div class="project-card__dots" aria-hidden="true"><span></span><span></span><span></span></div>
-                  <span class="project-card__url">civicos.it</span>
-                </div>
-                <img src="assets/project-civicos.webp" alt="Screenshot homepage CivicOS" width="960" height="403" class="project-card__screenshot" loading="lazy">
-              </a>
-            </div>
-            <div class="case-study__content">
-              <span class="case-study__number">02</span>
-              <h3>CivicoS</h3>
-              <p class="case-study__tagline">Ecosistema Smart City (Web + App) per la gestione della raccolta differenziata e la comunicazione cittadino-comune.</p>
-              <div class="case-study__meta">
-                <a href="https://www.civicos.it" target="_blank" rel="noopener noreferrer" class="case-study__link">
-                  www.civicos.it
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-                <p class="case-study__stack"><strong>Stack:</strong> PHP, Laravel, React Native, REST API, MySQL, Push Notifications</p>
-              </div>
-              <a href="civicos.html" class="btn btn--outline">Apri il case study →</a>
-            </div>
-          </article>
-
-          <article class="case-study reveal" id="progetto-caladelsol">
-            <div class="case-study__visual">
-              <a href="https://www.caladelsol.it/" target="_blank" rel="noopener noreferrer" class="project-card__frame">
-                <div class="project-card__toolbar">
-                  <div class="project-card__dots" aria-hidden="true"><span></span><span></span><span></span></div>
-                  <span class="project-card__url">caladelsol.it</span>
-                </div>
-                <img src="assets/project-caladelsol.webp" alt="Screenshot homepage Cala del Sol" width="800" height="342" class="project-card__screenshot" loading="lazy">
-              </a>
-            </div>
-            <div class="case-study__content">
-              <span class="case-study__number">03</span>
-              <h3>Cala del Sol</h3>
-              <p class="case-study__tagline">Piattaforma web turistica con sistema di prenotazione proprietario sviluppato su misura.</p>
-              <div class="case-study__meta">
-                <a href="https://www.caladelsol.it/" target="_blank" rel="noopener noreferrer" class="case-study__link">
-                  www.caladelsol.it
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-                <p class="case-study__stack"><strong>Stack:</strong> WordPress, Elementor Pro, PHP (Custom Plugin), JavaScript, CSS Custom</p>
-              </div>
-              <a href="cala-del-sol.html" class="btn btn--outline">Apri il case study →</a>
-            </div>
-          </article>
-
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Chi sono -->
-    <section class="section about-section" id="chi-sono">
-      <div class="container about-section__inner">
-        <div class="about-section__image reveal">
-          <img src="assets/fabio.jpg" alt="Fabio, fondatore di Evolo Digital Studio" width="768" height="1024" loading="lazy">
-          <div class="about-section__badge">
-            <img src="assets/logo.webp" alt="Evolo Digital Studio" width="40" height="47">
-            <div>
-              <strong>Fabio</strong>
-              <span>Fondatore, Evolo Digital Studio</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-section__content reveal reveal--delay">
-          <span class="section__label">Chi sono</span>
-          <h2 class="section__title">Parli con chi progetta e scrive il codice</h2>
-          <p>Sono <strong>Fabio</strong>: tecnico di formazione (telecomunicazioni e informatica), oggi sviluppatore e fondatore di Evolo Digital Studio. Lavoro con professionisti, PMI e — grazie all’iscrizione al <strong>MEPA</strong> — anche con la Pubblica Amministrazione.</p>
-          <p>Il mio approccio è semplice: <strong>ascolto, progetto, sviluppo e resto disponibile</strong>. Sito, software o assistenza IT: se qualcosa non è chiaro, me lo dici direttamente.</p>
-          <ul class="about__skills">
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>HTML, CSS, JavaScript</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>WordPress e software su misura</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>SEO e performance</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Assistenza IT e post-lancio</li>
-            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Fornitore MEPA</li>
-          </ul>
-          <div class="about-section__actions">
-            <a href="#contatti" class="btn btn--primary">Parliamo del tuo progetto</a>
-            <a href="#percorso" class="btn btn--outline">Il mio percorso →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pacchetti -->
-    <section class="section section--alt" id="pacchetti">
-      <div class="container">
-        <div class="section__header section__header--center reveal" data-watermark="PLAN">
-          <span class="section__label">Pacchetti</span>
-          <h2 class="section__title">Scegli la soluzione giusta per te</h2>
-          <p class="section__desc">Fasce di partenza chiare. Il preventivo definitivo dipende dal tuo progetto — la consulenza iniziale è gratuita.</p>
-        </div>
-        <div class="pricing">
-          <article class="pricing-card reveal">
-            <h3>Sito Vetrina</h3>
-            <p class="pricing-card__desc">Per professionisti e piccole attività che vogliono essere online con stile.</p>
-            <div class="pricing-card__price">
-              <span class="pricing-card__from">da</span>
-              <strong>600€</strong>
-            </div>
-            <ul class="pricing-card__features">
-              <li>Fino a 5 pagine</li>
-              <li>Design responsive</li>
-              <li>Modulo contatti</li>
-              <li>Ottimizzazione base SEO</li>
-              <li>Consegna in 2–3 settimane</li>
-            </ul>
-            <a href="#contatti" class="btn btn--outline btn--full">Richiedi preventivo</a>
-          </article>
-          <article class="pricing-card pricing-card--featured reveal reveal--delay">
-            <div class="pricing-card__badge">Consigliato</div>
-            <h3>Sito WordPress</h3>
-            <p class="pricing-card__desc">Per chi vuole gestire contenuti, blog e aggiornamenti in autonomia.</p>
-            <div class="pricing-card__price">
-              <span class="pricing-card__from">da</span>
-              <strong>1.000€</strong>
-            </div>
-            <ul class="pricing-card__features">
-              <li>Pagine illimitate</li>
-              <li>Tema personalizzato</li>
-              <li>Pannello admin intuitivo</li>
-              <li>Blog integrato</li>
-              <li>Formazione all'uso</li>
-              <li>Supporto 30 giorni</li>
-            </ul>
-            <a href="#contatti" class="btn btn--primary btn--full">Richiedi preventivo</a>
-          </article>
-          <article class="pricing-card reveal reveal--delay-2">
-            <h3>Sviluppo Custom</h3>
-            <p class="pricing-card__desc">Per progetti complessi che richiedono codice su misura e funzionalità avanzate.</p>
-            <div class="pricing-card__price">
-              <span class="pricing-card__from">da</span>
-              <strong>2.000€</strong>
-            </div>
-            <ul class="pricing-card__features">
-              <li>HTML, CSS, JavaScript</li>
-              <li>Animazioni avanzate</li>
-              <li>Integrazioni API</li>
-              <li>Performance massime</li>
-              <li>Supporto esteso</li>
-            </ul>
-            <a href="#contatti" class="btn btn--outline btn--full">Richiedi preventivo</a>
-          </article>
-        </div>
-        <div class="section__footer reveal">
-          <a href="quanto-costa-sito-web.html" class="btn btn--outline btn--lg">Cosa influenza il preventivo →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonianze -->
-    <section class="section" id="testimonianze">
-      <div class="container">
-        <div class="section__header section__header--center reveal">
-          <span class="section__label">Testimonianze</span>
-          <h2 class="section__title">Cosa dicono i clienti</h2>
-        </div>
-        <div class="testimonials">
-          <article class="testimonial-card reveal">
-            <div class="testimonial-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <blockquote>«Fabio ha capito subito le nostre esigenze nel settore sanitario. Il sito trasmette professionalità e i pazienti ci trovano facilmente online.»</blockquote>
-            <cite>
-              <strong>Alberto</strong>
-              <span>Visita Medical · Recensione Google</span>
-            </cite>
-          </article>
-          <article class="testimonial-card reveal reveal--delay">
-            <div class="testimonial-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <blockquote>«Un partner affidabile che ha trasformato la nostra presenza digitale. Codice pulito, design moderno e sempre disponibile per ogni richiesta.»</blockquote>
-            <cite>
-              <strong>Team CivicOS</strong>
-              <span>civicos.it</span>
-            </cite>
-          </article>
-          <article class="testimonial-card reveal reveal--delay-2">
-            <div class="testimonial-card__stars" aria-label="5 stelle su 5">★★★★★</div>
-            <blockquote>«Finalmente un sito che ci rappresenta davvero. Niente template generici: ogni dettaglio è stato curato con attenzione e il risultato parla da solo.»</blockquote>
-            <cite>
-              <strong>Cliente privato</strong>
-              <span>Progetto WordPress</span>
-            </cite>
-          </article>
-        </div>
-        <div class="section__footer reveal">
-          <a href="https://g.page/r/CdwnK_4LVsy6EAE/review" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--lg">
-            Lascia una recensione su Google
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Plugin -->
-    <section class="section section--dark" id="plugin">
+    <!-- QUOTE -->
+    <section class="ag-quote" aria-label="Testimonial">
       <div class="container">
-        <div class="section__header section__header--center reveal">
-          <span class="section__label">Prodotti</span>
-          <h2 class="section__title">Plugin WordPress sviluppati da me</h2>
-          <p class="section__desc">Soluzioni pronte per esigenze specifiche — prenotazioni, integrazioni e strumenti operativi, con supporto diretto.</p>
-        </div>
-        <div class="plugin-grid">
-          <article class="plugin-card reveal">
-            <a href="vacation-home-bookings.html" class="plugin-card__thumb plugin-card__thumb--brand">
-              <img src="assets/plugins/vhb/preview.webp"  alt="Vacation Home Bookings — plugin WordPress di Evolo Digital Studio" width="1024" height="558" loading="lazy">
-            </a>
-            <div class="plugin-card__body">
-              <div class="plugin-card__meta">
-                <span class="plugin-card__version">v1.2.0</span>
-                <span class="plugin-card__price">da 99 €/anno</span>
-              </div>
-              <h3 class="plugin-card__title"><a href="vacation-home-bookings.html">Vacation Home Bookings</a></h3>
-              <p>Prenotazioni case vacanza con sync iCal Airbnb/Booking e Stripe. Sul tuo WordPress, sul tuo dominio.</p>
-              <div class="plugin-card__actions">
-                <a href="vacation-home-bookings.html" class="btn btn--primary">Scopri il plugin</a>
-              </div>
-            </div>
-          </article>
-          <article class="plugin-card reveal reveal--delay">
-            <a href="doctorsearch.html" class="plugin-card__thumb">
-              <img src="assets/plugins/doctorsearch/screen-01-ricerca-hero.webp"  alt="DoctorSearch — ricerca medici WordPress" width="1536" height="1024" loading="lazy">
-            </a>
-            <div class="plugin-card__body">
-              <div class="plugin-card__meta">
-                <span class="plugin-card__version">v1.1.1</span>
-                <span class="plugin-card__price">Su preventivo</span>
-              </div>
-              <h3 class="plugin-card__title"><a href="doctorsearch.html">DoctorSearch</a></h3>
-              <p>Ricerca medici, strutture e visite con pannello admin, calendario prenotazioni e shortcode.</p>
-              <div class="plugin-card__actions">
-                <a href="doctorsearch.html" class="btn btn--primary">Scopri il plugin</a>
-              </div>
-            </div>
-          </article>
-          <article class="plugin-card reveal reveal--delay-2">
-            <a href="saloni-elite.html" class="plugin-card__thumb">
-              <img src="assets/plugins/saloni/01-homepage-hero.webp"  alt="Homepage Saloni Elite" width="1400" height="900" loading="lazy">
-            </a>
-            <div class="plugin-card__body">
-              <div class="plugin-card__meta">
-                <span class="plugin-card__version">v1.3.0</span>
-                <span class="plugin-card__price">Su preventivo</span>
-              </div>
-              <h3 class="plugin-card__title"><a href="saloni-elite.html">Saloni Elite</a></h3>
-              <p>Tema + plugin per parrucchieri e barbieri: prenotazioni online, dashboard admin e area clienti.</p>
-              <div class="plugin-card__actions">
-                <a href="saloni-elite.html" class="btn btn--primary">Scopri il prodotto</a>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="section__footer reveal">
-          <a href="plugins.html" class="btn btn--outline btn--lg">Tutti i plugin e temi</a>
+        <div class="ag-quote__inner reveal">
+          <span class="ag-quote__mark" aria-hidden="true">“</span>
+          <blockquote>
+            <p>Fabio ha capito subito le nostre esigenze nel settore sanitario. Il sito trasmette professionalità e i pazienti ci trovano facilmente online.</p>
+            <cite>Alberto · Visita Medical</cite>
+          </blockquote>
         </div>
       </div>
     </section>
 
-    <section class="section" id="blog">
+    <!-- PORTFOLIO -->
+    <section class="ag-portfolio" id="progetti">
       <div class="container">
-        <div class="section__header section__header--center reveal">
-          <span class="section__label">Blog</span>
-          <h2 class="section__title">Guide e articoli per il tuo sito web</h2>
-          <p class="section__subtitle">Risorse gratuite per capire cosa ti serve, quanto costa e come scegliere chi sviluppa il progetto.</p>
+        <div class="section-head reveal">
+          <p class="section-head__kicker">04 · Portfolio</p>
+          <h2>Progetti recenti</h2>
+          <p>Case study reali: sanità, smart city, turismo.</p>
         </div>
-        <div class="resource-grid">
-          <article class="resource-card reveal">
-            <span class="resource-card__tag">Prezzi</span>
-            <h3><a href="quanto-costa-sito-web.html">Quanto costa un sito web professionale</a></h3>
-            <p>Fasce di partenza e variabili che influenzano il preventivo, senza sorprese nascoste.</p>
-            <a href="quanto-costa-sito-web.html" class="btn btn--outline">Leggi la guida →</a>
-          </article>
-          <article class="resource-card reveal reveal--delay">
-            <span class="resource-card__tag">Tempi</span>
-            <h3><a href="tempo-realizzazione-sito-web.html">Quanto tempo serve per un sito professionale</a></h3>
-            <p>Cosa influenza i tempi: brief, contenuti e complessità — dal sito vetrina a CivicOS e Cala del Sol.</p>
-            <a href="tempo-realizzazione-sito-web.html" class="btn btn--outline">Leggi l’articolo →</a>
-          </article>
-          <article class="resource-card reveal reveal--delay-2">
-            <span class="resource-card__tag">Scelta</span>
-            <h3><a href="come-scegliere-sviluppatore-sito-web.html">5 domande prima di scegliere chi sviluppa</a></h3>
-            <p>Come valutare metodo, prezzo e supporto prima di affidare il progetto.</p>
-            <a href="come-scegliere-sviluppatore-sito-web.html" class="btn btn--outline">Leggi l’articolo →</a>
-          </article>
-        </div>
-        <div class="section__footer reveal">
-          <a href="blog.html" class="btn btn--primary btn--lg">Vai al blog</a>
-          <a href="realizzazione-siti-web.html" class="btn btn--outline btn--lg">Realizzazione siti web</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="faq">
-      <div class="container">
-        <div class="section__header section__header--center reveal">
-          <span class="section__label">FAQ</span>
-          <h2 class="section__title">Domande frequenti</h2>
-          <p class="section__desc">Tutto quello che devi sapere prima di iniziare.</p>
-        </div>
-        <div class="faq reveal">
-          <details class="faq__item">
-            <summary>Quanto costa un sito web?</summary>
-            <p>Le fasce di partenza sono: vetrina da 600€, WordPress da 1.000€, custom da 2.000€. Il totale dipende da pagine, funzionalità e obiettivi. Dettagli nella guida <a href="quanto-costa-sito-web.html">quanto costa un sito web</a>. La consulenza iniziale è gratuita.</p>
-          </details>
-          <details class="faq__item">
-            <summary>Quanto tempo ci vuole per avere il sito online?</summary>
-            <p>In media 2–4 settimane per un sito vetrina, 4–6 settimane per WordPress o progetti più articolati. Approfondimento: <a href="tempo-realizzazione-sito-web.html">tempi di realizzazione</a>.</p>
-          </details>
-          <details class="faq__item">
-            <summary>Posso aggiornare il sito da solo?</summary>
-            <p>Sì, con <a href="sito-wordpress-su-misura.html">WordPress su misura</a> gestisci testi, immagini e pagine in autonomia. Per siti custom posso integrare un CMS leggero o occuparmi io degli aggiornamenti con un piano di manutenzione.</p>
-          </details>
-          <details class="faq__item">
-            <summary>Il sito sarà visibile su Google?</summary>
-            <p>Ogni sito include ottimizzazione SEO di base: struttura corretta, meta tag, velocità e compatibilità mobile. Per strategie SEO avanzate possiamo definire un piano dedicato.</p>
-          </details>
-          <details class="faq__item">
-            <summary>Cosa succede dopo il lancio?</summary>
-            <p>Non ti lascio solo: offro supporto post-lancio, assistenza per modifiche e piani di manutenzione per tenere il sito sempre aggiornato e sicuro.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Banner -->
-    <section class="cta-banner" aria-label="Call to action">
-      <div class="cta-banner__bg cta-banner__bg--brand" aria-hidden="true"></div>
-      <div class="container cta-banner__inner reveal">
-        <h2>Pronto a far crescere la tua attività online?</h2>
-        <p>Richiedi una consulenza gratuita. Nessun impegno, solo una chiacchierata per capire come posso aiutarti.</p>
-        <a href="#contatti" class="btn btn--white btn--lg">
-          Inizia ora — è gratuito
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- Contatti -->
-    <section class="section" id="contatti">
-      <div class="container">
-        <div class="contact">
-          <div class="contact__info reveal">
-            <span class="section__label">Contatti</span>
-            <h2 class="section__title">Parliamo del tuo progetto</h2>
-            <p>Compila il modulo o scrivimi direttamente. Rispondo entro 24 ore lavorative.</p>
-            <div class="contact__items">
-              <a href="mailto:info@evolodigitalstudio.it" class="contact__item">
-                <div class="contact__item-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                </div>
-                <div>
-                  <strong>Email</strong>
-                  <span>Clicca per scrivermi</span>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/evolo.digitalstudio" target="_blank" rel="noopener noreferrer" class="contact__item">
-                <div class="contact__item-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                </div>
-                <div>
-                  <strong>Instagram</strong>
-                  <span>@evolo.digitalstudio</span>
-                </div>
-              </a>
-              <a href="https://www.tiktok.com/@evolo.web.designsv" target="_blank" rel="noopener noreferrer" class="contact__item">
-                <div class="contact__item-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
-                </div>
-                <div>
-                  <strong>TikTok</strong>
-                  <span>@evolo.web.designsv</span>
-                </div>
-              </a>
-              <a href="https://g.page/r/CdwnK_4LVsy6EAE/review" target="_blank" rel="noopener noreferrer" class="contact__item">
-                <div class="contact__item-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </div>
-                <div>
-                  <strong>Google Recensioni</strong>
-                  <span>Lascia una recensione</span>
-                </div>
-              </a>
+        <div class="ag-portfolio__grid">
+          <a href="visita-medical.html" class="ag-folio reveal">
+            <div class="ag-folio__img">
+              <img src="assets/project-visitamedical.webp" alt="Visita Medical" width="960" height="403" loading="lazy">
+              <div class="ag-folio__overlay"><span>Vedi case study</span></div>
             </div>
-            <ul class="contact__checks">
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Consulenza gratuita</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Preventivo senza impegno</li>
-              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Risposta entro 24h</li>
+            <div class="ag-folio__meta">
+              <span>Sanità</span>
+              <strong>VisitaMedical</strong>
+              <em>Piattaforma sanitaria</em>
+            </div>
+          </a>
+          <a href="civicos.html" class="ag-folio reveal reveal--delay">
+            <div class="ag-folio__img">
+              <img src="assets/project-civicos.webp" alt="CivicOS" width="960" height="403" loading="lazy">
+              <div class="ag-folio__overlay"><span>Vedi case study</span></div>
+            </div>
+            <div class="ag-folio__meta">
+              <span>Smart City</span>
+              <strong>CivicoS</strong>
+              <em>Web + app mobile</em>
+            </div>
+          </a>
+          <a href="cala-del-sol.html" class="ag-folio reveal reveal--delay-2">
+            <div class="ag-folio__img">
+              <img src="assets/project-caladelsol.webp" alt="Cala del Sol" width="800" height="342" loading="lazy">
+              <div class="ag-folio__overlay"><span>Vedi case study</span></div>
+            </div>
+            <div class="ag-folio__meta">
+              <span>Turismo</span>
+              <strong>Cala del Sol</strong>
+              <em>Prenotazioni online</em>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="ag-clients" aria-label="Clienti">
+      <div class="container ag-clients__inner">
+        <h2>Clienti</h2>
+        <div class="ag-clients__logos">
+          <a href="https://visitamedical.it" class="ag-clients__logo" target="_blank" rel="noopener noreferrer" aria-label="Visita Medical">
+            <img src="assets/logo-visitamedical.webp" alt="" width="160" height="80" loading="lazy">
+          </a>
+          <a href="https://civicos.it" class="ag-clients__logo" target="_blank" rel="noopener noreferrer" aria-label="CivicoS">
+            <img src="assets/logo-civicos.webp" alt="" width="160" height="106" loading="lazy">
+          </a>
+          <a href="https://caladelsol.it" class="ag-clients__logo" target="_blank" rel="noopener noreferrer" aria-label="Cala del Sol">
+            <img src="assets/logo-caladelsol.webp" alt="" width="160" height="118" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="ag-pricing" id="pacchetti">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-head__kicker">05 · Prezzi</p>
+          <h2>Pacchetti</h2>
+          <p>Fasce di partenza chiare. Il preventivo definitivo dipende dal progetto.</p>
+        </div>
+        <div class="ag-pricing__grid">
+          <article class="ag-price reveal">
+            <h3>Sito vetrina</h3>
+            <p class="ag-price__from">da <strong>600€</strong></p>
+            <ul>
+              <li>Fino a 5 pagine</li>
+              <li>Design responsive</li>
+              <li>Modulo contatti</li>
+              <li>SEO di base</li>
             </ul>
+            <a href="#contatti" class="ag-btn ag-btn--outline">Richiedi preventivo</a>
+          </article>
+          <article class="ag-price ag-price--featured reveal reveal--delay">
+            <span class="ag-price__badge">Consigliato</span>
+            <h3>WordPress</h3>
+            <p class="ag-price__from">da <strong>1.000€</strong></p>
+            <ul>
+              <li>Pagine illimitate</li>
+              <li>Tema su misura</li>
+              <li>Blog e admin</li>
+              <li>Formazione + supporto 30gg</li>
+            </ul>
+            <a href="#contatti" class="ag-btn ag-btn--primary">Richiedi preventivo</a>
+          </article>
+          <article class="ag-price reveal reveal--delay-2">
+            <h3>Custom</h3>
+            <p class="ag-price__from">da <strong>2.000€</strong></p>
+            <ul>
+              <li>HTML, CSS, JS</li>
+              <li>Funzionalità avanzate</li>
+              <li>Performance massime</li>
+              <li>Supporto esteso</li>
+            </ul>
+            <a href="#contatti" class="ag-btn ag-btn--outline">Richiedi preventivo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="ag-faq" id="faq">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="section-head__kicker">06 · FAQ</p>
+          <h2>Domande frequenti</h2>
+          <p>Le risposte alle domande che mi fanno più spesso prima di iniziare.</p>
+        </div>
+        <div class="ag-faq__list reveal">
+          <details class="ag-faq__item">
+            <summary>Quanto costa un sito web?</summary>
+            <p>Le fasce di partenza sono: vetrina da 600€, WordPress da 1.000€, custom da 2.000€. Il totale dipende da pagine, funzionalità e obiettivi. La consulenza iniziale è gratuita.</p>
+          </details>
+          <details class="ag-faq__item">
+            <summary>Quanto tempo ci vuole per avere il sito online?</summary>
+            <p>In media 2–4 settimane per un sito vetrina e 4–6 settimane per progetti WordPress o più articolati. Dipende anche da quanto sei pronto con testi e immagini.</p>
+          </details>
+          <details class="ag-faq__item">
+            <summary>Posso aggiornare il sito da solo?</summary>
+            <p>Sì, con WordPress puoi gestire testi, immagini e pagine in autonomia. Per siti custom valutiamo insieme un piano di manutenzione se ti serve supporto continuo.</p>
+          </details>
+          <details class="ag-faq__item">
+            <summary>Il sito sarà visibile su Google?</summary>
+            <p>Ogni sito include ottimizzazione SEO di base: struttura corretta, meta tag, velocità e compatibilità mobile. Per risultati duraturi servono anche contenuti e tempo.</p>
+          </details>
+          <details class="ag-faq__item">
+            <summary>Cosa succede dopo il lancio?</summary>
+            <p>È incluso supporto post-lancio e assistenza per le prime modifiche. Se vuoi, possiamo concordare un piano di manutenzione successivo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="ag-contact" id="contatti">
+      <div class="container ag-contact__grid">
+        <div>
+          <div class="section-head reveal">
+            <p class="section-head__kicker">07 · Contatti</p>
+            <h2>Parliamo del tuo progetto</h2>
+            <p>Compila il modulo o scrivimi. Risposta entro 24 ore lavorative.</p>
           </div>
-          <form class="contact__form reveal reveal--delay" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <ul class="ag-contact__list">
+            <li><a href="mailto:info@evolodigitalstudio.it">info@evolodigitalstudio.it</a></li>
+            <li>Iscritto al MEPA</li>
+            <li><a href="https://www.instagram.com/evolo.digitalstudio" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="ag-contact__form-wrap">
+<form class="contact__form reveal reveal--delay" id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
             <input type="hidden" name="access_key" value="ce82add0-4ddb-407b-a38c-6d64f1f5c90a">
             <input type="hidden" name="subject" value="Nuova richiesta preventivo — Evolo Digital Studio">
             <input type="hidden" name="from_name" value="Evolo Digital Studio">
@@ -1029,9 +580,8 @@
             <div class="form-group form-group--captcha" id="captcha-group">
               <div class="h-captcha" data-captcha="true" data-sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"></div>
             </div>
-            <button type="submit" class="btn btn--primary btn--lg btn--full" id="form-submit">
+            <button type="submit" class="ag-btn ag-btn--primary ag-btn--full" id="form-submit">
               <span class="btn__label">Invia richiesta</span>
-              <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
             <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
           </form>
@@ -1046,22 +596,22 @@
     <div class="container">
       <div class="footer__top">
         <div class="footer__top-copy">
-          <p class="footer__mega" aria-hidden="true">Evolo</p>
-          <p class="footer__tagline">Digital Studio — siti fatti a mano che portano clienti.</p>
+          <p class="footer__eyebrow">Evolo Digital Studio</p>
+          <h2 class="footer__headline">Siti fatti a mano<br>che portano clienti</h2>
         </div>
-        <a href="#contatti" class="btn btn--primary btn--lg footer__cta">Parliamo del tuo progetto</a>
+        <a href="#contatti" class="ag-btn ag-btn--primary footer__cta">Parliamo del progetto</a>
       </div>
 
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="#hero" class="footer__logo" aria-label="Evolo Digital Studio — Home">
-            <img src="assets/logo.webp" alt="" width="56" height="65">
+            <img src="assets/logo.webp" alt="" width="40" height="46">
             <span>
               <strong>Evolo</strong>
               <small>Digital Studio</small>
             </span>
           </a>
-          <p>Sviluppo HTML, CSS, JavaScript e WordPress su misura per professionisti e PMI in Italia.</p>
+          <p>HTML, CSS, JavaScript e WordPress su misura per professionisti e PMI in Italia. Iscritto al MEPA.</p>
           <div class="footer__social" aria-label="Social">
             <a href="https://www.instagram.com/evolo.digitalstudio" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://www.tiktok.com/@evolo.web.designsv" target="_blank" rel="noopener noreferrer">TikTok</a>
@@ -1072,10 +622,9 @@
         <div class="footer__col">
           <p class="footer__heading">Studio</p>
           <ul>
-            <li><a href="#servizi">Servizi</a></li>
-            <li><a href="#percorso">Percorso</a></li>
-            <li><a href="#progetti">Portfolio</a></li>
             <li><a href="#processo">Metodo</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#progetti">Portfolio</a></li>
             <li><a href="#pacchetti">Pacchetti</a></li>
             <li><a href="plugins.html">Plugin</a></li>
             <li><a href="blog.html">Blog</a></li>
@@ -1089,8 +638,7 @@
             <li><a href="quanto-costa-sito-web.html">Quanto costa un sito</a></li>
             <li><a href="realizzazione-siti-web.html">Realizzazione siti web</a></li>
             <li><a href="sito-wordpress-su-misura.html">WordPress su misura</a></li>
-            <li><a href="velocita-sito-web-seo.html">Velocità sito web SEO</a></li>
-            <li><a href="come-scegliere-sviluppatore-sito-web.html">Come scegliere lo sviluppatore</a></li>
+            <li><a href="velocita-sito-web-seo.html">Velocità e SEO</a></li>
             <li><a href="visita-medical.html">Case study Visita Medical</a></li>
             <li><a href="cala-del-sol.html">Case study Cala del Sol</a></li>
           </ul>
@@ -1128,6 +676,6 @@
 
   <script src="js/analytics.js?v=4"></script>
   <script src="js/cookie-consent.js?v=1"></script>
-  <script src="js/main.js?v=11"></script>
+  <script src="js/main.js?v=13"></script>
 </body>
 </html>
