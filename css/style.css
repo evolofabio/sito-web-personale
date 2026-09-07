@@ -2108,6 +2108,13 @@ ul { list-style: none; }
 
 .about-section__content strong { color: var(--text-primary); }
 
+.about-section__subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.75rem 0 0.75rem;
+}
+
 .about__skills {
   display: grid;
   grid-template-columns: 1fr 1fr;

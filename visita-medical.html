@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Case study Visita Medical: restyling sito web sanitario, UI/UX e backend PHP/MySQL su misura. Come ho modernizzato una piattaforma medica esistente.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <meta name="keywords" content="restyling sito web sanitario, piattaforma medica PHP, case study sito cliniche, sviluppo backend MySQL, Evolo Digital Studio">
   <title>Visita Medical: restyling sito web sanitario | Case study Evolo</title>
   <link rel="canonical" href="https://evolodigitalstudio.it/visita-medical.html">
   <link rel="icon" href="assets/logo.webp" type="image/webp">
@@ -19,11 +18,11 @@
   <meta name="twitter:title" content="Visita Medical — restyling sito web sanitario | Evolo">
   <meta name="twitter:description" content="Restyling UI/UX e backend PHP custom per una piattaforma sanitaria online.">
   <meta name="twitter:image" content="https://evolodigitalstudio.it/assets/project-visitamedical.webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=22">
-  <link rel="stylesheet" href="css/agency.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/agency.css?v=13">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,7 +37,7 @@
       {
         "@type": "Article",
         "datePublished": "2026-07-26",
-        "dateModified": "2026-07-26",
+        "dateModified": "2026-09-07",
         "headline": "Visita Medical: restyling di una piattaforma web sanitaria",
         "description": "Case study Visita Medical: restyling sito web sanitario, UI/UX e backend PHP/MySQL su misura. Come ho modernizzato una piattaforma medica esistente.",
         "image": "https://evolodigitalstudio.it/assets/project-visitamedical.webp",
@@ -120,22 +119,40 @@
         </div>
 
         <div class="case-page__content article-body reveal reveal--delay">
-          <p class="article-lead">Visita Medical è un progetto di <strong>restyling sito web sanitario</strong>: non partiva da zero, ma da una piattaforma già attiva che andava resa più chiara, più veloce e più adatta al lavoro quotidiano di cliniche e pazienti.</p>
+          <p class="article-lead">Visita Medical è un progetto di <strong>restyling sito web sanitario</strong>: non partiva da zero, ma da una piattaforma già attiva che andava resa più chiara, più veloce e più adatta al lavoro quotidiano di cliniche e pazienti. Qui racconto il contesto, le scelte tecniche e cosa implica un intervento del genere quando hai già qualcosa online — e non vuoi ricominciare da un foglio bianco.</p>
 
-          <h2>Il problema del sito esistente</h2>
-          <p>La piattaforma era avviata, ma con limiti strutturali e un’interfaccia datata. Serviva un intervento su un ecosistema reale: modernizzare senza buttare tutto, e aggiungere funzionalità che i template standard non coprono.</p>
+          <h2>Contesto e problema iniziale</h2>
+          <p>Quando un servizio sanitario è già presente sul web, il rischio non è solo “avere un sito brutto”. È avere uno strumento che i pazienti usano a fatica, e che internamente costa tempo perché le logiche non tengono il passo con il lavoro reale. Visita Medical era una piattaforma avviata: c’era già un backend, c’erano già contenuti e flussi. Quello che mancava era coerenza tra interfaccia, performance e bisogni di un contesto medico.</p>
+          <p>In sanità la fiducia passa anche da come leggi una pagina. Testi confusi, percorsi lunghi, un’interfaccia datata: il paziente lo sente subito. Allo stesso tempo, sul lato operativo, un sistema custom accumula debito tecnico: pezzi di codice che funzionano “quanto basta”, ma che diventano fragili quando chiedi nuove funzioni. Il brief non era “rifacciamo tutto perché è di moda”. Era modernizzare senza buttare ciò che funzionava, e aggiungere ciò che i template generici non coprono.</p>
+          <p>È un tipo di progetto diverso da una vetrina partita da zero. Devi capire cosa tenere, cosa riscrivere, cosa semplificare. E soprattutto ascoltare come lavora chi usa la piattaforma ogni giorno — non solo come “dovrebbe” apparire un sito medico su Pinterest.</p>
 
-          <h2>Cosa ho sviluppato</h2>
+          <h2>Approccio e scelte tecniche</h2>
+          <p>Lo stack scelto — <strong>PHP, MySQL, JavaScript, HTML5, CSS3/SASS</strong> — non è una dichiarazione di tendenza. È la conseguenza di un dato concreto: esisteva già un backend custom da evolvere. Partire da zero su un altro framework avrebbe significato riscrivere logiche già consolidate, con tempi e rischi più alti, senza un vantaggio chiaro per il cliente.</p>
+          <p>Ho preferito un approccio di restyling strutturato: riprogettare UI/UX sul fronte, consolidare e ottimizzare il codice sul retro. PHP e MySQL restano adatti quando hai regole di business specifiche, dati sensibili da gestire con attenzione, e bisogno di controllo diretto sulle query e sulle logiche — senza passare da un CMS che ti impone i suoi limiti. JavaScript e CSS su misura servono a rendere l’interfaccia più leggibile e usabile, anche su mobile, senza dipendere da temi pronti che sembrano tutti uguali.</p>
+          <p>In ambito sanitario non cerco effetti speciali. Cerco chiarezza: gerarchia tipografica, percorsi di contatto evidenti, linguaggio visivo sobrio. Se stai valutando un intervento simile, nella guida sulla <a href="realizzazione-siti-web.html">realizzazione di siti web</a> spiego come ragiono su stack e ambito; per cliniche e studi medici ho anche una pagina dedicata sul <a href="sito-web-per-cliniche-studi-medici.html">sito web per cliniche e studi medici</a>.</p>
+
+          <h2>Cosa è stato fatto in pratica</h2>
+          <p>Il lavoro non si è fermato al “cambio look”. Queste sono le aree concrete su cui ho lavorato:</p>
           <ul class="case-study__list">
-              <li><strong>UI/UX per il settore sanitario:</strong> Riprogettazione dell’interfaccia per un’esperienza più chiara, orientata a fiducia e usabilità in ambito medico.</li>
-              <li><strong>Backend PHP e MySQL custom:</strong> Logiche e funzionalità su misura, scritte sulle esigenze operative del cliente — non moduli generici.</li>
-              <li><strong>Ottimizzazione del codice:</strong> Refactoring del codice esistente per più stabilità e velocità di caricamento.</li>
+              <li><strong>UI/UX per il settore sanitario:</strong> Riprogettazione dell’interfaccia per un’esperienza più chiara, orientata a fiducia e usabilità in ambito medico. Meno rumore, più percorsi leggibili per chi cerca un servizio o vuole contattare la struttura.</li>
+              <li><strong>Backend PHP e MySQL custom:</strong> Logiche e funzionalità su misura, scritte sulle esigenze operative del cliente — non moduli generici staccati dal flusso reale. Il punto era far dialogare meglio front e back, non aggiungere pezzi “perché così fanno tutti”.</li>
+              <li><strong>Ottimizzazione del codice:</strong> Refactoring del codice esistente per più stabilità e velocità di caricamento. Un restyling serio include anche ripulire ciò che rallenta o rende fragile la piattaforma.</li>
           </ul>
+          <p>In pratica: design e sviluppo insieme. Se aggiorni solo i colori e lasci il motore com’è, tra sei mesi torni al punto di partenza. Se riscrivi tutto senza ascoltare il lavoro quotidiano di cliniche e pazienti, rischi un prodotto bello ma inutilizzabile. Qui il lavoro è stato tenere insieme le due cose.</p>
 
-          <h2>Risultato e ambito</h2>
-          <p>Il lavoro combina design e sviluppo: un sito sanitario deve trasmettere professionalità e far trovare servizi senza friction. Se stai valutando un <a href="realizzazione-siti-web.html">restyling o una realizzazione siti web</a> su misura, questo è un esempio concreto di intervento su codice esistente.</p>
-          <p>Sito live: <a href="https://www.visitamedical.it" target="_blank" rel="noopener noreferrer">visitamedical.it</a>.</p>
+          <h2>Risultato qualitativo</h2>
+          <p>Non invento percentuali di conversione né ranking inventati. Quello che posso dire con onestà è il risultato atteso — e verificato nel feedback del cliente — di un restyling sanitario fatto bene: il sito comunica più professionalità, i percorsi sono più chiari, e chi cerca il servizio online riesce a orientarsi senza friction inutili.</p>
+          <blockquote>
+            <p>Fabio ha capito subito le nostre esigenze nel settore sanitario. Il sito trasmette professionalità e i pazienti ci trovano facilmente online.</p>
+            <cite>Alberto · Visita Medical</cite>
+          </blockquote>
+          <p>È esattamente il tipo di esito che conta in questo settore: non “wow grafico”, ma fiducia e trovabilità. Una piattaforma medica online deve far capire chi sei e come contattarti; il resto viene dopo. Il sito live è <a href="https://www.visitamedical.it" target="_blank" rel="noopener noreferrer">visitamedical.it</a>.</p>
 
+          <h2>Cosa implica per un cliente simile</h2>
+          <p>Se hai già un sito o una piattaforma sanitaria e stai pensando a un restyling, questo case study ti dice tre cose concrete.</p>
+          <p>Prima: non sempre conviene buttare tutto. Quando il backend custom ha logiche utili, ha senso evolverle — con PHP/MySQL o con lo stack già in produzione — invece di migrare per moda. Seconda: in sanità UI/UX non è estetismo. È un modo per ridurre l’incertezza del paziente e dare un segnale di serietà. Terza: budget e tempi dipendono da quanto codice esiste già, da cosa va riscritto e da quali funzioni nuove servono davvero. Per orientarti sui costi, leggi <a href="quanto-costa-sito-web.html">quanto costa un sito web</a>; per i tempi di un intervento professionale, <a href="tempo-realizzazione-sito-web.html">quanto tempo serve</a>.</p>
+          <p>Se gestisci più medici o sedi e ti serve una ricerca interna su WordPress, può essere rilevante anche <a href="doctorsearch.html">DoctorSearch</a>. Se invece stai ancora scegliendo a chi affidarti, la guida su <a href="come-scegliere-sviluppatore-sito-web.html">come scegliere lo sviluppatore</a> ti aiuta a fare le domande giuste prima di firmare.</p>
+          <p>In sintesi: Visita Medical è un esempio di intervento su codice esistente, nel settore medico, con design e backend trattati come un unico pezzo. Se hai un contesto simile — clinica, rete di studi, piattaforma sanitaria già online — possiamo parlare di cosa ha senso nel tuo caso, senza promesse assolute e senza ricette uguali per tutti.</p>
 
           <h2>Altri case study</h2>
           <ul class="case-page__related">
@@ -206,6 +223,9 @@
             <li><a href="come-scegliere-sviluppatore-sito-web.html">Come scegliere lo sviluppatore</a></li>
             <li><a href="visita-medical.html">Case study Visita Medical</a></li>
             <li><a href="cala-del-sol.html">Case study Cala del Sol</a></li>
+            <li><a href="manutenzione-sito-web.html">Manutenzione sito</a></li>
+            <li><a href="siti-web-mepa.html">Siti web MEPA</a></li>
+            <li><a href="sito-web-cosenza-calabria.html">Sito web Cosenza</a></li>
           </ul>
         </div>
 

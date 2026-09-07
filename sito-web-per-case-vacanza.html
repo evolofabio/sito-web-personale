@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Come strutturare un sito web per case vacanza: calendario, iCal, richieste e perché conviene avere il booking sul tuo dominio. Guida Evolo Digital Studio.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <meta name="keywords" content="sito web case vacanza, prenotazioni case vacanza WordPress, sito affitti brevi, booking iCal Airbnb, plugin prenotazioni">
   <title>Sito web per case vacanza: prenotazioni e conversioni | Evolo</title>
   <link rel="canonical" href="https://evolodigitalstudio.it/sito-web-per-case-vacanza.html">
   <link rel="icon" href="assets/logo.webp" type="image/webp">
@@ -19,11 +18,11 @@
   <meta name="twitter:title" content="Sito web per case vacanza | Evolo">
   <meta name="twitter:description" content="Dal catalogo alloggi al booking: cosa serve per convertire richieste sul tuo sito.">
   <meta name="twitter:image" content="https://evolodigitalstudio.it/assets/blog/sito-web-case-vacanza.webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=22">
-  <link rel="stylesheet" href="css/agency.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/agency.css?v=13">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,7 +31,7 @@
     "description": "Come strutturare un sito web per case vacanza: calendario, iCal, richieste e perché conviene avere il booking sul tuo dominio. Guida Evolo Digital Studio.",
     "image": "https://evolodigitalstudio.it/assets/blog/sito-web-case-vacanza.webp",
     "datePublished": "2026-07-26",
-    "dateModified": "2026-07-26",
+    "dateModified": "2026-09-07",
     "author": { "@type": "Person", "name": "Fabio", "url": "https://evolodigitalstudio.it/chi-sono.html" },
     "publisher": {
       "@type": "Organization",
@@ -95,7 +94,7 @@
             <img src="assets/fabio.jpg" alt="Fabio, fondatore di Evolo Digital Studio" width="56" height="56" class="article-author__photo">
             <div class="article-author__info">
               <strong><a href="chi-sono.html">Fabio</a> · Evolo Digital Studio</strong>
-              <span>26 luglio 2026 · ~7 min di lettura</span>
+              <span>Aggiornato 7 settembre 2026 · ~12 min di lettura</span>
             </div>
           </div>
           <figure class="article-cover">
@@ -111,54 +110,93 @@
             <ol class="article-toc__list">
               <li><a href="#catalogo"><span>01</span> Catalogo alloggi</a></li>
               <li><a href="#calendario"><span>02</span> Calendario e iCal</a></li>
-              <li><a href="#conversione"><span>03</span> Conversione</a></li>
-              <li><a href="#wordpress"><span>04</span> WordPress</a></li>
+              <li><a href="#conversione"><span>03</span> Flusso di booking</a></li>
+              <li><a href="#plugin-vs-saas"><span>04</span> Plugin vs widget SaaS</a></li>
+              <li><a href="#wordpress"><span>05</span> WordPress</a></li>
+              <li><a href="#costi"><span>06</span> Costi e priorità</a></li>
             </ol>
             <a href="index.html#contatti" class="btn btn--primary btn--full article-toc__cta">Consulenza gratuita</a>
           </aside>
 
           <div class="article-body reveal">
-            <p class="article-lead">Se gestisci affitti brevi, sai già che Airbnb e Booking portano traffico — e commissioni. Un <strong>sito web per case vacanza</strong> non li sostituisce sempre al cento per cento, ma ti dà un canale diretto: brand, margini e relazione con l’ospite. Ecco cosa deve funzionare davvero.</p>
+            <p class="article-lead">Se gestisci affitti brevi, sai già che Airbnb e Booking portano traffico — e commissioni. Un <strong>sito web per case vacanza</strong> non li sostituisce sempre al cento per cento, ma ti dà un canale diretto: brand, margini e relazione con l’ospite. In questa guida ti spiego cosa deve funzionare davvero sul sito, come strutturare il flusso di prenotazione e quando ha senso un plugin WordPress dedicato rispetto a un widget SaaS esterno.</p>
 
             <section class="article-q" id="catalogo">
               <div class="article-q__num" aria-hidden="true">01</div>
               <div class="article-q__content">
                 <h2>Catalogo chiaro: alloggi, date, regole</h2>
-                <p>Ogni struttura deve avere scheda leggibile: foto, capienza, servizi, posizione, regole. Filtri utili (ospiti, date, tipologia) se hai più di un alloggio. Su mobile il percorso deve restare corto.</p>
-                <p>Un esempio reale è <a href="cala-del-sol.html">Cala del Sol</a>: sito turistico WordPress con attenzione a impatto visivo e flussi di richiesta.</p>
+                <p>Prima del booking arriva la comprensione. Ogni struttura deve avere una scheda leggibile: foto ordinate (non un album confuso), capienza, servizi, posizione, regole della casa, distanze utili. Se hai più di un alloggio, i filtri (ospiti, date, tipologia, zona) non sono un “extra”: sono il modo in cui l’ospite decide se vale la pena continuare.</p>
+                <p>Su mobile il percorso deve restare corto. Molti ospiti arrivano da Google o da un link WhatsApp e decidono in pochi secondi. Se la scheda è lenta, se le foto pesano, se le regole sono nascoste in un PDF, perdi fiducia prima ancora di parlare di disponibilità.</p>
+                <p>Un esempio reale è <a href="cala-del-sol.html">Cala del Sol</a>: sito turistico WordPress con attenzione all’impatto visivo e ai flussi di richiesta. Non è solo “bello”: è pensato perché l’ospite capisca cosa sta prenotando e come procedere senza dover chiamare per ogni dettaglio.</p>
+                <p class="article-tip"><strong>In pratica:</strong> una scheda alloggio deve rispondere a “cosa è”, “per chi è”, “quanto costa in linea di massima” e “come verifico le date” — in quest’ordine.</p>
               </div>
             </section>
 
             <section class="article-q" id="calendario">
               <div class="article-q__num" aria-hidden="true">02</div>
               <div class="article-q__content">
-                <h2>Calendario e sync iCal (Airbnb / Booking)</h2>
-                <p>Il rischio numero uno sono le doppie prenotazioni. Serve un calendario unico e, dove ha senso, sync iCal in export/import verso i portali. Non è magia: va configurato e tenuto aggiornato.</p>
-                <p>Ne parlo in dettaglio nella guida sul <a href="plugin-prenotazioni-case-vacanza-wordpress.html">sistema di prenotazioni online per case vacanza</a> e nel prodotto <a href="vacation-home-bookings.html">Vacation Home Bookings</a>.</p>
+                <h2>Calendario unico, iCal e rapporto con le OTA</h2>
+                <p>Il rischio numero uno negli affitti brevi non è “avere un sito brutto”: sono le <strong>doppie prenotazioni</strong>. Se vendi lo stesso alloggio su Airbnb, Booking e sul tuo dominio, serve una fonte di verità. In pratica: un calendario centrale sul sito (o sul tuo gestionale) e sync verso i portali, di solito via <strong>iCal</strong> in export/import.</p>
+                <p>Chiarisco un punto che crea confusione: <strong>iCal non è un channel manager completo</strong>. È un formato di sincronizzazione calendari, utile e diffuso, ma con limiti. I ritardi di aggiornamento esistono; le regole di prezzo complesse non “viaggiano” da sole; le cancellazioni e le modifiche vanno gestite con disciplina. Se hai molte unità e tariffe dinamiche aggressive, potresti aver bisogno di strumenti più strutturati. Se hai poche case e un flusso chiaro, iCal ben configurato è spesso sufficiente per evitare i doppi booking più banali.</p>
+                <p>Le OTA restano utili come vetrina e acquisizione. Il sito non deve fingere di sostituirle dall’oggi al domani: deve offrirti un’alternativa seria quando l’ospite ti conosce già, torna, o ti trova su Google con intenzione diretta. Meno commissioni su quella fetta di richieste, più controllo sul messaggio e sulla relazione.</p>
+                <p>Ne parlo nel dettaglio nella guida sul <a href="plugin-prenotazioni-case-vacanza-wordpress.html">sistema di prenotazioni online per case vacanza</a> e nella pagina prodotto di <a href="vacation-home-bookings.html">Vacation Home Bookings</a>, il plugin WordPress che ho sviluppato per catalogo, disponibilità, iCal e pagamenti.</p>
               </div>
             </section>
 
             <section class="article-q" id="conversione">
               <div class="article-q__num" aria-hidden="true">03</div>
               <div class="article-q__content">
-                <h2>Dalla scheda alla richiesta (o al pagamento)</h2>
-                <p>Decide tu il modello: richiesta con conferma manuale, oppure pagamento online (es. Stripe) dopo accettazione. L’importante è che l’ospite capisca i passaggi. Meno click inutili, più chiarezza su totale e condizioni.</p>
-                <p class="article-tip"><strong>In pratica:</strong> CTA visibile, disponibilità aggiornata, messaggio di conferma immediato.</p>
+                <h2>Il flusso di booking: dalla scheda alla conferma</h2>
+                <p>Decide tu il modello di business. Alcuni gestori vogliono solo una <strong>richiesta con conferma manuale</strong>: l’ospite sceglie date e alloggio, tu ricevi i dettagli, rispondi e chiudi. Altri preferiscono un percorso più vicino alla prenotazione immediata, con <strong>pagamento online</strong> (ad esempio Stripe) dopo accettazione o al momento della richiesta, a seconda delle regole che ti sei dato.</p>
+                <p>Quel che conta è che i passaggi siano evidenti. Un flusso tipico che funziona:</p>
+                <ol>
+                  <li>Scelta alloggio (o ricerca per date/ospiti)</li>
+                  <li>Verifica disponibilità sul calendario</li>
+                  <li>Riepilogo chiaro: notti, totale, condizioni essenziali</li>
+                  <li>Invio richiesta oppure pagamento / acconto</li>
+                  <li>Messaggio di conferma immediato (anche se poi valuti tu la richiesta)</li>
+                </ol>
+                <p>Meno click inutili, più chiarezza su cosa succede dopo. Se l’ospite non sa se ha “prenotato” o “solo scritto”, ti arriveranno messaggi confusi e telefonate. Se il totale appare solo alla fine senza spiegazioni (tasse di pulizia, deposito, sconto settimanale), la fiducia cala.</p>
+                <p>Sul piano conversioni, il sito vince quando riduce attrito: CTA sempre visibile, disponibilità aggiornata, tempi di risposta dichiarati (“ti rispondo entro X ore lavorative”), e un tono umano. Non serve un funnel da ecommerce globale: serve un percorso onesto per case vacanza.</p>
+                <p class="article-tip"><strong>In pratica:</strong> testalo tu da telefono. Se in tre minuti non arrivi a “inviare richiesta” o “vedere le date libere”, il flusso va semplificato prima di aggiungere funzioni.</p>
+              </div>
+            </section>
+
+            <section class="article-q" id="plugin-vs-saas">
+              <div class="article-q__num" aria-hidden="true">04</div>
+              <div class="article-q__content">
+                <h2>Plugin custom sul tuo WordPress vs widget SaaS</h2>
+                <p>Qui molti gestori restano bloccati: montare un <strong>widget di un servizio esterno</strong> (SaaS di booking) oppure investire in un <strong>plugin sul proprio sito</strong>. Non esiste una risposta universale; esiste la domanda giusta: dove vuoi che vivano i dati, chi controlla l’esperienza e cosa succede se cambi fornitore.</p>
+                <p>Un widget SaaS può essere rapido da attivare. Spesso, però, l’ospite percepisce un pezzo “incollato” al sito: stile diverso, dipendenza da un altro account, abbonamento ricorrente, limiti di personalizzazione. Se il servizio chiude, cambia prezzo o toglie una funzione, sei in coda.</p>
+                <p>Un plugin WordPress dedicato (come <a href="vacation-home-bookings.html">Vacation Home Bookings</a>) tiene catalogo e richieste sul tuo dominio, allineato al design del sito, con regole che puoi adattare al tuo modo di lavorare. Non è “gratis di manutenzione”: WordPress va aggiornato e ospitato bene. Ma i dati restano tuoi e l’esperienza ospite può essere coerente dall’homepage alla conferma.</p>
+                <p>Quando consiglio l’approccio custom: se hai già (o vuoi) un sito WordPress serio, se le regole di prenotazione non sono banali, se ti importa brand e controllo, se non vuoi un secondo “pannello” scollegato. Quando un SaaS può bastare: se partite con un’unica unità, budget molto contenuto e bisogno di qualcosa di operativo in pochi giorni — sapendo i trade-off.</p>
+                <p>Per capire il funzionamento lato ospite e gestore, leggi anche <a href="plugin-prenotazioni-case-vacanza-wordpress.html">come funziona un sistema di prenotazioni per case vacanza su WordPress</a>.</p>
               </div>
             </section>
 
             <section class="article-q" id="wordpress">
-              <div class="article-q__num" aria-hidden="true">04</div>
+              <div class="article-q__num" aria-hidden="true">05</div>
               <div class="article-q__content">
                 <h2>Perché WordPress (quando ha senso)</h2>
-                <p>Per molti gestori WordPress è il compromesso giusto: contenuti autonomi, SEO gestibile, plugin dedicati. Non è l’unica strada, ma è quella che uso spesso quando serve catalogo + booking custom senza ricostruire tutto da zero.</p>
-                <p>Approfondisci anche <a href="sito-wordpress-su-misura.html">sito WordPress su misura</a> se stai scegliendo tra tema custom e template.</p>
+                <p>Per molti gestori WordPress è il compromesso giusto: contenuti autonomi (testi, foto, pagine destinazione), SEO gestibile senza chiedere ogni volta allo sviluppatore, e la possibilità di aggiungere un plugin di booking senza ricostruire tutto da zero in React o in un’app custom.</p>
+                <p>Non è l’unica strada. Un sito statico HTML + form può bastare se hai un solo alloggio e poche richieste. Un gestionale esterno può avere senso se già lo usi per tutto il property management. Ma se vuoi un <strong>sito di marca</strong> che posizioni le tue case su Google e raccolga richieste in autonomia, WordPress su misura resta una scelta solida in Italia.</p>
+                <p>Attenzione ai template “da vacanza” comprati e lasciati così: spesso sembrano tutti uguali, sono pieni di plugin inutili e rendono lento il mobile. Meglio meno funzioni, fatte bene. Approfondisci <a href="sito-wordpress-su-misura.html">sito WordPress su misura</a> se stai scegliendo tra tema custom e template marketplace.</p>
+              </div>
+            </section>
+
+            <section class="article-q" id="costi">
+              <div class="article-q__num" aria-hidden="true">06</div>
+              <div class="article-q__content">
+                <h2>Costi, priorità e cosa fare prima del design</h2>
+                <p>Il preventivo di un sito per case vacanza dipende da quante unità hai, se serve sync iCal, se c’è pagamento online, quante lingue, quanto contenuto fotografico e SEO locale (città, zona, “case vacanza + località”). Non invento fasce qui: le variabili le spiego in <a href="quanto-costa-sito-web.html">quanto costa un sito web</a>, così puoi leggere i costi in modo onesto.</p>
+                <p>Prima del design, conviene mettere nero su bianco: regole di cancellazione, deposito, soggiorni minimi, come gestisci oggi WhatsApp e i portali, chi risponde alle richieste. Senza queste risposte, qualsiasi booking — plugin o SaaS — sarà un’interfaccia bella sopra un processo confuso.</p>
+                <p>Se hai già alloggi e OTA, il sito serve a portare a casa una parte delle richieste in autonomia. Se parti da zero, meglio definire flusso ospite e regole di business prima di scegliere colori e font. Su entrambi i fronti posso aiutarti: dalla consulenza iniziale al plugin, fino a un progetto come quello descritto nel case study <a href="cala-del-sol.html">Cala del Sol</a>.</p>
               </div>
             </section>
 
             <section class="article-closing" id="conclusione">
               <h2>Il prossimo passo</h2>
-              <p>Se hai già gli alloggi e i portali, il sito serve a portare a casa una parte delle richieste in autonomia. Se parti da zero, meglio definire flusso ospite e regole di business prima del design. Posso aiutarti su entrambi i fronti.</p>
+              <p>Un buon sito per case vacanza non è una brochure con form: è catalogo chiaro, calendario affidabile, flusso di richiesta o pagamento comprensibile e un canale che non dipende solo dalle commissioni delle piattaforme. Se vuoi valutare <a href="vacation-home-bookings.html">Vacation Home Bookings</a> sul tuo WordPress, o un percorso su misura, partiamo dal tuo inventario e dal modo in cui lavori oggi — non da un template generico.</p>
             </section>
           </div>
         </div>
@@ -253,6 +291,9 @@
             <li><a href="come-scegliere-sviluppatore-sito-web.html">Come scegliere lo sviluppatore</a></li>
             <li><a href="visita-medical.html">Case study Visita Medical</a></li>
             <li><a href="cala-del-sol.html">Case study Cala del Sol</a></li>
+            <li><a href="manutenzione-sito-web.html">Manutenzione sito</a></li>
+            <li><a href="siti-web-mepa.html">Siti web MEPA</a></li>
+            <li><a href="sito-web-cosenza-calabria.html">Sito web Cosenza</a></li>
           </ul>
         </div>
 

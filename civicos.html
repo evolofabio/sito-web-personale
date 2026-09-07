@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Case study CivicOS: ecosistema Smart City con portale web Laravel e app React Native per raccolta differenziata e comunicazione cittadino-comune.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-  <meta name="keywords" content="smart city web app, raccolta differenziata app, sviluppo Laravel React Native, case study software PA, Evolo Digital Studio">
   <title>CivicOS: Smart City web e app | Case study Evolo Digital Studio</title>
   <link rel="canonical" href="https://evolodigitalstudio.it/civicos.html">
   <link rel="icon" href="assets/logo.webp" type="image/webp">
@@ -19,11 +18,11 @@
   <meta name="twitter:title" content="CivicOS — Smart City web + app | Evolo">
   <meta name="twitter:description" content="Progetto full-stack da zero: web admin, app iOS/Android, push e servizi digitali per la raccolta differenziata.">
   <meta name="twitter:image" content="https://evolodigitalstudio.it/assets/project-civicos.webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=22">
-  <link rel="stylesheet" href="css/agency.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/agency.css?v=13">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,7 +37,7 @@
       {
         "@type": "Article",
         "datePublished": "2026-07-26",
-        "dateModified": "2026-07-26",
+        "dateModified": "2026-09-07",
         "headline": "CivicOS: ecosistema Smart City web e app",
         "description": "Case study CivicOS: ecosistema Smart City con portale web Laravel e app React Native per raccolta differenziata e comunicazione cittadino-comune.",
         "image": "https://evolodigitalstudio.it/assets/project-civicos.webp",
@@ -120,22 +119,36 @@
         </div>
 
         <div class="case-page__content article-body reveal reveal--delay">
-          <p class="article-lead">CivicOS è un progetto <strong>full-stack da zero</strong>: non una vetrina istituzionale, ma un prodotto digitale con portale web, app mobile e flussi operativi reali per la <strong>raccolta differenziata</strong> e i servizi al cittadino.</p>
+          <p class="article-lead">CivicOS è un progetto <strong>full-stack da zero</strong>: non una vetrina istituzionale, ma un prodotto digitale con portale web, app mobile e flussi operativi reali per la <strong>raccolta differenziata</strong> e i servizi al cittadino. Qui spiego perché non è “un sito con un’app appiccicata”, cosa comporta lo stack Laravel + React Native, e per chi ha senso un intervento di questa portata.</p>
 
-          <h2>L’obiettivo del progetto</h2>
-          <p>Migliorare la gestione quotidiana della raccolta differenziata e digitalizzare il rapporto tra cittadino e pubblica amministrazione, con web e mobile allineati sulle stesse logiche.</p>
+          <h2>Contesto e problema iniziale</h2>
+          <p>Comunicare con i cittadini su raccolta rifiuti, orari, punti sul territorio e segnalazioni non è un problema di brochure. È un problema di servizio quotidiano: informazioni che cambiano, richieste che arrivano, emergenze da notificare, mappe da consultare. Quando tutto passa da PDF, centralino o post social sparsi, il cittadino si perde e l’ente perde tempo.</p>
+          <p>CivicOS nasce da questa esigenza: digitalizzare il rapporto tra cittadino e comune (o gestore del servizio) intorno alla raccolta differenziata e ai servizi collegati. Non bastava “mettere online un calendario”. Serviva un ecosistema: un back-office dove gestire contenuti e richieste, un’app dove il cittadino trova ciò che gli serve, e canali di comunicazione in tempo reale quando c’è qualcosa di urgente.</p>
+          <p>È un ambito Smart City concreto, non uno slogan. Parliamo di flussi reali — calendario raccolta, ritiro ingombranti, mappe, segnalazioni — che devono funzionare su web e su mobile con le stesse regole. Partire da zero, in questo caso, non era un vezzo: non esisteva un prodotto già allineato a quei bisogni, e un template WordPress non avrebbe coperto l’app, le API e le notifiche push.</p>
 
-          <h2>Cosa ho sviluppato</h2>
+          <h2>Approccio e scelte tecniche</h2>
+          <p>Lo stack — <strong>Laravel, React Native, REST API, MySQL, push notifications</strong> — risponde a tre esigenze: un backend solido per amministrare e orchestrare i dati, un’app iOS/Android con una sola codebase mobile, e un contratto chiaro (API REST) tra i due mondi.</p>
+          <p>Laravel mi permette di strutturare autenticazione, modelli, validazioni e logiche di business in modo ordinato, con un ecosistema maturo per API e integrazione. MySQL resta adatto a dati relazionali (utenze, richieste, punti mappa, calendari) che devono restare coerenti tra web e app. React Native consente di pubblicare su iOS e Android senza sviluppare due applicazioni native separate da zero — utile quando il prodotto deve vivere su entrambi gli store e evolversi insieme.</p>
+          <p>Le push notifications non sono un “extra marketing”: in questo contesto sono un canale operativo. Avvisi urgenti, emergenze, comunicazioni comunali: se il cittadino deve aprirsi il sito ogni volta, il servizio perde valore. L’app e le push chiudono quel gap.</p>
+          <p>È un livello di complessità diverso da un sito vetrina. Nella pagina sulla <a href="realizzazione-siti-web.html">realizzazione siti web</a> distinguo i progetti di comunicazione da quelli prodotto; per tempi e effort, <a href="tempo-realizzazione-sito-web.html">quanto tempo serve per un sito (o un prodotto) professionale</a> aiuta a calibrare le aspettative. Anche i costi scalano con lo scope: orientati con <a href="quanto-costa-sito-web.html">quanto costa un sito web</a>, sapendo che web + app + API è un’altra fascia rispetto a una landing.</p>
+
+          <h2>Cosa è stato fatto in pratica</h2>
+          <p>Il deliverable non è una homepage. È un sistema. In concreto:</p>
           <ul class="case-study__list">
-              <li><strong>Portale web e app (Laravel + React Native):</strong> Architettura da zero del back-office web e dell’app iOS/Android, con API REST e database MySQL.</li>
-              <li><strong>Servizi smart sul territorio:</strong> Calendario raccolta, ritiro ingombranti, mappa punti acqua e segnalazioni geolocalizzate al Comune.</li>
-              <li><strong>Notifiche push:</strong> Canale in tempo reale per avvisi urgenti, emergenze e comunicazioni comunali.</li>
+              <li><strong>Portale web e app (Laravel + React Native):</strong> Architettura da zero del back-office web e dell’app iOS/Android, con API REST e database MySQL. Stesse logiche lato server, due interfacce (admin e cittadino) allineate.</li>
+              <li><strong>Servizi smart sul territorio:</strong> Calendario raccolta, ritiro ingombranti, mappa punti acqua e segnalazioni geolocalizzate al Comune. Funzioni che il cittadino usa davvero, non sezioni decorative.</li>
+              <li><strong>Notifiche push:</strong> Canale in tempo reale per avvisi urgenti, emergenze e comunicazioni comunali — parte integrante del prodotto, non un plugin aggiunto dopo.</li>
           </ul>
+          <p>Dal punto di vista del lavoro quotidiano: modellare i dati, definire i flussi di richiesta, costruire le schermate mobile, collegare mappe e geolocalizzazione, far sì che ciò che l’operatore pubblica o gestisce dal web arrivi in modo coerente sull’app. È sviluppo prodotto, non “mettere online tre pagine istituzionali”.</p>
 
-          <h2>Per chi è rilevante</h2>
-          <p>È l’esempio tipico di <strong>sviluppo custom complesso</strong>: tempi e budget diversi da un sito vetrina. Se ti interessa capire le differenze di effort, leggi anche <a href="tempo-realizzazione-sito-web.html">quanto tempo serve per un sito (o un prodotto) professionale</a>.</p>
-          <p>Prodotto live: <a href="https://www.civicos.it" target="_blank" rel="noopener noreferrer">civicos.it</a>.</p>
+          <h2>Risultato qualitativo</h2>
+          <p>Non pubblico metriche inventate su download o tasso di apertura delle push. Il risultato che posso descrivere in modo onesto è qualitativo: CivicOS offre un canale unico e strutturato per raccolta differenziata e servizi al cittadino, con web e mobile sullo stesso motore. Il cittadino ha dove guardare orari, mappe e richieste; l’ente ha uno strumento per comunicare e gestire, invece di pezzi sparsi.</p>
+          <p>Per un prodotto Smart City, “funziona” significa: i flussi principali sono usabili, le informazioni sono aggiornabili dal back-office, le notifiche arrivano quando servono. Il resto — adozione, volumi, evoluzioni future — dipende da come il servizio viene comunicato e gestito sul territorio. Il prodotto live è <a href="https://www.civicos.it" target="_blank" rel="noopener noreferrer">civicos.it</a>.</p>
 
+          <h2>Cosa implica per un cliente simile</h2>
+          <p>Se stai valutando un progetto web + app per PA, multiutility o un servizio territoriale, questo case study serve soprattutto a chiarire lo scope.</p>
+          <p>Prima: non è lo stesso preventivo di un sito aziendale. API, app store, push, mappe e back-office moltiplicano analisi, sviluppo e manutenzione. Seconda: conviene partire dai flussi reali (cosa deve fare il cittadino? cosa deve gestire l’operatore?) e solo dopo scegliere lo stack — Laravel + React Native ha senso quando ti serve un prodotto multi-piattaforma con backend centralizzato. Terza: un MVP può essere più snello, ma va detto chiaramente cosa entra e cosa resta fuori; altrimenti si promette un ecosistema e si consegna una brochure.</p>
+          <p>Se il tuo bisogno è invece un sito professionale senza app, restano rilevanti le guide su <a href="realizzazione-siti-web.html">realizzazione siti web</a> e <a href="come-scegliere-sviluppatore-sito-web.html">come scegliere lo sviluppatore</a>. Se invece stai costruendo un prodotto digitale serio — come CivicOS — serve un interlocutore che ragioni su architettura, non solo su template. Possiamo parlarne partendo dai tuoi flussi operativi, senza buzzword Smart City e senza promesse assolute.</p>
 
           <h2>Altri case study</h2>
           <ul class="case-page__related">
@@ -206,6 +219,9 @@
             <li><a href="come-scegliere-sviluppatore-sito-web.html">Come scegliere lo sviluppatore</a></li>
             <li><a href="visita-medical.html">Case study Visita Medical</a></li>
             <li><a href="cala-del-sol.html">Case study Cala del Sol</a></li>
+            <li><a href="manutenzione-sito-web.html">Manutenzione sito</a></li>
+            <li><a href="siti-web-mepa.html">Siti web MEPA</a></li>
+            <li><a href="sito-web-cosenza-calabria.html">Sito web Cosenza</a></li>
           </ul>
         </div>
 
