@@ -20,9 +20,8 @@
   <meta name="twitter:image" content="https://evolodigitalstudio.it/assets/blog/sito-web-case-vacanza.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=27">
-  <link rel="stylesheet" href="css/agency.css?v=14">
+  <link rel="stylesheet" href="css/style.css?v=28">
+  <link rel="stylesheet" href="css/commercial.css?v=5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,23 +52,23 @@
   }
   </script>
 </head>
-<body class="site-agency">
-  <header class="header header--scrolled" id="header">
-    <div class="container header__inner">
-      <a href="index.html" class="header__logo" aria-label="Evolo Digital Studio — Home">
-        <img src="assets/logo.webp" alt="Evolo Digital Studio" width="48" height="48">
-        <span class="header__brand"><strong>Evolo</strong><small>Digital Studio</small></span>
+<body class="site-commercial">
+  <header class="ev-header ev-header--solid header--scrolled" id="header">
+    <div class="container ev-header__inner">
+      <a href="index.html" class="ev-header__logo" aria-label="Evolo Digital Studio — Home">
+        <img src="assets/logo.webp" alt="" width="36" height="42">
+        <span><strong>Evolo</strong> Digital Studio</span>
       </a>
-      <nav class="header__nav" id="nav" aria-label="Navigazione principale">
+      <nav class="ev-header__nav" id="nav" aria-label="Navigazione principale">
         <ul class="header__links">
           <li><a href="index.html#servizi">Servizi</a></li>
-          <li><a href="index.html#progetti">Portfolio</a></li>
-          <li><a href="plugins.html">Plugin</a></li>
+          <li><a href="index.html#progetti">Progetti</a></li>
+          <li><a href="index.html#prezzi">Prezzi</a></li>
           <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="index.html#contatti">Contatti</a></li>
         </ul>
       </nav>
-      <a href="index.html#contatti" class="btn btn--primary header__cta">Preventivo gratuito</a>
+      <a href="index.html#contatti" class="ev-btn ev-btn--primary ev-header__cta">Preventivo gratuito</a>
       <button class="header__toggle" id="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
@@ -88,7 +87,7 @@
             </ol>
           </nav>
           <span class="section__label">Nicchia turistica</span>
-          <h1>Sito web per case vacanza: <span class="text-gradient">prenotazioni sul tuo dominio</span></h1>
+          <h1>Sito web per case vacanza: prenotazioni sul tuo dominio</h1>
           <p class="article-hero__lead">Foto belle non bastano: serve un percorso chiaro dalla scoperta dell’alloggio alla richiesta o prenotazione, senza perderti tra le piattaforme.</p>
           <div class="article-author">
             <img src="assets/fabio.jpg" alt="Fabio, fondatore di Evolo Digital Studio" width="56" height="56" class="article-author__photo">
@@ -115,7 +114,7 @@
               <li><a href="#wordpress"><span>05</span> WordPress</a></li>
               <li><a href="#costi"><span>06</span> Costi e priorità</a></li>
             </ol>
-            <a href="index.html#contatti" class="btn btn--primary btn--full article-toc__cta">Consulenza gratuita</a>
+            <a href="index.html#contatti" class="ev-btn ev-btn--primary ev-btn--full article-toc__cta">Consulenza gratuita</a>
           </aside>
 
           <div class="article-body reveal">
@@ -147,7 +146,7 @@
               <div class="article-q__num" aria-hidden="true">03</div>
               <div class="article-q__content">
                 <h2>Il flusso di booking: dalla scheda alla conferma</h2>
-                <p>Decide tu il modello di business. Alcuni gestori vogliono solo una <strong>richiesta con conferma manuale</strong>: l’ospite sceglie date e alloggio, tu ricevi i dettagli, rispondi e chiudi. Altri preferiscono un percorso più vicino alla prenotazione immediata, con <strong>pagamento online</strong> (ad esempio Stripe) dopo accettazione o al momento della richiesta, a seconda delle regole che ti sei dato.</p>
+                <p>Decide tu il modello di business. Alcuni gestori vogliono solo una <strong>richiesta con conferma manuale</strong>: l’ospite sceglie date e alloggio, tu ricevi i dettagli, rispondi e chiudi. Altri preferiscono un percorso più vicino alla prenotazione immediata, con <strong>pagamento online</strong> (ad esempio Stripe) dopo accettazione o al momento della richiesta, a seconda delle regole che ti sei dato. Se invece ti serve un POS o un referente pagamenti sul territorio, posso presentarti la collaborazione con <a href="pagamenti-sumup.html">SumUp</a>.</p>
                 <p>Quel che conta è che i passaggi siano evidenti. Un flusso tipico che funziona:</p>
                 <ol>
                   <li>Scelta alloggio (o ricerca per date/ospiti)</li>
@@ -202,12 +201,11 @@
         </div>
       </div>
 
-      <section class="cta-banner" aria-label="Call to action">
-        <div class="cta-banner__bg cta-banner__bg--brand" aria-hidden="true"></div>
-        <div class="container cta-banner__inner reveal">
+      <section class="ev-cta-band">
+      <div class="container reveal">
           <h2>Gestisci case vacanza e vuoi il booking sul tuo sito?</h2>
           <p>Scrivimi: valutiamo insieme se ti basta un form, un plugin dedicato o un flusso custom.</p>
-          <a href="index.html#contatti" class="btn btn--white btn--lg">Richiedi la consulenza gratuita</a>
+          <a href="index.html#contatti" class="ev-btn ev-btn--primary">Richiedi la consulenza gratuita</a>
         </div>
       </section>
 
@@ -222,19 +220,19 @@
               <span class="resource-card__tag">Plugin</span>
               <h3><a href="vacation-home-bookings.html">Vacation Home Bookings</a></h3>
               <p>Prenotazioni WordPress con iCal e Stripe.</p>
-              <a href="vacation-home-bookings.html" class="btn btn--outline">Leggi →</a>
+              <a href="vacation-home-bookings.html" class="ev-btn ev-btn--outline">Leggi →</a>
             </article>
             <article class="resource-card reveal">
               <span class="resource-card__tag">Case study</span>
               <h3><a href="cala-del-sol.html">Cala del Sol</a></h3>
               <p>Sito turistico con prenotazioni custom.</p>
-              <a href="cala-del-sol.html" class="btn btn--outline">Leggi →</a>
+              <a href="cala-del-sol.html" class="ev-btn ev-btn--outline">Leggi →</a>
             </article>
             <article class="resource-card reveal">
               <span class="resource-card__tag">Guida</span>
               <h3><a href="plugin-prenotazioni-case-vacanza-wordpress.html">Come funziona il booking</a></h3>
               <p>Calendario, iCal e pagamenti spiegati.</p>
-              <a href="plugin-prenotazioni-case-vacanza-wordpress.html" class="btn btn--outline">Leggi →</a>
+              <a href="plugin-prenotazioni-case-vacanza-wordpress.html" class="ev-btn ev-btn--outline">Leggi →</a>
             </article>
           </div>
         </div>
@@ -242,80 +240,66 @@
     </article>
   </main>
 
-  <footer class="footer">
+  <footer class="ev-footer">
     <div class="container">
-      <div class="footer__top">
-        <div class="footer__top-copy">
-          <p class="footer__eyebrow">Evolo Digital Studio</p>
-          <h2 class="footer__headline">Siti fatti a mano<br>che portano clienti</h2>
+      <div class="ev-footer__top">
+        <div>
+          <p class="ev-footer__eyebrow">Evolo Digital Studio</p>
+          <h2 class="ev-footer__headline">Siti fatti a mano<br>che portano clienti</h2>
         </div>
-        <a href="index.html#contatti" class="ag-btn ag-btn--primary footer__cta">PARLIAMO DEL PROGETTO</a>
+        <a href="index.html#contatti" class="ev-btn ev-btn--primary">Parliamo del progetto</a>
       </div>
-
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a href="index.html" class="footer__logo" aria-label="Evolo Digital Studio — Home">
-            <img src="assets/logo.webp" alt="" width="56" height="65">
-            <span>
-              <strong>Evolo</strong>
-              <small>Digital Studio</small>
-            </span>
+      <div class="ev-footer__grid">
+        <div class="ev-footer__brand">
+          <a href="index.html" class="ev-footer__logo" aria-label="Evolo Digital Studio — Home">
+            <img src="assets/logo.webp" alt="" width="40" height="46">
+            <span><strong>Evolo</strong><small>Digital Studio</small></span>
           </a>
-          <p>Sviluppo HTML, CSS, JavaScript e WordPress su misura per professionisti e PMI in Italia.</p>
-          <div class="footer__social" aria-label="Social">
+          <p>Siti web su misura per professionisti e PMI in Italia. Iscritto al MEPA.</p>
+          <div class="ev-footer__social" aria-label="Social">
             <a href="https://www.instagram.com/evolo.digitalstudio" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://www.tiktok.com/@evolo.web.designsv" target="_blank" rel="noopener noreferrer">TikTok</a>
             <a href="https://g.page/r/CdwnK_4LVsy6EAE/review" target="_blank" rel="noopener noreferrer">Google</a>
           </div>
         </div>
-
-        <div class="footer__col">
-          <p class="footer__heading">Studio</p>
+        <div>
+          <p class="ev-footer__heading">Studio</p>
           <ul>
             <li><a href="index.html#servizi">Servizi</a></li>
-            <li><a href="index.html#progetti">Portfolio</a></li>
-            <li><a href="index.html#pacchetti">Pacchetti</a></li>
-            <li><a href="plugins.html">Plugin</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#progetti">Progetti</a></li>
+            <li><a href="index.html#prezzi">Prezzi</a></li>
             <li><a href="chi-sono.html">Chi sono</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="plugins.html">Plugin</a></li>
           </ul>
         </div>
-
-        <div class="footer__col">
-          <p class="footer__heading">Risorse</p>
+        <div>
+          <p class="ev-footer__heading">Landing</p>
           <ul>
-            <li><a href="quanto-costa-sito-web.html">Quanto costa un sito</a></li>
             <li><a href="realizzazione-siti-web.html">Realizzazione siti web</a></li>
             <li><a href="sito-wordpress-su-misura.html">WordPress su misura</a></li>
-            <li><a href="velocita-sito-web-seo.html">Velocità sito web SEO</a></li>
-            <li><a href="come-scegliere-sviluppatore-sito-web.html">Come scegliere lo sviluppatore</a></li>
-            <li><a href="visita-medical.html">Case study Visita Medical</a></li>
-            <li><a href="cala-del-sol.html">Case study Cala del Sol</a></li>
-            <li><a href="manutenzione-sito-web.html">Manutenzione sito</a></li>
-            <li><a href="siti-web-mepa.html">Siti web MEPA</a></li>
+            <li><a href="quanto-costa-sito-web.html">Quanto costa un sito</a></li>
+            <li><a href="creazione-siti-web-vibo-valentia.html">Siti web Vibo Valentia</a></li>
             <li><a href="sito-web-cosenza-calabria.html">Sito web Cosenza</a></li>
+            <li><a href="manutenzione-sito-web.html">Manutenzione</a></li>
           </ul>
         </div>
-
-        <div class="footer__col">
-          <p class="footer__heading">Contatti</p>
+        <div>
+          <p class="ev-footer__heading">Contatti</p>
           <ul>
             <li><a href="mailto:info@evolodigitalstudio.it">info@evolodigitalstudio.it</a></li>
-            <li><a href="index.html#contatti">Richiedi consulenza</a></li>
+            <li><a href="index.html#contatti">Preventivo gratuito</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="cookie.html">Cookie Policy</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer__bottom">
+      <div class="ev-footer__bottom">
         <p>&copy; 2026 Evolo Digital Studio</p>
-        <div class="footer__bottom-right">
-          <nav class="footer__legal-links" aria-label="Link legali">
-            <a href="privacy.html">Privacy</a>
-            <a href="cookie.html">Cookie</a>
-          </nav>
-          <p class="footer__piva">P.IVA <span id="piva-number">04071170791</span></p>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="cookie.html">Cookie</a>
+          <span>P.IVA 04071170791</span>
         </div>
       </div>
     </div>
@@ -323,7 +307,7 @@
 
   <script src="js/analytics.js?v=4"></script>
   <script src="js/cookie-consent.js?v=1"></script>
-  <script src="js/main.js?v=11"></script>
+  <script src="js/main.js?v=17"></script>
 </body>
 </html>
 

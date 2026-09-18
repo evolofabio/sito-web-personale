@@ -506,6 +506,18 @@
     });
   }
 
+  /* ---- Prefill contact form from query (?interesse=sumup) ---- */
+  const contactService = document.getElementById('service');
+  if (contactService) {
+    const interesse = new URLSearchParams(window.location.search).get('interesse');
+    if (interesse === 'sumup') {
+      const sumupOption = Array.from(contactService.options).find((opt) =>
+        /sumup/i.test(opt.value)
+      );
+      if (sumupOption) contactService.value = sumupOption.value;
+    }
+  }
+
   /* ---- FAQ: close others on open ---- */
   document.querySelectorAll('.faq__item, .ag-faq__item').forEach((item) => {
     item.addEventListener('toggle', () => {
@@ -538,6 +550,11 @@
         url: 'caladelsol.it',
         alt: 'Anteprima progetto Cala del Sol',
       },
+      {
+        src: 'assets/project-nextgen.webp',
+        url: 'nextgenenglishschool.it',
+        alt: 'Anteprima progetto NextGen English School',
+      },
     ];
     let heroSlideIndex = 0;
     const heroFadeMs = 450;
@@ -558,4 +575,77 @@
       }, heroIntervalMs);
     }
   }
+  /* ---- Portfolio carousel ---- */
+  document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+    const viewport = carousel.querySelector('[data-carousel-viewport]');
+    const track = carousel.querySelector('[data-carousel-track]');
+    const slides = Array.from(carousel.querySelectorAll('.ev-carousel__slide'));
+    const prevBtn = carousel.querySelector('[data-carousel-prev]');
+    const nextBtn = carousel.querySelector('[data-carousel-next]');
+    const dotsWrap = carousel.querySelector('[data-carousel-dots]');
+    const countEl = carousel.querySelector('[data-carousel-count]');
+    if (!viewport || !track || slides.length < 2) return;
+
+    let index = 0;
+    const dots = slides.map((_, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'ev-carousel__dot';
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-label', `Vai al progetto ${i + 1}`);
+      btn.addEventListener('click', () => goTo(i));
+      dotsWrap?.appendChild(btn);
+      return btn;
+    });
+
+    function slideStep() {
+      const slide = slides[0];
+      const styles = window.getComputedStyle(track);
+      const gap = parseFloat(styles.columnGap || styles.gap || '0') || 0;
+      return slide.getBoundingClientRect().width + gap;
+    }
+
+    function goTo(i, behavior = 'smooth') {
+      index = Math.max(0, Math.min(slides.length - 1, i));
+      viewport.scrollTo({ left: slideStep() * index, behavior });
+      updateUI();
+    }
+
+    function updateUI() {
+      if (countEl) countEl.textContent = `${index + 1} / ${slides.length}`;
+      dots.forEach((dot, i) => {
+        dot.setAttribute('aria-selected', i === index ? 'true' : 'false');
+      });
+      if (prevBtn) prevBtn.disabled = index <= 0;
+      if (nextBtn) nextBtn.disabled = index >= slides.length - 1;
+    }
+
+    function syncFromScroll() {
+      const step = slideStep();
+      if (step <= 0) return;
+      const nextIndex = Math.round(viewport.scrollLeft / step);
+      if (nextIndex !== index) {
+        index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+        updateUI();
+      }
+    }
+
+    prevBtn?.addEventListener('click', () => goTo(index - 1));
+    nextBtn?.addEventListener('click', () => goTo(index + 1));
+    viewport.addEventListener('scroll', () => {
+      window.requestAnimationFrame(syncFromScroll);
+    }, { passive: true });
+    viewport.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        goTo(index - 1);
+      }
+      if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        goTo(index + 1);
+      }
+    });
+    window.addEventListener('resize', () => goTo(index, 'auto'));
+    updateUI();
+  });
 })();

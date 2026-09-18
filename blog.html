@@ -20,9 +20,8 @@
   <meta name="twitter:image" content="https://evolodigitalstudio.it/assets/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=27">
-  <link rel="stylesheet" href="css/agency.css?v=14">
+  <link rel="stylesheet" href="css/style.css?v=28">
+  <link rel="stylesheet" href="css/commercial.css?v=5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -152,27 +151,24 @@
   }
   </script>
 </head>
-<body class="site-agency">
+<body class="site-commercial">
 
-  <header class="header header--scrolled" id="header">
-    <div class="container header__inner">
-      <a href="index.html" class="header__logo" aria-label="Evolo Digital Studio — Home">
-        <img src="assets/logo.webp"  alt="Evolo Digital Studio" width="48" height="48">
-        <span class="header__brand">
-          <strong>Evolo</strong>
-          <small>Digital Studio</small>
-        </span>
+  <header class="ev-header ev-header--solid header--scrolled" id="header">
+    <div class="container ev-header__inner">
+      <a href="index.html" class="ev-header__logo" aria-label="Evolo Digital Studio — Home">
+        <img src="assets/logo.webp" alt="" width="36" height="42">
+        <span><strong>Evolo</strong> Digital Studio</span>
       </a>
-      <nav class="header__nav" id="nav" aria-label="Navigazione principale">
+      <nav class="ev-header__nav" id="nav" aria-label="Navigazione principale">
         <ul class="header__links">
           <li><a href="index.html#servizi">Servizi</a></li>
-          <li><a href="index.html#progetti">Portfolio</a></li>
-          <li><a href="plugins.html">Plugin</a></li>
+          <li><a href="index.html#progetti">Progetti</a></li>
+          <li><a href="index.html#prezzi">Prezzi</a></li>
           <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="chi-sono.html">Chi sono</a></li>
+          <li><a href="index.html#contatti">Contatti</a></li>
         </ul>
       </nav>
-      <a href="index.html#contatti" class="btn btn--primary header__cta">Preventivo gratuito</a>
+      <a href="index.html#contatti" class="ev-btn ev-btn--primary ev-header__cta">Preventivo gratuito</a>
       <button class="header__toggle" id="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
       </button>
@@ -180,16 +176,16 @@
   </header>
 
   <main>
-    <section class="page-hero page-hero--rich">
-      <div class="container page-hero__inner reveal">
+    <section class="ev-page-hero">
+      <div class="container reveal">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li aria-current="page">Blog</li>
           </ol>
         </nav>
-        <span class="section__label">Blog</span>
-        <h1>Guide e articoli <span class="text-gradient">per il tuo sito web</span></h1>
+        <p class="ev-brand">Blog</p>
+        <h1>Guide e articoli per il tuo sito web</h1>
         <p>Contenuti pratici su realizzazione siti, WordPress, costi e come scegliere chi sviluppa il tuo progetto — senza giri di parole.</p>
       </div>
     </section>
@@ -209,7 +205,7 @@
               </div>
               <h2><a href="manutenzione-sito-web.html">Manutenzione sito web: cosa serve dopo il lancio</a></h2>
               <p>Aggiornamenti di sicurezza, backup e supporto: quando basta un intervento spot e quando conviene un piano.</p>
-              <a href="manutenzione-sito-web.html" class="btn btn--primary">Leggi l’articolo →</a>
+              <a href="manutenzione-sito-web.html" class="ev-btn ev-btn--primary">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -224,13 +220,13 @@
               </div>
               <h2><a href="siti-web-mepa.html">Siti web MEPA per la Pubblica Amministrazione</a></h2>
               <p>Cos’è il MEPA in parole semplici, perché Evolo è iscritto e come avviare un progetto sito web con la PA.</p>
-              <a href="siti-web-mepa.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="siti-web-mepa.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
           <article class="blog-card reveal reveal--delay">
             <a href="sito-web-cosenza-calabria.html" class="blog-card__media">
-              <img src="assets/og-image.png" alt="Sviluppo siti web Cosenza e Calabria" width="1200" height="630" loading="lazy">
+              <img src="assets/blog/sito-web-cosenza-calabria.webp" alt="Sviluppo siti web Cosenza e Calabria" width="1280" height="720" loading="lazy">
             </a>
             <div class="blog-card__body">
               <div class="blog-card__meta">
@@ -239,7 +235,7 @@
               </div>
               <h2><a href="sito-web-cosenza-calabria.html">Sviluppo siti web a Cosenza e in Calabria</a></h2>
               <p>Base in Calabria, clienti in tutta Italia in remoto: come lavoro su siti professionali senza template anonimi.</p>
-              <a href="sito-web-cosenza-calabria.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="sito-web-cosenza-calabria.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -254,7 +250,7 @@
               </div>
               <h2><a href="come-far-trovare-sito-su-google.html">Come far trovare il sito su Google: cosa serve davvero</a></h2>
               <p>Indicizzazione, Search Console e sito chiaro: guida pratica per comparire nelle ricerche, senza trucchi né promesse magiche.</p>
-              <a href="come-far-trovare-sito-su-google.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="come-far-trovare-sito-su-google.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -269,7 +265,7 @@
               </div>
               <h2><a href="seo-o-google-ads.html">SEO o Google Ads? Quale scegliere nel 2026</a></h2>
               <p>Risultati rapidi o crescita stabile? Confronto pratico su tempi, costi e quando conviene usarli insieme.</p>
-              <a href="seo-o-google-ads.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="seo-o-google-ads.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -284,7 +280,7 @@
               </div>
               <h2><a href="sito-web-professionista-vs-ai.html">Sito web professionista vs AI: cosa conviene davvero</a></h2>
               <p>L’AI costruisce pagine in pochi minuti. Un professionista costruisce un sito che porta clienti. Ecco il confronto concreto, senza hype.</p>
-              <a href="sito-web-professionista-vs-ai.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="sito-web-professionista-vs-ai.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -299,7 +295,7 @@
               </div>
               <h2><a href="velocita-sito-web-seo.html">Sito veloce = più clienti: perché la velocità sito web conta per la SEO</a></h2>
               <p>Google misura i secondi. Gli utenti ancora di più. Cosa rallenta un sito e come ottimizzare le performance in modo concreto.</p>
-              <a href="velocita-sito-web-seo.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="velocita-sito-web-seo.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -314,7 +310,7 @@
               </div>
               <h2><a href="sito-web-per-cliniche-studi-medici.html">Sito web per cliniche e studi medici: cosa serve davvero</a></h2>
               <p>Fiducia, servizi chiari, prenotazioni e SEO locale: guida pratica per il settore sanitario.</p>
-              <a href="sito-web-per-cliniche-studi-medici.html" class="btn btn--primary">Leggi l’articolo →</a>
+              <a href="sito-web-per-cliniche-studi-medici.html" class="ev-btn ev-btn--primary">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -329,7 +325,7 @@
               </div>
               <h2><a href="sito-web-per-case-vacanza.html">Sito web per case vacanza: prenotazioni sul tuo dominio</a></h2>
               <p>Catalogo, iCal e conversioni: come strutturare un sito che porti richieste dirette.</p>
-              <a href="sito-web-per-case-vacanza.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="sito-web-per-case-vacanza.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -344,7 +340,7 @@
               </div>
               <h2><a href="sito-web-per-parrucchieri-saloni.html">Sito web per parrucchieri e saloni: appuntamenti online</a></h2>
               <p>Servizi, team e prenotazioni: cosa serve per portare clienti in salone dal sito.</p>
-              <a href="sito-web-per-parrucchieri-saloni.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="sito-web-per-parrucchieri-saloni.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -360,7 +356,7 @@
               </div>
               <h2><a href="tempo-realizzazione-sito-web.html">Quanto tempo serve per realizzare un sito web professionale</a></h2>
               <p>Cosa influenza i tempi: brief, contenuti e complessità. Dal sito vetrina a progetti come CivicOS e Cala del Sol.</p>
-              <a href="tempo-realizzazione-sito-web.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="tempo-realizzazione-sito-web.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -375,7 +371,7 @@
               </div>
               <h2><a href="plugin-prenotazioni-case-vacanza-wordpress.html">Sistema di prenotazioni online per case vacanza: come funziona</a></h2>
               <p>Calendario, iCal, pagamenti e flusso ospite: cosa fa un plugin prenotazioni case vacanza WordPress sul tuo sito.</p>
-              <a href="plugin-prenotazioni-case-vacanza-wordpress.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="plugin-prenotazioni-case-vacanza-wordpress.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -390,7 +386,7 @@
               </div>
               <h2><a href="sviluppatore-web-freelance-vs-agenzia.html">Sviluppatore web freelance vs agenzia: cosa conviene</a></h2>
               <p>Confronto concreto su costi, metodo e comunicazione: quando scegliere il freelance e quando l’agenzia.</p>
-              <a href="sviluppatore-web-freelance-vs-agenzia.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="sviluppatore-web-freelance-vs-agenzia.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -405,7 +401,7 @@
               </div>
               <h2><a href="come-scegliere-sviluppatore-sito-web.html">5 domande da fare prima di scegliere chi ti realizza il sito web</a></h2>
               <p>Come scegliere lo sviluppatore del sito web giusto: metodo, prezzo, portfolio e supporto — prima di firmare.</p>
-              <a href="come-scegliere-sviluppatore-sito-web.html" class="btn btn--outline">Leggi l’articolo →</a>
+              <a href="come-scegliere-sviluppatore-sito-web.html" class="ev-btn ev-btn--outline">Leggi l’articolo →</a>
             </div>
           </article>
 
@@ -420,7 +416,7 @@
               </div>
               <h2><a href="sito-wordpress-su-misura.html">Sito WordPress su misura</a></h2>
               <p>Tema sviluppato da zero vs template acquistato: velocità, sicurezza e controllo a confronto.</p>
-              <a href="sito-wordpress-su-misura.html" class="btn btn--outline">Leggi la guida →</a>
+              <a href="sito-wordpress-su-misura.html" class="ev-btn ev-btn--outline">Leggi la guida →</a>
             </div>
           </article>
 
@@ -435,7 +431,7 @@
               </div>
               <h2><a href="quanto-costa-sito-web.html">Quanto costa un sito web professionale</a></h2>
               <p>Fasce di partenza e variabili che influenzano il preventivo, senza sorprese nascoste.</p>
-              <a href="quanto-costa-sito-web.html" class="btn btn--outline">Leggi la guida →</a>
+              <a href="quanto-costa-sito-web.html" class="ev-btn ev-btn--outline">Leggi la guida →</a>
             </div>
           </article>
 
@@ -450,7 +446,7 @@
               </div>
               <h2><a href="realizzazione-siti-web.html">Realizzazione siti web professionali</a></h2>
               <p>Tecnologie, processo e cosa aspettarti: dalla consulenza gratuita fino al lancio online.</p>
-              <a href="realizzazione-siti-web.html" class="btn btn--outline">Leggi la guida →</a>
+              <a href="realizzazione-siti-web.html" class="ev-btn ev-btn--outline">Leggi la guida →</a>
             </div>
           </article>
 
@@ -458,90 +454,75 @@
       </div>
     </section>
 
-    <section class="cta-banner" aria-label="Call to action">
-      <div class="cta-banner__bg cta-banner__bg--brand" aria-hidden="true"></div>
-      <div class="container cta-banner__inner reveal">
+    <section class="ev-cta-band">
+      <div class="container reveal">
         <h2>Hai un progetto in mente?</h2>
         <p>La consulenza iniziale è gratuita. Ti dico cosa ha senso per la tua attività, in tutta Italia.</p>
-        <a href="index.html#contatti" class="btn btn--white btn--lg">Richiedi la consulenza gratuita</a>
+        <a href="index.html#contatti" class="ev-btn ev-btn--primary">Richiedi la consulenza gratuita</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="ev-footer">
     <div class="container">
-      <div class="footer__top">
-        <div class="footer__top-copy">
-          <p class="footer__eyebrow">Evolo Digital Studio</p>
-          <h2 class="footer__headline">Siti fatti a mano<br>che portano clienti</h2>
+      <div class="ev-footer__top">
+        <div>
+          <p class="ev-footer__eyebrow">Evolo Digital Studio</p>
+          <h2 class="ev-footer__headline">Siti fatti a mano<br>che portano clienti</h2>
         </div>
-        <a href="index.html#contatti" class="ag-btn ag-btn--primary footer__cta">PARLIAMO DEL PROGETTO</a>
+        <a href="index.html#contatti" class="ev-btn ev-btn--primary">Parliamo del progetto</a>
       </div>
-
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <a href="index.html" class="footer__logo" aria-label="Evolo Digital Studio — Home">
-            <img src="assets/logo.webp" alt="" width="56" height="65">
-            <span>
-              <strong>Evolo</strong>
-              <small>Digital Studio</small>
-            </span>
+      <div class="ev-footer__grid">
+        <div class="ev-footer__brand">
+          <a href="index.html" class="ev-footer__logo" aria-label="Evolo Digital Studio — Home">
+            <img src="assets/logo.webp" alt="" width="40" height="46">
+            <span><strong>Evolo</strong><small>Digital Studio</small></span>
           </a>
-          <p>Sviluppo HTML, CSS, JavaScript e WordPress su misura per professionisti e PMI in Italia.</p>
-          <div class="footer__social" aria-label="Social">
+          <p>Siti web su misura per professionisti e PMI in Italia. Iscritto al MEPA.</p>
+          <div class="ev-footer__social" aria-label="Social">
             <a href="https://www.instagram.com/evolo.digitalstudio" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://www.tiktok.com/@evolo.web.designsv" target="_blank" rel="noopener noreferrer">TikTok</a>
             <a href="https://g.page/r/CdwnK_4LVsy6EAE/review" target="_blank" rel="noopener noreferrer">Google</a>
           </div>
         </div>
-
-        <div class="footer__col">
-          <p class="footer__heading">Studio</p>
+        <div>
+          <p class="ev-footer__heading">Studio</p>
           <ul>
             <li><a href="index.html#servizi">Servizi</a></li>
-            <li><a href="index.html#progetti">Portfolio</a></li>
-            <li><a href="index.html#pacchetti">Pacchetti</a></li>
-            <li><a href="plugins.html">Plugin</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#progetti">Progetti</a></li>
+            <li><a href="index.html#prezzi">Prezzi</a></li>
             <li><a href="chi-sono.html">Chi sono</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="plugins.html">Plugin</a></li>
           </ul>
         </div>
-
-        <div class="footer__col">
-          <p class="footer__heading">Risorse</p>
+        <div>
+          <p class="ev-footer__heading">Landing</p>
           <ul>
-            <li><a href="quanto-costa-sito-web.html">Quanto costa un sito</a></li>
             <li><a href="realizzazione-siti-web.html">Realizzazione siti web</a></li>
             <li><a href="sito-wordpress-su-misura.html">WordPress su misura</a></li>
-            <li><a href="velocita-sito-web-seo.html">Velocità sito web SEO</a></li>
-            <li><a href="come-scegliere-sviluppatore-sito-web.html">Come scegliere lo sviluppatore</a></li>
-            <li><a href="visita-medical.html">Case study Visita Medical</a></li>
-            <li><a href="cala-del-sol.html">Case study Cala del Sol</a></li>
-            <li><a href="manutenzione-sito-web.html">Manutenzione sito</a></li>
-            <li><a href="siti-web-mepa.html">Siti web MEPA</a></li>
+            <li><a href="quanto-costa-sito-web.html">Quanto costa un sito</a></li>
+            <li><a href="creazione-siti-web-vibo-valentia.html">Siti web Vibo Valentia</a></li>
             <li><a href="sito-web-cosenza-calabria.html">Sito web Cosenza</a></li>
+            <li><a href="manutenzione-sito-web.html">Manutenzione</a></li>
           </ul>
         </div>
-
-        <div class="footer__col">
-          <p class="footer__heading">Contatti</p>
+        <div>
+          <p class="ev-footer__heading">Contatti</p>
           <ul>
             <li><a href="mailto:info@evolodigitalstudio.it">info@evolodigitalstudio.it</a></li>
-            <li><a href="index.html#contatti">Richiedi consulenza</a></li>
+            <li><a href="index.html#contatti">Preventivo gratuito</a></li>
             <li><a href="privacy.html">Privacy Policy</a></li>
             <li><a href="cookie.html">Cookie Policy</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="footer__bottom">
+      <div class="ev-footer__bottom">
         <p>&copy; 2026 Evolo Digital Studio</p>
-        <div class="footer__bottom-right">
-          <nav class="footer__legal-links" aria-label="Link legali">
-            <a href="privacy.html">Privacy</a>
-            <a href="cookie.html">Cookie</a>
-          </nav>
-          <p class="footer__piva">P.IVA <span id="piva-number">04071170791</span></p>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="cookie.html">Cookie</a>
+          <span>P.IVA 04071170791</span>
         </div>
       </div>
     </div>
@@ -549,6 +530,6 @@
 
   <script src="js/analytics.js?v=4"></script>
   <script src="js/cookie-consent.js?v=1"></script>
-  <script src="js/main.js?v=11"></script>
+  <script src="js/main.js?v=17"></script>
 </body>
 </html>
