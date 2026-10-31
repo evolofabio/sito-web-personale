@@ -3405,11 +3405,21 @@ body.menu-open { overflow: hidden; }
   transform: translateY(100%);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
+  max-height: min(42vh, 220px);
+  overflow: auto;
 }
 
 .cookie-banner--visible {
   transform: translateY(0);
   opacity: 1;
+}
+
+body:has(.cookie-banner--visible) {
+  padding-bottom: 7.5rem;
+}
+
+body:has(.cookie-banner--visible) .sticky-cta {
+  bottom: 6.5rem;
 }
 
 .cookie-banner__inner {
