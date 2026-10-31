@@ -69,54 +69,64 @@ In GA4: **Admin → Eventi** — segna come conversione almeno `generazione_lead
 
 ---
 
-## 4. Template report mensile (compilare a mano)
+## 4. Report mensile
+
+**Baseline compilata:** 31 ott 2026 → dettaglio in [`REPORT-BASELINE-2026-10-31.md`](REPORT-BASELINE-2026-10-31.md)  
+**Periodo file:** 1 gen – 31 ott 2026 (GSC Web + GA4 istantanea)
 
 ### 4.1 Sintesi
 
-| Metrica | Periodo corrente | Periodo precedente | Δ |
-|---------|------------------|--------------------|---|
-| Click organici (GSC) | | | |
-| Impressioni (GSC) | | | |
-| CTR medio (GSC) | | | |
-| Posizione media (GSC) | | | |
-| Sessioni Organic (GA4) | | | |
-| Eventi `generazione_lead` | | | |
-| Lead reali (inbox) | | | |
+| Metrica | Periodo export (YTD) | Periodo precedente | Δ |
+|---------|----------------------|--------------------|---|
+| Click organici (GSC) | **15** (lug–ott in Grafico) | n/d in export | — |
+| Impressioni (GSC) | **311** | n/d | — |
+| CTR medio (GSC) | **~4,8%** | n/d | — |
+| Posizione media (GSC) | variabile (IT ~33) | n/d | — |
+| Sessioni Organic (GA4) | **45** google/organic (+40 search.google.com) | n/d | — |
+| Utenti attivi (GA4) | **36** | n/d | — |
+| Eventi `generazione_lead` | **non in istantanea** | — | verificare conversione GA4 |
+| Lead reali (inbox) | **non forniti** | — | — |
 
-### 4.2 Top pagine (GSC) — 10 URL
+### 4.2 Top pagine (GSC)
 
 | Pagina | Click | Impr. | CTR | Pos. |
-|--------|-------|-------|-----|------|
-| | | | | |
+|--------|------:|------:|-----|------|
+| `/` | 11 | 136 | 8,09% | 4,54 |
+| `/chi-sono.html` | 3 | 22 | 13,64% | 4,64 |
+| `/realizzazione-siti-web.html` | 1 | 20 | 5% | 5,5 |
+| `/seo-o-google-ads.html` | 0 | 81 | 0% | 84,15 |
+| `/sito-wordpress-su-misura.html` | 0 | 36 | 0% | 54,86 |
+| `/quanto-costa-sito-web.html` | 0 | 26 | 0% | **5,5** |
+| `/come-far-trovare-sito-su-google.html` | 0 | 21 | 0% | 42,29 |
+| `/doctorsearch.html` | 0 | 19 | 0% | 66,47 |
+| `/come-scegliere-sviluppatore-sito-web.html` | 0 | 7 | 0% | **5,57** |
+| `/civicos.html` | 0 | 6 | 0% | 7,33 |
 
 ### 4.3 Hub nuovi — riga per URL (§2)
 
 | URL | Click | Impr. | CTR | Pos. | Sessioni GA4 | Note |
-|-----|-------|-------|-----|------|--------------|------|
-| | | | | | | |
+|-----|------:|------:|-----|------|--------------|------|
+| hub POS / software / IT / ecommerce / PA / articoli | — | — | — | — | — | **Assenti** da questo export (pre-indicizzazione) |
 
-### 4.4 Query da osservare (senza inventare volumi)
+### 4.4 Query da osservare
 
-Intento commerciale legato agli hub:
+| Query | Impr. | Pos. | Nota |
+|-------|------:|------|------|
+| seo o google ads | 74 | ~86 | Volume impr. ma fuori prima pagina |
+| sviluppo wordpress su misura | 10 | ~85 | Intent commerciale, posizione bassa |
+| digital / evolo / civicos | poche | 5–8 | Brand; volume minimo |
+| siti web calabria | 1 | 1 | Segnale locale isolato |
 
-- realizzazione siti web / WordPress su misura  
-- manutenzione WordPress / assistenza sito  
-- commissioni POS / POS negozio  
-- assistenza informatica aziende  
-- ecommerce WooCommerce / negozio online  
-- siti web pubblica amministrazione / MEPA  
-- plugin WordPress / software su misura  
-
-Segnare: query in posizioni 8–20 con CTR basso (candidati title/meta), query nuove che atterrano sugli hub.
+Posizioni ~5–8 con **0 clic** (priorità snippet): `quanto-costa`, `come-scegliere` (+ `civicos`, `tempo-realizzazione` in zona 7).
 
 ### 4.5 Alert cannibalizzazione
 
-| Coppia | Sintomo | Azione se confermato |
-|--------|---------|----------------------|
-| `manutenzione-assistenza` vs `manutenzione-sito-web` | Stesse query, CTR spezzato | Rafforzare intent: piano vs guida |
-| `plugins` vs `software-su-misura` | Overlap “plugin WordPress” | Hub software = commerciale; plugins = catalogo |
-| `siti-web-mepa` vs `siti-web-pubblica-amministrazione` | Overlap PA | PA = hub; MEPA = guida acquisto |
-| `soluzioni-pos` vs `confronto-commissioni-pos` | Ok se ruoli diversi | Hub vs tool |
+| Coppia | Sintomo in questo export | Azione |
+|--------|--------------------------|--------|
+| `manutenzione-assistenza` vs `manutenzione-sito-web` | **Nessuna delle due in Pagine.csv** | Ricontrollare tra 28–90 gg |
+| `plugins` vs `software-su-misura` | software hub assente | Ok per ora; monitor post-index |
+| `siti-web-mepa` vs PA hub | PA hub assente; MEPA 1 view GA4 | Monitor |
+| `soluzioni-pos` vs confronto | assenti | Monitor |
 
 ---
 
@@ -133,12 +143,13 @@ Con quei file si chiude il report §4 (nessuna stima al posto dei dati).
 
 ## 6. Checklist post-publish (prima misura utile)
 
-- [ ] Deploy Fase 1–2 su produzione  
-- [ ] Richiesta indicizzazione GSC per le 6 URL nuove (+ home)  
-- [ ] Verifica live `sitemap.xml`  
-- [ ] GA4: conversione su `generazione_lead`  
-- [ ] Dopo 14–28 giorni: primo riempimento §4  
-- [ ] Dopo 90 giorni: confronto vs baseline pre-hub  
+- [x] Deploy Fase 1–2 su produzione (`main` push 31/10/2026)  
+- [ ] Richiesta indicizzazione GSC per le URL nuove (+ home aggiornata)  
+- [x] Verifica live `sitemap.xml` (HTTP 200)  
+- [ ] GA4: conversione su `generazione_lead` (istantanea senza eventi chiave)  
+- [x] Baseline §4 compilata (YTD) — vedi REPORT-BASELINE  
+- [ ] Export **ultimi 28 giorni** a fine novembre (effetto hub)  
+- [ ] Dopo 90 giorni: confronto vs questa baseline  
 
 ---
 
@@ -146,11 +157,11 @@ Con quei file si chiude il report §4 (nessuna stima al posto dei dati).
 
 | Deliverable | Stato |
 |-------------|--------|
-| Inventario URL nuove | Fatto (§2, aggiornato) |
-| Template report | Fatto (§4) |
-| Eventi lead + simulatore POS | Fatto in codice (`main.js` / `confronto-commissioni-pos.html`) |
-| Sitemap live | HTTP **200** (curl 31/10/2026) |
-| PageSpeed API | Quota giornaliera esaurita — rieseguire a mano |
-| Numeri GSC/GA4 compilati | **In attesa export** (non inventabili) |
+| Inventario URL nuove | Fatto (§2) |
+| Template + baseline numerica | **Fatto** — [`REPORT-BASELINE-2026-10-31.md`](REPORT-BASELINE-2026-10-31.md) |
+| Eventi lead + simulatore POS | In codice; conversione GA4 da confermare in UI |
+| Sitemap live | HTTP **200** |
+| PageSpeed API | Quota esaurita — rieseguire a mano |
+| Numeri GSC/GA4 | **Compilati** da export 31/10/2026 |
 
-Prossimo passo misura: allegare CSV GSC/GA4 → compilare §4 senza ipotesi.
+Prossimo passo: indicizzazione URL nuove + conversione GA4 + export 28 giorni a fine novembre.

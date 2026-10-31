@@ -1,0 +1,428 @@
+# ----------------------------------------
+# Istantanea report
+# Account: CivicOS
+# Proprietà: Evolo Digital Studio
+# ----------------------------------------
+#  
+# Data di inizio: 20260101
+# Data di fine: 20261031
+Utenti attivi,Nuovi utenti,Durata media del coinvolgimento per utente attivo,Conteggio eventi
+36,37,270,1209
+
+#  
+# Data di inizio: 20260101
+# Data di fine: 20261031
+Titolo pagina e classe schermata,Visualizzazioni,Utenti attivi,Conteggio eventi,Frequenza di rimbalzo
+"Evolo Digital Studio | Sviluppo Siti Web HTML, CSS, JS e WordPress",239,31,604,0.41964285714285715
+Plugin WordPress | Evolo Digital Studio,38,5,81,0.19047619047619047
+Blog | Guide e articoli | Evolo Digital Studio,33,5,80,0
+Chi Sono | Evolo Digital Studio,29,6,68,0
+Evolo Digital Studio | Siti web che portano clienti,25,5,63,0.3333333333333333
+Vacation Home Bookings | Plugin WordPress | Evolo Digital Studio,17,5,38,0.18181818181818182
+Come scegliere lo sviluppatore del sito web: 5 domande | Evolo Digital Studio,11,3,26,0
+Quanto Costa un Sito Web Professionale in Italia (2026) | Evolo Digital Studio,11,3,25,0
+"Evolo Digital Studio | Siti web HTML, CSS, JS, WordPress",9,1,28,0.2857142857142857
+Realizzazione Siti Web Professionali in Italia | Evolo Digital Studio,8,3,20,0
+Saloni Elite | Tema + Plugin WordPress | Evolo Digital Studio,6,3,12,0
+Visita Medical: restyling sito web sanitario | Case study Evolo,6,4,14,0
+Cala del Sol: sito turistico WordPress con prenotazioni | Case study,5,4,16,0
+Servizi Web | Evolo Digital Studio,5,1,9,0
+Sito WordPress Su Misura per Professionisti e Aziende in Italia | Evolo Digital Studio,5,2,11,0
+Tempo realizzazione sito web: quanto serve davvero | Evolo Digital Studio,5,1,11,0
+DoctorSearch | Plugin WordPress | Evolo Digital Studio,4,1,9,0
+Manutenzione & Assistenza siti web | Evolo Digital Studio,4,1,11,0
+Plugin prenotazioni case vacanza WordPress: come funziona | Evolo Digital Studio,4,2,10,0.3333333333333333
+Sviluppatore web freelance vs agenzia: cosa conviene | Evolo Digital Studio,4,2,10,0
+Portfolio Web | Evolo Digital Studio,3,1,7,0
+Sito web per cliniche e studi medici: cosa serve davvero | Evolo,3,1,7,0
+Sito web professionista vs AI: cosa conviene davvero | Evolo,3,2,6,0
+Privacy Policy | Evolo Digital Studio,2,1,3,0
+Quanto costa un sito web? Da 600€ — prezzi chiari 2026 | Evolo,2,1,5,0
+Realizzazione siti web su misura (no template) | Evolo,2,2,8,0
+Cala del Sol | Case study | Evolo Digital Studio,1,1,4,0
+CivicOS | Case study | Evolo Digital Studio,1,1,3,0
+NextGen English School: sito scuola di inglese a Tropea | Case study,1,1,1,0
+SEO o Google Ads? Quale scegliere nel 2026 | Evolo,1,1,4,0
+Siti web MEPA per la Pubblica Amministrazione | Evolo,1,1,3,0
+Sito web per case vacanza: prenotazioni e conversioni | Evolo,1,1,3,0
+Sito web per parrucchieri e saloni: prenotazioni online | Evolo,1,1,3,0
+Velocità sito web SEO: perché un sito lento ti costa clienti | Evolo,1,1,2,0
+Visita Medical | Case study | Evolo Digital Studio,1,1,4,0
+
+#  
+# Data di inizio: 20260101
+# Data di fine: 20261031
+Sorgente/Mezzo della prima interazione dell'utente,Utenti attivi
+(direct) / (none),16
+google / organic,6
+l.instagram.com / referral,4
+ig / social,3
+linktr.ee / referral,3
+l.wl.co / referral,2
+facebook.com / referral,1
+linkedin.com / referral,1
+
+#  
+# Data di inizio: 20260101
+# Data di fine: 20261031
+Sorgente/mezzo sessione,Sessioni
+google / organic,45
+search.google.com / referral,40
+(direct) / (none),31
+l.wl.co / referral,10
+visitamedical.it / referral,7
+ig / social,6
+linktr.ee / referral,6
+l.instagram.com / referral,4
+facebook.com / referral,1
+linkedin.com / referral,1
+
+#  
+# Data di inizio: 20260101
+# Data di fine: 20261031
+N° giorno,returning,new
+0000,0,0
+0001,0,0
+0002,0,0
+0003,0,0
+0004,0,0
+0005,0,0
+0006,0,0
+0007,0,0
+0008,0,0
+0009,0,0
+0010,0,0
+0011,0,0
+0012,0,0
+0013,0,0
+0014,0,0
+0015,0,0
+0016,0,0
+0017,0,0
+0018,0,0
+0019,0,0
+0020,0,0
+0021,0,0
+0022,0,0
+0023,0,0
+0024,0,0
+0025,0,0
+0026,0,0
+0027,0,0
+0028,0,0
+0029,0,0
+0030,0,0
+0031,0,0
+0032,0,0
+0033,0,0
+0034,0,0
+0035,0,0
+0036,0,0
+0037,0,0
+0038,0,0
+0039,0,0
+0040,0,0
+0041,0,0
+0042,0,0
+0043,0,0
+0044,0,0
+0045,0,0
+0046,0,0
+0047,0,0
+0048,0,0
+0049,0,0
+0050,0,0
+0051,0,0
+0052,0,0
+0053,0,0
+0054,0,0
+0055,0,0
+0056,0,0
+0057,0,0
+0058,0,0
+0059,0,0
+0060,0,0
+0061,0,0
+0062,0,0
+0063,0,0
+0064,0,0
+0065,0,0
+0066,0,0
+0067,0,0
+0068,0,0
+0069,0,0
+0070,0,0
+0071,0,0
+0072,0,0
+0073,0,0
+0074,0,0
+0075,0,0
+0076,0,0
+0077,0,0
+0078,0,0
+0079,0,0
+0080,0,0
+0081,0,0
+0082,0,0
+0083,0,0
+0084,0,0
+0085,0,0
+0086,0,0
+0087,0,0
+0088,0,0
+0089,0,0
+0090,0,0
+0091,0,0
+0092,0,0
+0093,0,0
+0094,0,0
+0095,0,0
+0096,0,0
+0097,0,0
+0098,0,0
+0099,0,0
+0100,0,0
+0101,0,0
+0102,0,0
+0103,0,0
+0104,0,0
+0105,0,0
+0106,0,0
+0107,0,0
+0108,0,0
+0109,0,0
+0110,0,0
+0111,0,0
+0112,0,0
+0113,0,0
+0114,0,0
+0115,0,0
+0116,0,0
+0117,0,0
+0118,0,0
+0119,0,0
+0120,0,0
+0121,0,0
+0122,0,0
+0123,0,0
+0124,0,0
+0125,0,0
+0126,0,0
+0127,0,0
+0128,0,0
+0129,0,0
+0130,0,0
+0131,0,0
+0132,0,0
+0133,0,0
+0134,0,0
+0135,0,0
+0136,0,0
+0137,0,0
+0138,0,0
+0139,0,0
+0140,0,0
+0141,0,0
+0142,0,0
+0143,0,0
+0144,0,0
+0145,0,0
+0146,0,0
+0147,0,0
+0148,0,0
+0149,0,0
+0150,0,0
+0151,0,0
+0152,0,0
+0153,0,0
+0154,0,0
+0155,0,0
+0156,0,0
+0157,0,0
+0158,0,0
+0159,0,0
+0160,0,0
+0161,0,0
+0162,0,0
+0163,0,0
+0164,0,0
+0165,0,0
+0166,0,0
+0167,0,0
+0168,0,0
+0169,0,0
+0170,0,0
+0171,0,0
+0172,0,0
+0173,0,0
+0174,0,0
+0175,0,0
+0176,0,0
+0177,0,0
+0178,0,0
+0179,0,0
+0180,0,0
+0181,0,0
+0182,0,0
+0183,0,0
+0184,0,0
+0185,0,0
+0186,0,0
+0187,0,0
+0188,0,0
+0189,0,0
+0190,1,6
+0191,3,2
+0192,1,0
+0193,1,1
+0194,2,4
+0195,0,1
+0196,3,3
+0197,0,0
+0198,0,0
+0199,0,0
+0200,3,3
+0201,4,2
+0202,2,0
+0203,2,2
+0204,3,0
+0205,3,2
+0206,3,1
+0207,2,4
+0208,1,0
+0209,1,0
+0210,2,0
+0211,0,0
+0212,1,0
+0213,1,0
+0214,0,0
+0215,0,0
+0216,1,0
+0217,0,0
+0218,0,0
+0219,0,0
+0220,0,0
+0221,0,0
+0222,1,1
+0223,0,0
+0224,0,0
+0225,1,0
+0226,1,0
+0227,0,0
+0228,0,0
+0229,0,0
+0230,0,0
+0231,0,0
+0232,0,0
+0233,1,0
+0234,0,0
+0235,1,0
+0236,0,0
+0237,0,0
+0238,0,0
+0239,1,0
+0240,1,0
+0241,0,0
+0242,0,0
+0243,1,0
+0244,1,0
+0245,0,0
+0246,0,0
+0247,0,0
+0248,0,0
+0249,1,0
+0250,1,0
+0251,0,0
+0252,0,0
+0253,0,0
+0254,0,0
+0255,0,0
+0256,0,0
+0257,1,0
+0258,0,0
+0259,0,1
+0260,1,0
+0261,1,0
+0262,1,0
+0263,0,0
+0264,1,0
+0265,0,0
+0266,1,0
+0267,0,0
+0268,0,0
+0269,0,0
+0270,0,0
+0271,0,0
+0272,0,0
+0273,0,0
+0274,0,0
+0275,0,0
+0276,0,0
+0277,1,0
+0278,0,0
+0279,1,1
+0280,0,0
+0281,1,1
+0282,0,0
+0283,0,0
+0284,0,0
+0285,0,0
+0286,0,1
+0287,0,0
+0288,0,0
+0289,0,0
+0290,0,0
+0291,0,0
+0292,0,0
+0293,0,0
+0294,1,0
+0295,0,0
+0296,1,0
+0297,0,0
+0298,0,0
+0299,0,0
+0300,0,0
+0301,0,0
+0302,0,0
+0303,0,0
+
+# How does activity on your platforms compare?
+# Data di inizio: 20260101
+# Data di fine: 20261031
+Piattaforma,Eventi chiave
+
+
+#  
+# Data di inizio: 20260101
+# Data di fine: 20261031
+Città,Utenti attivi
+Rome,9
+Sellia Marina,9
+Catanzaro,6
+Milan,4
+Cosenza,2
+Genoa,2
+Iglesias,2
+Naples,2
+Palermo,2
+Bari,1
+Bologna,1
+Brescia,1
+Carini,1
+Catania,1
+Ceccano,1
+Chirignago-Zelarino,1
+Empoli,1
+Fondi,1
+Gallarate,1
+Paola,1
+Siderno,1
+Trieste,1
+Turin,1
+Venice,1
+
+#  
+# Data di inizio: 20260101
+# Data di fine: 20261031
+Nome segmento di pubblico,Utenti attivi
+All Users,36
