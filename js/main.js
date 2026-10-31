@@ -473,6 +473,8 @@
         const result = await response.json().catch(() => ({}));
 
         if (response.ok && result.success) {
+          const serviceField = contactForm.querySelector('#service, [name="service"]');
+          const interesseServizio = serviceField && serviceField.value ? String(serviceField.value) : 'non_specificato';
           contactForm.reset();
           clearFieldErrors();
           resetCaptcha();
@@ -480,6 +482,12 @@
           if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
             window.gtag('event', 'generazione_lead', {
               metodo_contatto: 'form_sito',
+              interesse_servizio: interesseServizio,
+            });
+          } else if (window.EvoloAnalytics && typeof window.EvoloAnalytics.trackEvent === 'function') {
+            window.EvoloAnalytics.trackEvent('generazione_lead', {
+              metodo_contatto: 'form_sito',
+              interesse_servizio: interesseServizio,
             });
           }
         } else {

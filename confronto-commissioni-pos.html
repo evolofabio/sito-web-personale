@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Confronta le commissioni POS: stima costi mensili e annuali in base a transato, percentuale, fisso per transazione e canone. Simulatore gratuito Evolo.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <title>Confronto commissioni POS | Simulatore costi | Evolo</title>
+  <link rel="canonical" href="https://evolodigitalstudio.it/confronto-commissioni-pos.html">
+  <link rel="icon" href="assets/logo.webp" type="image/webp">
+  <meta property="og:title" content="Confronto commissioni POS | Evolo Digital Studio">
+  <meta property="og:description" content="Simula e confronta i costi del POS: commissioni, fisso per transazione e canone.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evolodigitalstudio.it/confronto-commissioni-pos.html">
+  <meta property="og:image" content="https://evolodigitalstudio.it/assets/og-image.png">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Confronto commissioni POS | Evolo">
+  <meta name="twitter:description" content="Simulatore gratuito per stimare e confrontare i costi di accettazione pagamenti.">
+  <meta name="twitter:image" content="https://evolodigitalstudio.it/assets/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=28">
+  <link rel="stylesheet" href="css/commercial.css?v=9">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://evolodigitalstudio.it/" },
+          { "@type": "ListItem", "position": 2, "name": "Soluzioni POS", "item": "https://evolodigitalstudio.it/soluzioni-pos.html" },
+          { "@type": "ListItem", "position": 3, "name": "Confronto commissioni", "item": "https://evolodigitalstudio.it/confronto-commissioni-pos.html" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Simulatore commissioni POS",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+        "description": "Simulatore illustrativo per stimare costi mensili e annuali di accettazione pagamenti elettronici.",
+        "url": "https://evolodigitalstudio.it/confronto-commissioni-pos.html",
+        "provider": {
+          "@type": "ProfessionalService",
+          "name": "Evolo Digital Studio",
+          "url": "https://evolodigitalstudio.it/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Il simulatore mostra l’offerta migliore sul mercato?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Non confronta listini di marche diverse in automatico. Inserisci tu i parametri del contratto attuale e di uno scenario alternativo per vedere la differenza di costo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I risultati includono l’IVA?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Il calcolo è una stima sugli importi che inserisci. IVA, sconti promozionali e canoni speciali vanno considerati solo se li indichi nei campi."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="site-commercial">
+
+  <header class="ev-header ev-header--solid header--scrolled" id="header">
+    <div class="container ev-header__inner">
+      <a href="index.html" class="ev-header__logo" aria-label="Evolo Digital Studio — Home">
+        <img src="assets/logo.webp" alt="" width="36" height="42">
+        <span><strong>Evolo</strong> Digital Studio</span>
+      </a>
+      <nav class="ev-header__nav" id="nav" aria-label="Navigazione principale">
+        <ul class="header__links">
+          <li><a href="realizzazione-siti-web.html">Web</a></li>
+          <li><a href="software-su-misura.html">Software</a></li>
+          <li><a href="manutenzione-assistenza.html">Manutenzione</a></li>
+          <li><a href="assistenza-informatica-aziende.html">IT</a></li>
+          <li><a href="soluzioni-pos.html" class="active">POS</a></li>
+          <li><a href="index.html#progetti">Progetti</a></li>
+          <li><a href="index.html#contatti">Contatti</a></li>
+        </ul>
+      </nav>
+      <a href="index.html#contatti" class="ev-btn ev-btn--primary ev-header__cta">Analisi gratuita</a>
+      <button class="header__toggle" id="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="ev-page-hero">
+      <div class="container reveal">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="soluzioni-pos.html">Soluzioni POS</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Confronto commissioni</span>
+        </nav>
+        <p class="ev-brand">Simulatore</p>
+        <h1>Confronto commissioni POS</h1>
+        <p>Inserisci transato, percentuale, fisso per transazione e canone. Confronti lo scenario attuale con un’alternativa — senza preferenze di marca hard-coded.</p>
+      </div>
+    </section>
+
+    <section class="ev-section" aria-labelledby="calc-title">
+      <div class="container">
+        <div class="ev-section__head reveal">
+          <p class="ev-kicker">Calcolo</p>
+          <h2 id="calc-title">Stima i costi di accettazione</h2>
+          <p>I valori di partenza sono solo esempi. Modificali con i numeri del tuo contratto o di un’offerta ricevuta.</p>
+        </div>
+
+        <div class="pos-calc reveal" id="pos-calc">
+          <div class="pos-calc__grid">
+            <label class="pos-calc__full">
+              Transato mensile (€)
+              <div class="pos-calc__range">
+                <input type="range" id="volume" min="1000" max="100000" step="500" value="8000" aria-valuetext="8000 euro">
+                <input type="number" id="volume-num" min="0" step="100" value="8000" inputmode="decimal">
+              </div>
+              <span>Utile soprattutto da circa 5.000 €/mese in su, ma puoi simulare anche volumi più bassi.</span>
+            </label>
+
+            <label>
+              Transazioni stimate / mese
+              <input type="number" id="tx-count" min="0" step="1" value="200" inputmode="numeric">
+              <span>Serve solo se c’è un fisso per transazione.</span>
+            </label>
+            <div aria-hidden="true"></div>
+
+            <label>
+              Commissione attuale (%)
+              <input type="number" id="a-rate" min="0" max="10" step="0.01" value="1.50" inputmode="decimal">
+            </label>
+            <label>
+              Commissione alternativa (%)
+              <input type="number" id="b-rate" min="0" max="10" step="0.01" value="0.99" inputmode="decimal">
+            </label>
+
+            <label>
+              Fisso / tx attuale (€)
+              <input type="number" id="a-fixed" min="0" step="0.01" value="0.10" inputmode="decimal">
+            </label>
+            <label>
+              Fisso / tx alternativo (€)
+              <input type="number" id="b-fixed" min="0" step="0.01" value="0.05" inputmode="decimal">
+            </label>
+
+            <label>
+              Canone attuale (€/mese)
+              <input type="number" id="a-fee" min="0" step="0.01" value="19" inputmode="decimal">
+            </label>
+            <label>
+              Canone alternativo (€/mese)
+              <input type="number" id="b-fee" min="0" step="0.01" value="0" inputmode="decimal">
+            </label>
+
+            <label>
+              Altri costi attuali (€/mese)
+              <input type="number" id="a-other" min="0" step="0.01" value="0" inputmode="decimal">
+            </label>
+            <label>
+              Altri costi alternativi (€/mese)
+              <input type="number" id="b-other" min="0" step="0.01" value="0" inputmode="decimal">
+            </label>
+          </div>
+
+          <div class="pos-calc__results" aria-live="polite">
+            <div class="pos-calc__stat">
+              <span>Costo attuale / mese</span>
+              <strong id="out-a-month">—</strong>
+            </div>
+            <div class="pos-calc__stat">
+              <span>Scenario alternativo / mese</span>
+              <strong id="out-b-month">—</strong>
+            </div>
+            <div class="pos-calc__stat">
+              <span>Costo attuale / anno</span>
+              <strong id="out-a-year">—</strong>
+            </div>
+            <div class="pos-calc__stat">
+              <span>Scenario alternativo / anno</span>
+              <strong id="out-b-year">—</strong>
+            </div>
+            <div class="pos-calc__save" id="out-save-box">
+              <span id="out-save-label">Differenza stimata / anno</span>
+              <strong id="out-save">—</strong>
+              <span id="out-save-note">Confronta i due scenari con gli stessi volumi.</span>
+            </div>
+          </div>
+
+          <p class="pos-calc__note">Simulazione illustrativa. Non sostituisce il contratto né un listino ufficiale. IVA, promozioni e condizioni speciali vanno inserite nei campi se rilevanti. Evolo non è banca né acquirer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ev-section ev-section--soft" aria-labelledby="guide-title">
+      <div class="container">
+        <div class="ev-section__head reveal">
+          <p class="ev-kicker">Come leggere i numeri</p>
+          <h2 id="guide-title">Cosa conta davvero in un’offerta POS</h2>
+        </div>
+        <div class="ev-services ev-services--areas">
+          <article class="ev-service reveal">
+            <span class="ev-service__num">01</span>
+            <h3>Commissione %</h3>
+            <p>Incide sul volume. Su transato alto anche pochi decimali fanno differenza annuale.</p>
+          </article>
+          <article class="ev-service reveal reveal--delay">
+            <span class="ev-service__num">02</span>
+            <h3>Fisso per transazione</h3>
+            <p>Pesa sulle vendite piccole e frequenti (bar, caffè, ticket bassi).</p>
+          </article>
+          <article class="ev-service reveal reveal--delay-2">
+            <span class="ev-service__num">03</span>
+            <h3>Canone e altri costi</h3>
+            <p>Canone terminale, SIM, carte, attivazione: vanno nel totale mensile, non “a parte”.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ev-section" aria-labelledby="faq-calc">
+      <div class="container">
+        <div class="ev-section__head reveal">
+          <p class="ev-kicker">FAQ</p>
+          <h2 id="faq-calc">Domande sul simulatore</h2>
+        </div>
+        <div class="ev-faq reveal">
+          <details class="ag-faq__item">
+            <summary>Il simulatore mostra l’offerta migliore sul mercato?</summary>
+            <p>No. Non scarica listini automatici. Confronti due scenari con i parametri che inserisci tu.</p>
+          </details>
+          <details class="ag-faq__item">
+            <summary>Posso usarlo senza sapere il numero di transazioni?</summary>
+            <p>Sì: lascia il fisso a zero oppure stima le transazioni. Se non c’è fisso per tx, il campo transazioni non cambia il risultato.</p>
+          </details>
+          <details class="ag-faq__item">
+            <summary>Dopo la stima cosa succede?</summary>
+            <p>Se vuoi, ti aiuto a rileggere il contratto attuale e a confrontarlo con un’offerta concreta — con disclosure chiara sul mio ruolo commerciale.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="ev-cta-band">
+      <div class="container reveal">
+        <h2>Hai i numeri del contratto a portata di mano?</h2>
+        <p>Mandami estratto o condizioni: li confrontiamo insieme, senza impegno.</p>
+        <a href="index.html#contatti" class="ev-btn ev-btn--primary">Richiedi analisi</a>
+        <a href="soluzioni-pos.html" class="ev-btn ev-btn--outline">Torna a Soluzioni POS</a>
+      </div>
+    </section>
+  </main>
+
+    <footer class="ev-footer">
+    <div class="container">
+      <div class="ev-footer__top">
+        <div>
+          <p class="ev-footer__eyebrow">Evolo Digital Studio</p>
+          <h2 class="ev-footer__headline">Tecnologia chiara<br>per la tua attività</h2>
+        </div>
+        <a href="index.html#contatti" class="ev-btn ev-btn--primary">Parliamo del progetto</a>
+      </div>
+
+      <div class="ev-footer__grid">
+        <div class="ev-footer__brand">
+          <a href="index.html" class="ev-footer__logo" aria-label="Evolo Digital Studio — Home">
+            <img src="assets/logo.webp" alt="" width="40" height="46">
+            <span>
+              <strong>Evolo</strong>
+              <small>Digital Studio</small>
+            </span>
+          </a>
+          <p>Web, software, manutenzione, IT e soluzioni POS per professionisti e PMI in Italia. Iscritto al MEPA.</p>
+          <div class="ev-footer__social" aria-label="Social">
+            <a href="https://www.instagram.com/evolo.digitalstudio" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.tiktok.com/@evolo.web.designsv" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://g.page/r/CdwnK_4LVsy6EAE/review" target="_blank" rel="noopener noreferrer">Google</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="ev-footer__heading">Studio</p>
+          <ul>
+            <li><a href="index.html#servizi">Servizi</a></li>
+            <li><a href="index.html#progetti">Progetti</a></li>
+            <li><a href="chi-sono.html">Chi sono</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="plugins.html">Plugin</a></li>
+          </ul>
+        </div>
+
+        <div>
+                    <p class="ev-footer__heading">Servizi</p>
+          <ul>
+            <li><a href="realizzazione-siti-web.html">Sviluppo web</a></li>
+            <li><a href="software-su-misura.html">Software su misura</a></li>
+            <li><a href="ecommerce.html">Ecommerce</a></li>
+            <li><a href="manutenzione-assistenza.html">Manutenzione</a></li>
+            <li><a href="consulenza-seo.html">Consulenza SEO</a></li>
+            <li><a href="assistenza-informatica-aziende.html">Assistenza IT</a></li>
+            <li><a href="soluzioni-pos.html">Soluzioni POS</a></li>
+            <li><a href="siti-web-pubblica-amministrazione.html">Pubblica Amministrazione</a></li>
+          </ul>
+        </div>
+
+        <div>
+                    <p class="ev-footer__heading">Guide</p>
+          <ul>
+            <li><a href="quanto-costa-sito-web.html">Quanto costa un sito</a></li>
+            <li><a href="confronto-commissioni-pos.html">Confronto commissioni POS</a></li>
+            <li><a href="manutenzione-wordpress-piano-vs-spot.html">Piano vs intervento spot</a></li>
+            <li><a href="segnali-restyling-sito-web.html">Segnali di restyling</a></li>
+            <li><a href="quando-serve-plugin-wordpress-su-misura.html">Plugin su misura</a></li>
+            <li><a href="mailto:info@evolodigitalstudio.it">info@evolodigitalstudio.it</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ev-footer__bottom">
+        <p>&copy; 2026 Evolo Digital Studio</p>
+        <div>
+          <a href="privacy.html">Privacy</a>
+          <a href="cookie.html">Cookie</a>
+          <span>P.IVA 04071170791</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=18"></script>
+  <script src="js/analytics.js?v=4"></script>
+  <script src="js/cookie-consent.js?v=1"></script>
+  <script>
+  (function () {
+    var eur = new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' });
+    var ids = ['volume', 'volume-num', 'tx-count', 'a-rate', 'b-rate', 'a-fixed', 'b-fixed', 'a-fee', 'b-fee', 'a-other', 'b-other'];
+
+    function n(id) {
+      var el = document.getElementById(id);
+      var v = parseFloat(el && el.value);
+      return isFinite(v) ? v : 0;
+    }
+
+    function cost(rate, fixed, fee, other, volume, tx) {
+      return (volume * rate / 100) + (tx * fixed) + fee + other;
+    }
+
+    function syncVolume(fromRange) {
+      var range = document.getElementById('volume');
+      var num = document.getElementById('volume-num');
+      if (fromRange) num.value = range.value;
+      else {
+        var v = Math.max(0, n('volume-num'));
+        num.value = v;
+        if (v >= 1000 && v <= 100000) range.value = v;
+      }
+      range.setAttribute('aria-valuetext', num.value + ' euro');
+    }
+
+    var trackTimer = null;
+
+    function onUserInput(azione) {
+      if (trackTimer) clearTimeout(trackTimer);
+      trackTimer = setTimeout(function () {
+        var payload = {
+          azione: azione || 'modifica_parametri',
+          volume_mensile: Math.round(n('volume-num'))
+        };
+        if (window.EvoloAnalytics && typeof window.EvoloAnalytics.trackEvent === 'function') {
+          window.EvoloAnalytics.trackEvent('uso_simulatore_pos', payload);
+        } else if (typeof window.gtag === 'function') {
+          window.gtag('event', 'uso_simulatore_pos', payload);
+        }
+      }, 1200);
+    }
+
+    function recalc() {
+      var volume = n('volume-num');
+      var tx = n('tx-count');
+      var a = cost(n('a-rate'), n('a-fixed'), n('a-fee'), n('a-other'), volume, tx);
+      var b = cost(n('b-rate'), n('b-fixed'), n('b-fee'), n('b-other'), volume, tx);
+      var diff = a - b;
+
+      document.getElementById('out-a-month').textContent = eur.format(a);
+      document.getElementById('out-b-month').textContent = eur.format(b);
+      document.getElementById('out-a-year').textContent = eur.format(a * 12);
+      document.getElementById('out-b-year').textContent = eur.format(b * 12);
+      document.getElementById('out-save').textContent = eur.format(Math.abs(diff * 12));
+
+      var label = document.getElementById('out-save-label');
+      var note = document.getElementById('out-save-note');
+      var box = document.getElementById('out-save-box');
+      if (Math.abs(diff) < 0.005) {
+        label.textContent = 'Differenza stimata / anno';
+        note.textContent = 'I due scenari risultano equivalenti con questi parametri.';
+        box.style.background = 'var(--ev-soft)';
+        box.style.borderColor = 'var(--ev-line)';
+      } else if (diff > 0) {
+        label.textContent = 'Risparmio stimato / anno (alternativa)';
+        note.textContent = 'L’alternativa costa meno con gli stessi volumi. Verifica sempre le condizioni aggiornate.';
+        box.style.background = '#E8F5EC';
+        box.style.borderColor = '#C6E6D0';
+      } else {
+        label.textContent = 'Costo aggiuntivo stimato / anno (alternativa)';
+        note.textContent = 'Con questi parametri lo scenario attuale risulta più conveniente.';
+        box.style.background = '#F8EFE8';
+        box.style.borderColor = '#E8D4C4';
+      }
+    }
+
+    document.getElementById('volume').addEventListener('input', function () {
+      syncVolume(true);
+      recalc();
+      onUserInput('volume');
+    });
+    document.getElementById('volume-num').addEventListener('input', function () {
+      syncVolume(false);
+      recalc();
+      onUserInput('volume');
+    });
+    ids.slice(2).forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener('input', function () {
+        recalc();
+        onUserInput(id);
+      });
+    });
+    recalc();
+  })();
+  </script>
+</body>
+</html>
