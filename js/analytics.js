@@ -2,10 +2,28 @@
   'use strict';
 
   const GA_ID = 'G-TCB4S4BPWH';
+  const CLARITY_ID = 'xu58plvbwu';
   let loaded = false;
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  window.gtag = gtag;
+
+  /* Consent Mode v2 default: denied until banner accept */
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500,
+  });
+
   function trackEvent(name, params) {
-    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+    if (typeof window.gtag === 'function') {
       if (params) {
         window.gtag('event', name, params);
       } else {
@@ -14,13 +32,18 @@
     }
   }
 
-  const CLARITY_ID = 'xu58plvbwu';
-
   function loadMicrosoftClarity() {
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    (function (c, l, a, r, i, t, y) {
+      c[a] =
+        c[a] ||
+        function () {
+          (c[a].q = c[a].q || []).push(arguments);
+        };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = 'https://www.clarity.ms/tag/' + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
     })(window, document, 'clarity', 'script', CLARITY_ID);
   }
 
@@ -28,19 +51,19 @@
     if (loaded) return;
     loaded = true;
 
+    gtag('consent', 'update', {
+      analytics_storage: 'granted',
+    });
+
     const script = document.createElement('script');
     script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
     document.head.appendChild(script);
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      window.dataLayer.push(arguments);
-    }
-    window.gtag = gtag;
-
     gtag('js', new Date());
-    gtag('config', GA_ID);
+    gtag('config', GA_ID, {
+      anonymize_ip: true,
+    });
 
     loadMicrosoftClarity();
   }

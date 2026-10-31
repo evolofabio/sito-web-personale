@@ -144,7 +144,7 @@ Con quei file si chiude il report §4 (nessuna stima al posto dei dati).
 ## 6. Checklist post-publish (prima misura utile)
 
 - [x] Deploy Fase 1–2 su produzione (`main` push 31/10/2026)  
-- [ ] Richiesta indicizzazione GSC per le URL nuove (+ home aggiornata)  
+- [x] Richiesta indicizzazione GSC per le URL nuove (31/10/2026, da Fabio)  
 - [x] Verifica live `sitemap.xml` (HTTP 200)  
 - [ ] GA4: conversione su `generazione_lead` (istantanea senza eventi chiave)  
 - [x] Baseline §4 compilata (YTD) — vedi REPORT-BASELINE  
