@@ -1203,6 +1203,30 @@ body.site-commercial .ev-footer__bottom a {
 
 body.site-commercial .ev-footer__bottom a:hover { color: var(--ev-ink); }
 
+body.site-commercial .ev-footer__bottom > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem 0.9rem;
+  max-width: 42rem;
+}
+
+body.site-commercial .ev-footer__bottom > div a {
+  margin-left: 0;
+}
+
+body.site-commercial .ev-footer__legal {
+  flex-basis: 100%;
+  margin-top: 0.15rem;
+  color: var(--ev-mute);
+  line-height: 1.45;
+  text-align: right;
+}
+
+body.site-commercial .ev-footer__legal a {
+  margin-left: 0;
+}
+
 /* Inner page hero */
 body.site-commercial .ev-page-hero {
   padding: calc(var(--header-offset) + 3rem) 0 3rem;
